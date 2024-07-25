@@ -7,10 +7,13 @@ from uuids_fake import uuids_amendes, uuids_paypal,uuids_atandt, uuids_ameli, uu
 lookyloo = Lookyloo()
 
 if lookyloo.is_up:
+    #name of the institution so that we do not have to change the paths in the code
     institution = "ameli"
 
+    #need to change the uuid list manually
     for uuid in uuids_ameli:
 
+        #saving the capture in the corresponding folder
         zip_buffer = lookyloo.get_complete_capture(uuid)
         print(uuid)
 
@@ -21,23 +24,20 @@ if lookyloo.is_up:
 
         txt_datei = './'+ institution +'_fake/' + name + '/0.last_redirect.txt'
 
-        # Pfad zur CSV-Datei
         csv_datei = './'+ institution +'_fake/'+ institution +'_urls.csv'
 
-        # Datei lesen und in CSV schreiben
+        #writing the uuid and the url into the csv file
         with open(txt_datei, 'r') as txt_file, open(csv_datei, 'a', newline='') as csv_file:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerow([uuid])
 
             for zeile in txt_file:
-                # Zeile in eine Liste von Werten aufteilen
                 daten = zeile.strip().split(',')
-                # Daten in die CSV-Datei schreiben
                 csv_writer.writerow(daten)
 
         csv_datei = './'+ institution +'_fake/'+ institution +'_takedown_info.csv'
 
-        # Datei lesen und in CSV schreiben
+        #takedown information are written into the csv file
         with open(csv_datei, 'a') as f_object:
             writer_object = writer(f_object)
             writer_object.writerow([uuid])
