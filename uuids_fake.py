@@ -176,3 +176,8 @@ already_taken_uuids_atandt=[
     "f1652ec1-809a-4029-8f87-e3ee36979be6",
     "0700cd8f-94b3-457e-882b-85bdffc2d336"
 ]
+
+uuids_orange=[
+    "9e10517b-e2ce-4c89-9d24-445db081e6fc",
+    "e4e3bb65-e6aa-48f2-9e0c-57d7ff3e3689"
+]
