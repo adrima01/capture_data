@@ -1,0 +1,71 @@
+{
+  "cff85ea240151402df8e1d589aa144d76cfa8412": {
+    "FileName": "../../../down/cdnjs/cdnjs/ajax/libs/video.js/8.2.0/font/VideoJS.woff",
+    "FileSize": "5408",
+    "MD5": "B3B850897C8A9EED4BD451E7C51129AD",
+    "SHA-1": "CFF85EA240151402DF8E1D589AA144D76CFA8412",
+    "SHA-256": "A412C7EB119CDDAD46E615EE14664076ECE9DF0D2EEE6B6C9067F7BF053E7C42",
+    "SHA-512": "053B8BE7949DF99FC488014BFE091B994B8DB5E4FB45A0C7B1002124969C1084348D86B276C35D7FB4E30B31D995B980F0E15058BAFDF0A677F648FA108C874D",
+    "SSDEEP": "96:xomRP0/Raq3HnX24pFUf+C/+Of/NQUBV4ZfPF+cqT9ku9UNPbg:xoqhq3HntpFU2C/+qyUBV4JkA8",
+    "TLSH": "T199B17D6CC971390AE65624388468BFE6B73E81049051C8AC5C0ED5F79F1A6CEB4FA867",
+    "insert-timestamp": "1678264716.873263",
+    "mimetype": "application/octet-stream",
+    "source": "cdnjs"
+  },
+  "8d81b73ae06f664f9d9e53dd5829a799bf434491": {
+    "KnownMalicious": "malshare.com",
+    "MD5": "99BBE560926E583B8E99036251DEB783",
+    "SHA-1": "8D81B73AE06F664F9D9E53DD5829A799BF434491",
+    "SHA-256": "648E766BF519673F9A90CC336CBECEDE80DCBE3419B43D36ECBB25D88F5584A3",
+    "SSDEEP": "768:YDDFSZ8JDMS1XGPLOPXBK+KQZPKOF/PY7PFW7N5O9QMSE9FLRJIWZAFAP34VEZH0:6FSZYDMS1XGNOPX5LP16FUVQT7BMVF"
+  },
+  "7a85f4764bbd6daf1c3545efbbf0f279a6dc0beb": {
+    "FileName": "./usr/lib64/qt5/tests/auto/3rdparty/testsuites/XQTS/ExpectedTestResults/SchemaImport/FLWORExprSI/ForExprType053.txt",
+    "FileSize": "2",
+    "KnownMalicious": "malshare.com",
+    "MD5": "444BCB3A3FCF8389296C49467F27E1D6",
+    "SHA-1": "7A85F4764BBD6DAF1C3545EFBBF0F279A6DC0BEB",
+    "SHA-256": "2689367B205C16CE32ED4200942B8B8B1E262DFC70D9BC9FBC77C49699A4F1DF",
+    "SSDEEP": "3:V:V",
+    "TLSH": ""
+  },
+  "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f": {
+    "CRC32": "A3A6BF43",
+    "FileName": "snap-hashlookup-import/bin/data/flutter_assets/AssetManifest.json",
+    "FileSize": "2",
+    "KnownMalicious": "malshare.com",
+    "MD5": "99914B932BD37A50B983C5E7C90AE93B",
+    "OpSystemCode": "362",
+    "ProductCode": "311",
+    "RDS:package_id": "309120",
+    "SHA-1": "BF21A9E8FBC5A3846FB05B4FA0859E0917B2202F",
+    "SHA-256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+    "SHA-512": "27C74670ADB75075FAD058D5CEAF7B20C4E7786C83BAE8A32F626F9782AF34C9A33C2046EF60FD2A7878D378E29FEC851806BBD9A67878F3A9F1CDA4830763FD",
+    "SSDEEP": "3:H:H",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1715093972.704104",
+    "mimetype": "text/plain",
+    "source": "snap:MAjDgfyZldCAwLXd3u8mVay6jCnegw34_1",
+    "tar:gname": "root",
+    "tar:uname": "root"
+  },
+  "53a5687cb26dc41f2ab4033e97e13adefd3740d6": {
+    "CRC32": "6F00DFB2",
+    "FileName": "uptime.txt",
+    "FileSize": "7",
+    "KnownMalicious": "malshare.com",
+    "MD5": "260CA9DD8A4577FC00B7BD5810298076",
+    "OpSystemCode": "362",
+    "ProductCode": "845",
+    "RDS:package_id": "845",
+    "SHA-1": "53A5687CB26DC41F2AB4033E97E13ADEFD3740D6",
+    "SHA-256": "AEE408847D35E44E99430F0979C3357B85FE8DBB4535A494301198ADBEE85F27",
+    "SSDEEP": "3:BZW:B6",
+    "SpecialCode": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1648601595.2546122",
+    "source": "RDS_2022.03.1_legacy.db"
+  }
+}

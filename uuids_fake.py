@@ -127,6 +127,7 @@ already_taken_uuids_luxtrust=[
 ]
 
 uuids_microsoft=[
+    "eb7ff7e6-dd30-4abc-a252-c554390a3e6f"
 
 ]
 
@@ -137,4 +138,41 @@ already_taken_uuids_microsoft=[
     "48e7fb51-e528-42ce-9e5f-fddb294291c8",
     "b2f65ea4-9e02-4114-b004-e3b0a53b846a",
     "7c9a26de-bd2d-4285-8486-6e2ed9cb2047"
+]
+
+uuids_atandt=[
+
+]
+
+already_taken_uuids_atandt=[
+    "58608b35-ac4c-4f8b-8b16-e39e8f0760fe",
+    "57282ade-80d1-4d1c-870d-06b7ea5fedc8",
+    "2db81cfd-df9d-405b-b146-255735cf581a",
+    "41c7ffa5-5138-4456-a4e3-8fedccb18896",
+    "edfb20ba-6d46-42cd-825b-84e1e7f36712",
+    "42ec1ff1-6510-48b9-bbac-95063a6195f3",
+    "31506667-18c5-40d1-992a-2d575397d4af",
+    "492f2e15-9f68-4af0-bfbf-7038c7bbf785",
+    "2dadfaf4-8079-4485-8b63-2c34f02fbd21",
+    "7f149319-dd1d-4731-8cd3-1a45993e8643",
+    "dab40386-c70d-4dd8-9ee7-fb9817d77acd",
+    "f1e614ed-f2e5-4fe2-a0bb-15c937293c57",
+    "caaa51b1-b267-4622-9533-74b5cd930d60",
+    "231a2749-13f6-43e6-967a-f61ca00c7868",
+    "490f2aec-7abb-40cc-a1a4-85c0aa767693",
+    "624d1ecf-d342-41dc-9c46-2897f0c545da",
+    "012f6772-806f-4866-93e8-3dc34514b5e5",
+    "b0ad839a-1cda-4c38-9634-14b9f002793e",
+    "d69203f2-2b81-4530-90f8-7f7b6e6e48e3",
+    "0f903edf-6e2c-4448-af83-182040374747",
+    "d8a92ecb-43de-4c07-8115-e55905987e59",
+    "75c55452-51a7-49bc-86a1-69db4f6bdf34",
+    "7f924ef1-740e-4eb1-bffa-71f2416b9ad1",
+    "42b11957-c78b-44ea-9b2d-6734858c130a",
+    "9bbd6507-28c5-425a-99cc-88f55817cad9",
+    "75e43339-73b1-4c88-a775-be9bee45e62d",
+    "4e748f90-b3fe-4cc7-9b6e-1e47c0ac9f60",
+    "ac5f52d9-a470-4c01-b5ba-78dc831c830c",
+    "f1652ec1-809a-4029-8f87-e3ee36979be6",
+    "0700cd8f-94b3-457e-882b-85bdffc2d336"
 ]
