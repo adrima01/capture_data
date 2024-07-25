@@ -127,7 +127,6 @@ already_taken_uuids_luxtrust=[
 ]
 
 uuids_microsoft=[
-    "eb7ff7e6-dd30-4abc-a252-c554390a3e6f"
 
 ]
 
@@ -137,7 +136,8 @@ already_taken_uuids_microsoft=[
     "a79749f2-d2a1-4350-a82a-4a3960f1492f",
     "48e7fb51-e528-42ce-9e5f-fddb294291c8",
     "b2f65ea4-9e02-4114-b004-e3b0a53b846a",
-    "7c9a26de-bd2d-4285-8486-6e2ed9cb2047"
+    "7c9a26de-bd2d-4285-8486-6e2ed9cb2047",
+    "eb7ff7e6-dd30-4abc-a252-c554390a3e6f"
 ]
 
 uuids_atandt=[
