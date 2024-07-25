@@ -7,9 +7,9 @@ from uuids_fake import uuids_amendes, uuids_paypal,uuids_atandt, uuids_ameli, uu
 lookyloo = Lookyloo()
 
 if lookyloo.is_up:
-    institution = "microsoft"
+    institution = "ameli"
 
-    for uuid in uuids_microsoft:
+    for uuid in uuids_ameli:
 
         zip_buffer = lookyloo.get_complete_capture(uuid)
         print(uuid)

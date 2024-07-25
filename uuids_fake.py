@@ -42,6 +42,7 @@ already_taken_uuids_paypal=[
 ]
 
 uuids_ameli = [
+    "fc541a6d-9776-43b1-a9ae-fabf38a00bbc"
 
 ]
 
