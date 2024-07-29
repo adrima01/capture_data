@@ -36,3 +36,8 @@ for website in args.website:
 
     ratio_compare = ratio(ressource_diff, sim)
     print(f"Ratio: {ratio_compare}")
+
+"""
+Beispiel
+python3 similarius_test.py -o paypal.com/signin -w main.d1rqan5j5td705.amplifyapp.com/otp3.html
+"""
