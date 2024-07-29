@@ -1,0 +1,17 @@
+{
+  "f5cad74e9791d2ef725f9ff5d53216cfff4f3678": {
+    "CRC32": "A15DFBB3",
+    "FileName": "SourceSansPro-Bold.ttf",
+    "FileSize": "290916",
+    "MD5": "0D9B62A03206F739CD34B2936A5929F1",
+    "OpSystemCode": "362",
+    "ProductCode": "237947",
+    "RDS:package_id": "306836",
+    "SHA-1": "F5CAD74E9791D2EF725F9FF5D53216CFFF4F3678",
+    "SHA-256": "DA4F442E66843990825ED4757E27AD3442CAD83F9844CC503E8ECE85E00F77F2",
+    "SpecialCode": "",
+    "db": "nsrl_android",
+    "insert-timestamp": "1712930446.0047169",
+    "source": "sqlite.db"
+  }
+}

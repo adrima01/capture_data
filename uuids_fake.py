@@ -22,7 +22,9 @@ already_taken_uuids_amendes=[
     "b6305f20-fcdb-47f6-b48c-060b17c8da63",
     "baf9a7ee-b161-4d01-a421-ef463b8b197a",
     "4761b8af-7c01-4659-83cb-0414aab9f76b",
-    "8cf8b030-80e9-4e1a-ae12-bc549505a1b8"
+    "8cf8b030-80e9-4e1a-ae12-bc549505a1b8",
+    "441e5ca3-c9e2-4c01-8ce1-046e1bf6c799",
+    "d7cb1a0c-7179-48fd-b66e-b91a261668fc"
 ]
 
 uuids_paypal=[
@@ -42,7 +44,6 @@ already_taken_uuids_paypal=[
 ]
 
 uuids_ameli = [
-    "fc541a6d-9776-43b1-a9ae-fabf38a00bbc"
 
 ]
 
@@ -111,7 +112,23 @@ already_taken_uuids_ameli=[
     "689e4e8f-4239-44cc-86b2-855ba58d94c5",
     "d0432d43-8e7e-48f7-ab22-3bae5871b17d",
     "38b5cb70-c34f-4ec2-8ef7-e88729f75ddf",
-    "cef60880-bfd6-4e1f-b9b0-3a55caa41cfb"
+    "cef60880-bfd6-4e1f-b9b0-3a55caa41cfb",
+    "fc541a6d-9776-43b1-a9ae-fabf38a00bbc",
+    "75d98996-03b8-4c57-9193-094716df23a8",
+    "32576556-a936-4bce-a183-ddc794b309f4",
+    "ec78036f-c829-49bb-a285-e25c68400678",
+    "f9330b01-490b-491c-9fe1-731d6127297e",
+    "bfc40e8f-ee56-4108-bfb8-08f35adde0fc",
+    "276fc9a5-12d4-4a4f-8bb2-2c979bf3c3ad",
+    "74e27ce2-93e8-4a85-affc-27181fdbf09f",
+    "ca82455b-71a5-408a-88e1-86016ad1d3d9",
+    "c91d5a7f-bd0e-4e4c-a42b-8be02eca64c7",
+    "530d3675-2a54-424b-996d-5ff1f81cc263",
+    "5e9a60fa-68ce-4708-8598-df0152d130d3",
+    "6b638cbc-a17b-4a06-85f0-da8250b75cde",
+    "01b06160-cbeb-499f-a407-1da93f3512ee",
+    "5e555285-c0d0-4700-905d-94218032e749",
+    "04dc3f33-3ad6-47dd-a58c-99474262ddb7"
 ]
 
 uuids_luxtrust =[
@@ -124,7 +141,8 @@ already_taken_uuids_luxtrust=[
     "dd8402e2-5ffa-42f8-8518-6e950f8f7c56",
     "ea1a3687-9a34-44b2-a685-417ea2a840b9",
     "bbdf8a95-fcf7-4fac-93e7-832d5bba1448",
-    "d1be7218-b016-41fb-8855-4292f87e18d7"
+    "d1be7218-b016-41fb-8855-4292f87e18d7",
+    "4e478fd4-54fb-4dd0-9b7d-d2d852cbf4fa"
 ]
 
 uuids_microsoft=[
@@ -175,10 +193,13 @@ already_taken_uuids_atandt=[
     "4e748f90-b3fe-4cc7-9b6e-1e47c0ac9f60",
     "ac5f52d9-a470-4c01-b5ba-78dc831c830c",
     "f1652ec1-809a-4029-8f87-e3ee36979be6",
-    "0700cd8f-94b3-457e-882b-85bdffc2d336"
+    "0700cd8f-94b3-457e-882b-85bdffc2d336",
+    "4e8354a1-3ef5-4486-8153-0e454a2b688f",
+    "f1d3e59d-58f7-4a92-8d2a-ec064e6d3775"
 ]
 
 uuids_orange=[
     "9e10517b-e2ce-4c89-9d24-445db081e6fc",
-    "e4e3bb65-e6aa-48f2-9e0c-57d7ff3e3689"
+    "e4e3bb65-e6aa-48f2-9e0c-57d7ff3e3689",
+    "9dd5b3a2-5000-4a77-ba7e-37eaded25cb1"
 ]

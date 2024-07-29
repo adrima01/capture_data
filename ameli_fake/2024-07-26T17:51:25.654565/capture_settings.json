@@ -1,0 +1,14 @@
+{
+  "url": "http://nouvelle-cartesante.info",
+  "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1",
+  "with_favicon": true,
+  "allow_tracking": false,
+  "force": false,
+  "recapture_interval": 300,
+  "priority": 0,
+  "depth": 0,
+  "rendered_hostname_only": true,
+  "listing": true,
+  "not_queued": false,
+  "os": "iOS 17.3"
+}
