@@ -231,7 +231,14 @@ already_taken_uuids_orange=[
 ]
 
 uuids_credit_agricole=[
-
+    "80983ee7-a6cc-4adf-a099-0ec07d6ca6bc",
+    "9c786afb-2091-4c37-b3fc-8e79fd4e894d",
+    "bde6ffea-d85b-4dff-a55f-cba0e9de81df",
+    "63183041-642c-4369-ae89-a5492b49dde1",
+    "6b54758b-b613-471c-8762-b992346eba27",
+    "8541e43d-8d2e-43ce-bf4d-6b9d435390d2",
+    "1d262685-1812-4e8e-b7b6-7fe386f87918",
+    "9abc3d31-ab54-436b-a487-ecd8fe5b1dc9"
 ]
 
 
