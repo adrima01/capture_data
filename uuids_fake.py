@@ -216,5 +216,11 @@ already_taken_uuids_orange=[
     "6a5f1f6f-b644-4681-a68f-dfde12b0014c",
     "f9eea449-799a-4b60-aeb7-97e67ddf01c9",
     "aa30c293-6a57-4b73-8300-48048d7eac1d",
-    "3546fcab-abad-4c82-9a98-b207d4c28c2a"
+    "3546fcab-abad-4c82-9a98-b207d4c28c2a",
+    "6ff41fd4-d4dd-47f3-b1f4-e59c3a3c9235",
+    "31f9e245-0bd9-4838-885d-ac27ce15c1af",
+    "2dce51ba-2c60-4eab-94b0-80b22cbf222e",
+    "b925e70d-2a4e-4716-b349-919a93932431",
+    "7dbeeabc-3359-40e4-b944-938a361a8a71",
+    "e5027141-f2a9-4aa6-8ce6-d53a32dc52ee"
 ]
