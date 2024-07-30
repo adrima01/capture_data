@@ -229,3 +229,21 @@ already_taken_uuids_orange=[
     "7dbeeabc-3359-40e4-b944-938a361a8a71",
     "e5027141-f2a9-4aa6-8ce6-d53a32dc52ee"
 ]
+
+uuids_credit_agricole=[
+
+]
+
+
+already_taken_uuids_credit_agricole=[
+    "71564b2b-9749-4e66-845b-ede907fbe188",
+    "71504ba8-5eae-4e56-9b47-41bfa976a7ac",
+    "3f729db9-11d1-4c6a-b0a5-feaf199710be",
+    "e85b5f82-da42-42fd-a230-fe9f72975d18",
+    "957a7933-b040-4185-a1cc-ea519579f155",
+    "f84d6eda-5bbd-4c27-8712-9e4759aff143",
+    "0ef6b992-ae83-408a-b9d8-3cb16fbe7080",
+    "121ef8ea-6c37-4b8b-8c54-eec0cee01bac",
+    "21527115-cc91-46b4-8818-80fb96226b5b",
+    "6dd27a65-22c7-4458-9347-30085287e226"
+]
