@@ -128,11 +128,14 @@ already_taken_uuids_ameli=[
     "6b638cbc-a17b-4a06-85f0-da8250b75cde",
     "01b06160-cbeb-499f-a407-1da93f3512ee",
     "5e555285-c0d0-4700-905d-94218032e749",
-    "04dc3f33-3ad6-47dd-a58c-99474262ddb7"
+    "04dc3f33-3ad6-47dd-a58c-99474262ddb7",
+    "329f6ddd-b74f-4622-bbc9-dec6bde5d700",
+    "4acd0f10-e799-457a-a10d-7c94e7766e6e",
+    "0912afba-2406-4f33-b2c6-3265014cb2d5"
 ]
 
 uuids_luxtrust =[
-    "5392c4a1-09f9-4299-b8da-99d9a99042d6"
+
 ]
 
 already_taken_uuids_luxtrust=[
@@ -142,7 +145,9 @@ already_taken_uuids_luxtrust=[
     "ea1a3687-9a34-44b2-a685-417ea2a840b9",
     "bbdf8a95-fcf7-4fac-93e7-832d5bba1448",
     "d1be7218-b016-41fb-8855-4292f87e18d7",
-    "4e478fd4-54fb-4dd0-9b7d-d2d852cbf4fa"
+    "4e478fd4-54fb-4dd0-9b7d-d2d852cbf4fa",
+    "5392c4a1-09f9-4299-b8da-99d9a99042d6",
+    "27a4f03f-c6f2-4640-b006-9e541351a97b"
 ]
 
 uuids_microsoft=[
