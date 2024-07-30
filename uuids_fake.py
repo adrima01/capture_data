@@ -201,7 +201,20 @@ already_taken_uuids_atandt=[
 ]
 
 uuids_orange=[
+
+]
+
+already_taken_uuids_orange=[
     "9e10517b-e2ce-4c89-9d24-445db081e6fc",
     "e4e3bb65-e6aa-48f2-9e0c-57d7ff3e3689",
-    "9dd5b3a2-5000-4a77-ba7e-37eaded25cb1"
+    "9dd5b3a2-5000-4a77-ba7e-37eaded25cb1",
+    "2cce057f-4274-49d3-b72d-27eaaaaeaaff",
+    "8436dae4-7ff3-4a1b-8894-e7a153a79169",
+    "ae950fb7-e2f6-4dd7-b4e8-f958998e139e",
+    "ace05624-db1b-4607-8206-d2179f9befd2",
+    "53ca3fc2-79ce-4677-9359-ff8f64b11182",
+    "6a5f1f6f-b644-4681-a68f-dfde12b0014c",
+    "f9eea449-799a-4b60-aeb7-97e67ddf01c9",
+    "aa30c293-6a57-4b73-8300-48048d7eac1d",
+    "3546fcab-abad-4c82-9a98-b207d4c28c2a"
 ]

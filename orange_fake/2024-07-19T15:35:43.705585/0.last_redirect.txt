@@ -1,0 +1,1 @@
+https://urssafauthenorge.tftpd.net/auth=1/login/ologin.php
