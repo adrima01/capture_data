@@ -1,0 +1,21 @@
+{
+  "4caece539b039b16e16206ea2478f8c5ffb2ca05": {
+    "CRC32": "7A0709A4",
+    "FileName": "./usr/share/pixmaps/searchmonkey/logo-5.png",
+    "FileSize": "8",
+    "MD5": "E9DD2797018CAD79186E03E8C5AEC8DC",
+    "OpSystemCode": "362",
+    "ProductCode": "11949",
+    "RDS:package_id": "181949",
+    "SHA-1": "4CAECE539B039B16E16206EA2478F8C5FFB2CA05",
+    "SHA-256": "4C4B6A3BE1314AB86138BEF4314DDE022E600960D8689A2C8F8631802D20DAB6",
+    "SSDEEP": "3:yionvn:6vn",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1679412469.3047817",
+    "source": "RDS.db",
+    "tar:gname": "bin",
+    "tar:uname": "root"
+  }
+}

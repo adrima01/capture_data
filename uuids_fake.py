@@ -161,11 +161,11 @@ already_taken_uuids_microsoft=[
     "48e7fb51-e528-42ce-9e5f-fddb294291c8",
     "b2f65ea4-9e02-4114-b004-e3b0a53b846a",
     "7c9a26de-bd2d-4285-8486-6e2ed9cb2047",
-    "eb7ff7e6-dd30-4abc-a252-c554390a3e6f"
+    "eb7ff7e6-dd30-4abc-a252-c554390a3e6f",
+    "84a4f7f5-2e21-45cc-a0db-94e15f87509d"
 ]
 
 uuids_atandt=[
-
 
 ]
 
@@ -202,7 +202,9 @@ already_taken_uuids_atandt=[
     "0700cd8f-94b3-457e-882b-85bdffc2d336",
     "4e8354a1-3ef5-4486-8153-0e454a2b688f",
     "f1d3e59d-58f7-4a92-8d2a-ec064e6d3775",
-    "92a75572-2933-4e7f-be90-4335efdb54f9"
+    "92a75572-2933-4e7f-be90-4335efdb54f9",
+    "dc835056-2bd1-4572-94ee-513fc3a2a40f",
+    "69f055a4-b61c-4240-aa5c-04c417ba0404"
 ]
 
 uuids_orange=[
@@ -253,7 +255,9 @@ already_taken_uuids_credit_agricole=[
     "6b54758b-b613-471c-8762-b992346eba27",
     "8541e43d-8d2e-43ce-bf4d-6b9d435390d2",
     "1d262685-1812-4e8e-b7b6-7fe386f87918",
-    "9abc3d31-ab54-436b-a487-ecd8fe5b1dc9"
+    "9abc3d31-ab54-436b-a487-ecd8fe5b1dc9",
+    "6f52dbb1-9e5c-485b-a6d6-18f03e9efbb7",
+    "6e1d77f5-898d-4974-9445-d9df84ee842a"
 ]
 
 
@@ -287,5 +291,7 @@ already_taken_uuids_netflix=[
     "d5a91d74-8b7b-4f11-b829-c1f8bc8b6bcb",
     "0387b372-5035-4bf1-b6d6-88ae9dec4d32",
     "01c5b974-d88a-437a-9d61-35c39d3130c8",
-    "3841f42d-a960-425e-8ac8-98bd6786af3d"
+    "3841f42d-a960-425e-8ac8-98bd6786af3d",
+    "5e92d7f6-7714-47c7-b4f4-97c6a55e2ad5",
+    "67f9e0e1-7f74-40ef-bd13-cb660f10fc72"
 ]
