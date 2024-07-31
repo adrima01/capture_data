@@ -286,5 +286,6 @@ already_taken_uuids_netflix=[
     "f25e220c-218e-4353-9c09-a9bea2279473",
     "d5a91d74-8b7b-4f11-b829-c1f8bc8b6bcb",
     "0387b372-5035-4bf1-b6d6-88ae9dec4d32",
-    "01c5b974-d88a-437a-9d61-35c39d3130c8"
+    "01c5b974-d88a-437a-9d61-35c39d3130c8",
+    "3841f42d-a960-425e-8ac8-98bd6786af3d"
 ]
