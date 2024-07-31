@@ -24,7 +24,10 @@ already_taken_uuids_amendes=[
     "4761b8af-7c01-4659-83cb-0414aab9f76b",
     "8cf8b030-80e9-4e1a-ae12-bc549505a1b8",
     "441e5ca3-c9e2-4c01-8ce1-046e1bf6c799",
-    "d7cb1a0c-7179-48fd-b66e-b91a261668fc"
+    "d7cb1a0c-7179-48fd-b66e-b91a261668fc",
+    "b657c1e6-ea63-475c-9aa6-a7ac4e5c6670",
+    "75cce1b9-45f4-4097-9286-fd5d398984ab",
+    "b3e3ea7c-b05c-4306-aa67-d2a2022f1d7c"
 ]
 
 uuids_paypal=[
@@ -131,7 +134,9 @@ already_taken_uuids_ameli=[
     "04dc3f33-3ad6-47dd-a58c-99474262ddb7",
     "329f6ddd-b74f-4622-bbc9-dec6bde5d700",
     "4acd0f10-e799-457a-a10d-7c94e7766e6e",
-    "0912afba-2406-4f33-b2c6-3265014cb2d5"
+    "0912afba-2406-4f33-b2c6-3265014cb2d5",
+    "3837586e-e245-40fd-89de-3f87cbbe62bb",
+    "602ef874-87f3-4bf2-ad99-95901d3cb886"
 ]
 
 uuids_luxtrust =[
@@ -204,7 +209,10 @@ already_taken_uuids_atandt=[
     "f1d3e59d-58f7-4a92-8d2a-ec064e6d3775",
     "92a75572-2933-4e7f-be90-4335efdb54f9",
     "dc835056-2bd1-4572-94ee-513fc3a2a40f",
-    "69f055a4-b61c-4240-aa5c-04c417ba0404"
+    "69f055a4-b61c-4240-aa5c-04c417ba0404",
+    "c83ba9ae-026a-4b03-a91c-973bb63e5f02",
+    "d52c29c4-9e3a-4a54-beda-f112815a54b7",
+    "b49f2175-d86b-4099-af3e-82b1c242d05c"
 ]
 
 uuids_orange=[
@@ -229,7 +237,8 @@ already_taken_uuids_orange=[
     "2dce51ba-2c60-4eab-94b0-80b22cbf222e",
     "b925e70d-2a4e-4716-b349-919a93932431",
     "7dbeeabc-3359-40e4-b944-938a361a8a71",
-    "e5027141-f2a9-4aa6-8ce6-d53a32dc52ee"
+    "e5027141-f2a9-4aa6-8ce6-d53a32dc52ee",
+    "29cede7b-caf9-481f-a72b-8ce093f4eb03"
 ]
 
 uuids_credit_agricole=[
@@ -257,7 +266,8 @@ already_taken_uuids_credit_agricole=[
     "1d262685-1812-4e8e-b7b6-7fe386f87918",
     "9abc3d31-ab54-436b-a487-ecd8fe5b1dc9",
     "6f52dbb1-9e5c-485b-a6d6-18f03e9efbb7",
-    "6e1d77f5-898d-4974-9445-d9df84ee842a"
+    "6e1d77f5-898d-4974-9445-d9df84ee842a",
+    "f165cee5-ea1e-4397-b7bc-0171eb3f05b1"
 ]
 
 
