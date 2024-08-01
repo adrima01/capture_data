@@ -171,7 +171,8 @@ already_taken_uuids_microsoft=[
 ]
 
 uuids_atandt=[
-
+    "60942a2d-fac2-40dc-9993-85dbe2a86aee",
+    "50932606-24bd-4beb-b384-3c53bc369b8b"
 ]
 
 already_taken_uuids_atandt=[
