@@ -267,7 +267,9 @@ already_taken_uuids_credit_agricole=[
     "9abc3d31-ab54-436b-a487-ecd8fe5b1dc9",
     "6f52dbb1-9e5c-485b-a6d6-18f03e9efbb7",
     "6e1d77f5-898d-4974-9445-d9df84ee842a",
-    "f165cee5-ea1e-4397-b7bc-0171eb3f05b1"
+    "f165cee5-ea1e-4397-b7bc-0171eb3f05b1",
+    "09b76de4-5e94-4854-b6cb-294e617138d5",
+    "50283a79-bd97-45de-b21c-6348e69c0c34"
 ]
 
 
