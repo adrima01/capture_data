@@ -48,6 +48,7 @@ already_taken_uuids_paypal=[
 
 uuids_ameli = [
 
+
 ]
 
 already_taken_uuids_ameli=[
@@ -136,7 +137,13 @@ already_taken_uuids_ameli=[
     "4acd0f10-e799-457a-a10d-7c94e7766e6e",
     "0912afba-2406-4f33-b2c6-3265014cb2d5",
     "3837586e-e245-40fd-89de-3f87cbbe62bb",
-    "602ef874-87f3-4bf2-ad99-95901d3cb886"
+    "602ef874-87f3-4bf2-ad99-95901d3cb886",
+    "59158ee9-3ae9-43c9-a26f-08273b9f5fe9",
+    "d406e754-faf4-40f9-85b8-fafc4bfd096e",
+    "bc13f0ce-079c-489e-bce0-52e3c8caee96",
+    "12f7d0cd-355e-462f-92d9-97158060e58e",
+    "540a1fc6-8752-4783-9913-6b39a85d5727",
+    "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db"
 ]
 
 uuids_luxtrust =[
@@ -167,12 +174,12 @@ already_taken_uuids_microsoft=[
     "b2f65ea4-9e02-4114-b004-e3b0a53b846a",
     "7c9a26de-bd2d-4285-8486-6e2ed9cb2047",
     "eb7ff7e6-dd30-4abc-a252-c554390a3e6f",
-    "84a4f7f5-2e21-45cc-a0db-94e15f87509d"
+    "84a4f7f5-2e21-45cc-a0db-94e15f87509d",
+    "06f26531-5455-499c-be90-d78d606de89d"
 ]
 
 uuids_atandt=[
-    "60942a2d-fac2-40dc-9993-85dbe2a86aee",
-    "50932606-24bd-4beb-b384-3c53bc369b8b"
+
 ]
 
 already_taken_uuids_atandt=[
@@ -213,7 +220,11 @@ already_taken_uuids_atandt=[
     "69f055a4-b61c-4240-aa5c-04c417ba0404",
     "c83ba9ae-026a-4b03-a91c-973bb63e5f02",
     "d52c29c4-9e3a-4a54-beda-f112815a54b7",
-    "b49f2175-d86b-4099-af3e-82b1c242d05c"
+    "b49f2175-d86b-4099-af3e-82b1c242d05c",
+    "60942a2d-fac2-40dc-9993-85dbe2a86aee",
+    "50932606-24bd-4beb-b384-3c53bc369b8b",
+    "5acfa9d5-0759-4b27-80d8-58d5b8f278e8",
+    "ecb4d9a8-2091-4af7-812b-02a7f1fc8e2a"
 ]
 
 uuids_orange=[
@@ -239,7 +250,11 @@ already_taken_uuids_orange=[
     "b925e70d-2a4e-4716-b349-919a93932431",
     "7dbeeabc-3359-40e4-b944-938a361a8a71",
     "e5027141-f2a9-4aa6-8ce6-d53a32dc52ee",
-    "29cede7b-caf9-481f-a72b-8ce093f4eb03"
+    "29cede7b-caf9-481f-a72b-8ce093f4eb03",
+    "0b16cca5-7646-4619-a239-f2db4b2a7ab2",
+    "c3828eba-074a-4cf1-8268-5ea7c5ccf509",
+    "24b40fe3-79f7-472a-8223-9dbd0e0016d6",
+    "391dd4aa-e917-49b6-98c2-79db28c6cbb3"
 ]
 
 uuids_credit_agricole=[
@@ -306,5 +321,7 @@ already_taken_uuids_netflix=[
     "01c5b974-d88a-437a-9d61-35c39d3130c8",
     "3841f42d-a960-425e-8ac8-98bd6786af3d",
     "5e92d7f6-7714-47c7-b4f4-97c6a55e2ad5",
-    "67f9e0e1-7f74-40ef-bd13-cb660f10fc72"
+    "67f9e0e1-7f74-40ef-bd13-cb660f10fc72",
+    "8ecb440b-2235-497d-8978-7dfc8a79fe4d",
+    "af9ab8c4-78ae-40ce-91a7-e1dd8878e8f3"
 ]
