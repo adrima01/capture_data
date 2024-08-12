@@ -1,0 +1,29 @@
+{
+  "6abe394b53b32816eca642126fd62bcd91d17348": {
+    "KnownMalicious": "threatview.io",
+    "SHA-1": "6ABE394B53B32816ECA642126FD62BCD91D17348"
+  },
+  "d5fceb6532643d0d84ffe09c40c481ecdf59e15a": {
+    "CRC32": "27951378",
+    "FileName": "snap-hashlookup-import/resources/app/assets/Transparent.gif",
+    "FileSize": "42",
+    "KnownMalicious": "malshare.com",
+    "MD5": "D89746888DA2D9510B64A9F031EAECD5",
+    "OpSystemCode": "362",
+    "ProductCode": "6230",
+    "RDS:package_id": "304974",
+    "SHA-1": "D5FCEB6532643D0D84FFE09C40C481ECDF59E15A",
+    "SHA-256": "EF1955AE757C8B966C83248350331BD3A30F658CED11F387F8EBF05AB3368629",
+    "SHA-512": "D5DA26B5D496EDB0221DF1A4057A8B0285D15592A8F8DC7016A294DF37ED335F3FDE6A2252962E0DF38B62847F8B771463A0124EF3F84299F262ED9D9D3CEE4C",
+    "SSDEEP": "3:CUXPQE/xlEy:1QEoy",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1715083396.3245697",
+    "mimetype": "image/gif",
+    "nsrl-sha256": "rds241-sha256.zip",
+    "source": "snap:GG3UVQtIKlFZgfwDdhNloeng06sJqF3U_18",
+    "tar:gname": "root",
+    "tar:uname": "root"
+  }
+}

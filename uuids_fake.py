@@ -395,7 +395,17 @@ already_taken_uuids_amazon=[
 ]
 
 uuids_other_phishing=[
+
+]
+
+
+already_taken_uuids_other_phishing=[
     "3db5d45f-eec2-42da-be3a-7e18b81cb8cd",
-    "24633d98-4172-47a8-b3d0-2f8b885586b8",
-    "f559e569-c16d-49e8-bbdc-c73354ec7781"
+    "f559e569-c16d-49e8-bbdc-c73354ec7781",
+    "f21b3008-fb03-4f80-ab4c-49d37a90c2c9",
+    "8efc308e-cbe2-47c0-867b-73d891fc319a",
+    "f306d51d-67c1-4232-9adf-2d777ec53e86",
+    "3fdcd2c4-4e7b-4525-800c-ba56907e431b",
+    "9701b784-21dd-4b8e-8a17-25948d6f32ea",
+    "add97ab9-7bd4-4184-be13-7b33eab96f6b"
 ]
