@@ -1,0 +1,57 @@
+{
+  "ce9f513f733febb7112d3028f7d0b3ad9a40f7f2": {
+    "KnownMalicious": "threatview.io",
+    "SHA-1": "CE9F513F733FEBB7112D3028F7D0B3AD9A40F7F2"
+  },
+  "a6dee4a1df6c51b82ce2e67323514e7de4e165d4": {
+    "KnownMalicious": "malshare.com",
+    "MD5": "A635A55DDB6339A3D0D01C641F670753",
+    "SHA-1": "A6DEE4A1DF6C51B82CE2E67323514E7DE4E165D4",
+    "SHA-256": "A6C3BFF965978DF8093C3A29F7071C21D7439A212AF41E7B40CE70D94D6BCC44",
+    "SSDEEP": "96:CEJNA4URZMVCW/VTXWIEG6YGFPYUQQB7LKWTGQUQHQXYMKDYQZY:JAWCW/VSIEGVMR7BZUKNMKDK"
+  },
+  "9d01cc5dc8e042c0d4ad6cfb8b3ac38e84a5ef9f": {
+    "CRC32": "28CD1914",
+    "FileName": "./usr/share/openboard/library/applications/OpenStreetMap.wgt/api/img/blank.gif",
+    "FileSize": "42",
+    "MD5": "ACCBA0B69F352B4C9440F05891B015C5",
+    "OpSystemCode": "362",
+    "ProductCode": "845",
+    "RDS:package_id": "304765",
+    "SHA-1": "9D01CC5DC8E042C0D4AD6CFB8B3AC38E84A5EF9F",
+    "SHA-256": "47043E4823A6C21A8881DE789B4185355330B5804629D23F6B43DD93F5265292",
+    "SHA-512": "D3C4A5427BF645CC226106B0E8C28A76B0B91F50FA6D77E962A3B59B85BE2A0CFDB94EC0F40742F10C18025573D8FBFADECDDF60F4652BAE671F6031C02A7CB5",
+    "SSDEEP": "3:CUXPQE/xlIle:1QEn",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1703174522.6384337",
+    "nsrl-sha256": "rds241-sha256.zip",
+    "source": "db.sqlite",
+    "tar:gname": "root",
+    "tar:uname": "root"
+  },
+  "d5fceb6532643d0d84ffe09c40c481ecdf59e15a": {
+    "CRC32": "27951378",
+    "FileName": "snap-hashlookup-import/resources/app/assets/Transparent.gif",
+    "FileSize": "42",
+    "KnownMalicious": "malshare.com",
+    "MD5": "D89746888DA2D9510B64A9F031EAECD5",
+    "OpSystemCode": "362",
+    "ProductCode": "6230",
+    "RDS:package_id": "304974",
+    "SHA-1": "D5FCEB6532643D0D84FFE09C40C481ECDF59E15A",
+    "SHA-256": "EF1955AE757C8B966C83248350331BD3A30F658CED11F387F8EBF05AB3368629",
+    "SHA-512": "D5DA26B5D496EDB0221DF1A4057A8B0285D15592A8F8DC7016A294DF37ED335F3FDE6A2252962E0DF38B62847F8B771463A0124EF3F84299F262ED9D9D3CEE4C",
+    "SSDEEP": "3:CUXPQE/xlEy:1QEoy",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1715083396.3245697",
+    "mimetype": "image/gif",
+    "nsrl-sha256": "rds241-sha256.zip",
+    "source": "snap:GG3UVQtIKlFZgfwDdhNloeng06sJqF3U_18",
+    "tar:gname": "root",
+    "tar:uname": "root"
+  }
+}

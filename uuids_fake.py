@@ -46,7 +46,8 @@ already_taken_uuids_paypal=[
     "a2d72ad3-e898-4b95-8649-797ad088c6d6",
     "e85634b4-b4a9-44bb-836a-c42849196ed2",
     "bebdc094-6ba7-4d03-92f9-0a596b2b9d52",
-    "5e1fa0aa-42e4-49d0-99d6-2c20e9194353"
+    "5e1fa0aa-42e4-49d0-99d6-2c20e9194353",
+    "c4c1ff94-4c86-4d82-9795-09b038743e14"
 ]
 
 uuids_ameli = [
