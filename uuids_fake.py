@@ -268,7 +268,9 @@ already_taken_uuids_orange=[
     "0b16cca5-7646-4619-a239-f2db4b2a7ab2",
     "c3828eba-074a-4cf1-8268-5ea7c5ccf509",
     "24b40fe3-79f7-472a-8223-9dbd0e0016d6",
-    "391dd4aa-e917-49b6-98c2-79db28c6cbb3"
+    "391dd4aa-e917-49b6-98c2-79db28c6cbb3",
+    "b2eea8c7-a044-4c7b-8627-ce283f8602fd",
+    "f50751d9-d2e3-4019-a406-82d85b156eb8"
 ]
 
 uuids_credit_agricole=[
@@ -386,5 +388,7 @@ already_taken_uuids_amazon=[
     "72e4a2f0-36dc-4efc-93cc-a7307c74ae1a",
     "e65446a8-5cb1-430d-a21e-4f040719af49",
     "4f407186-da1a-4e65-bbc4-dc012fa7e188",
-    "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd"
+    "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd",
+    "8a077990-066e-4174-baa5-c1622c5a9330",
+    "e4184a64-dc23-4270-bfdc-da13e4ddbb4e"
 ]
