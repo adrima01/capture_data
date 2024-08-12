@@ -6,7 +6,7 @@ import zipfile
 
 from bs4 import BeautifulSoup
 from pylookyloo import Lookyloo
-from uuids_legitimate import uuids_netlfix
+
 
 def finding_links(path: str) -> set:
     soup = BeautifulSoup(path, "html.parser")
