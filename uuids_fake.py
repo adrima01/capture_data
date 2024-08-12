@@ -366,5 +366,19 @@ already_taken_uuids_amazon=[
     "b85c3c9a-23eb-45b4-8090-6896c8d178a2",
     "1f221ee0-ef07-497b-b6cb-97b16d47bfc1",
     "1a4d86c6-21dc-4655-8960-3520e5fd4a2f",
-    "31f3b12f-ca63-4a14-8fdf-acab0c571f6d"
+    "31f3b12f-ca63-4a14-8fdf-acab0c571f6d",
+    "6820e6b2-0e62-430b-bf49-1a1684c64d84",
+    "349dff26-903d-476b-bae4-c23aedf14b9e",
+    "7de1187a-871b-43e6-8cd0-577f4710c091",
+    "a9a9fd56-845b-4579-9c4a-41c6a4807e3d",
+    "982503b9-b08c-4e71-8620-e19cf67a27c5",
+    "0427abdc-b862-43b7-a0e6-7db3e116f63e",
+    "8728d483-9ce1-446c-be62-20900886746a",
+    "d82a37f7-07d4-4de7-a9d4-8b8e6dd124a1",
+    "d933f959-fbce-4536-9c0d-05b799147f08",
+    "f9685244-7a67-486d-b7b5-821bef4b35b9",
+    "72e4a2f0-36dc-4efc-93cc-a7307c74ae1a",
+    "e65446a8-5cb1-430d-a21e-4f040719af49",
+    "4f407186-da1a-4e65-bbc4-dc012fa7e188",
+    "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd"
 ]
