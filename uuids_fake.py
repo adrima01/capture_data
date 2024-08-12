@@ -355,5 +355,16 @@ already_taken_uuids_amazon=[
     "9f970bc0-425e-4770-bf62-4a2416cbb79c",
     "f8e22c40-7b43-495d-b10d-91a9bae006db",
     "c76fe31b-8f9e-4a54-aa76-7bc4f09ecf51",
-    "5f7d29d2-f738-4e33-b3bf-64fbb1c6bd4c"
+    "5f7d29d2-f738-4e33-b3bf-64fbb1c6bd4c",
+    "e7cc2a26-28f6-4a65-b8b5-3a5ef1f2f011",
+    "2d3e3ddb-6ccf-453c-96f9-be96b300d9a2",
+    "896e17f6-e650-4f6b-aa1b-8427981ec842",
+    "691d193e-19f3-4a6e-9a1c-01a4ec465c38",
+    "7d07f651-e2be-45d4-8459-5458a0312c3f",
+    "8595cd8b-7f0d-4715-bfeb-c920aa2c4a38",
+    "996e78e9-fce9-4298-8083-31ee0c2d10a7",
+    "b85c3c9a-23eb-45b4-8090-6896c8d178a2",
+    "1f221ee0-ef07-497b-b6cb-97b16d47bfc1",
+    "1a4d86c6-21dc-4655-8960-3520e5fd4a2f",
+    "31f3b12f-ca63-4a14-8fdf-acab0c571f6d"
 ]
