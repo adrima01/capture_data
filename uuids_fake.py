@@ -333,3 +333,22 @@ already_taken_uuids_netflix=[
     "8ecb440b-2235-497d-8978-7dfc8a79fe4d",
     "af9ab8c4-78ae-40ce-91a7-e1dd8878e8f3"
 ]
+
+
+uuids_amazon=[
+
+]
+
+
+already_taken_uuids_amazon=[
+    "e70baec9-1059-4ef3-8561-7f79e0092b95",
+    "3e37d799-52d9-4d9e-8c5e-aa576e5da8bd",
+    "c016d31d-063a-457d-95c7-e72992a19ef9",
+    "6b854db1-2077-40c0-9500-41c31579953a",
+    "54e51cb8-6fbb-4216-9bd8-f34bffc44996",
+    "349c602f-3c14-4def-a200-de4cd0c614ae",
+    "97415277-b1d9-4111-9547-d73a8af007a9",
+    "46a66183-f60e-4b27-9757-b486616f7e40",
+    "fc019fb2-9a50-46b4-b1b5-039767276242",
+    "5309d833-0c27-46a5-8351-b9acc7f7795c"
+]
