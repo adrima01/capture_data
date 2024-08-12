@@ -27,7 +27,10 @@ already_taken_uuids_amendes=[
     "d7cb1a0c-7179-48fd-b66e-b91a261668fc",
     "b657c1e6-ea63-475c-9aa6-a7ac4e5c6670",
     "75cce1b9-45f4-4097-9286-fd5d398984ab",
-    "b3e3ea7c-b05c-4306-aa67-d2a2022f1d7c"
+    "b3e3ea7c-b05c-4306-aa67-d2a2022f1d7c",
+    "00b6f518-e506-4470-8665-ed76a58d3be9",
+    "7628f188-da39-4d62-b905-21fffd6040c8",
+    "bdb15464-2df0-4833-94a7-31f1811766cd"
 ]
 
 uuids_paypal=[
@@ -148,8 +151,7 @@ already_taken_uuids_ameli=[
 ]
 
 uuids_luxtrust =[
-    "24638f05-cad1-45c0-b282-88fee5c2ac16",
-    "92310dc1-6073-4fd2-8057-1df2b610b229"
+
 ]
 
 already_taken_uuids_luxtrust=[
@@ -161,7 +163,9 @@ already_taken_uuids_luxtrust=[
     "d1be7218-b016-41fb-8855-4292f87e18d7",
     "4e478fd4-54fb-4dd0-9b7d-d2d852cbf4fa",
     "5392c4a1-09f9-4299-b8da-99d9a99042d6",
-    "27a4f03f-c6f2-4640-b006-9e541351a97b"
+    "27a4f03f-c6f2-4640-b006-9e541351a97b",
+    "24638f05-cad1-45c0-b282-88fee5c2ac16",
+    "92310dc1-6073-4fd2-8057-1df2b610b229"
 ]
 
 uuids_microsoft=[
