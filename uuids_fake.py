@@ -143,7 +143,8 @@ already_taken_uuids_ameli=[
     "12f7d0cd-355e-462f-92d9-97158060e58e",
     "540a1fc6-8752-4783-9913-6b39a85d5727",
     "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db",
-    "9d233823-371e-405a-ad04-27bceffa3613"
+    "9d233823-371e-405a-ad04-27bceffa3613",
+    "81663895-88bc-4fcd-809c-f53075cc5ff9"
 ]
 
 uuids_luxtrust =[
@@ -230,7 +231,8 @@ already_taken_uuids_atandt=[
     "60942a2d-fac2-40dc-9993-85dbe2a86aee",
     "50932606-24bd-4beb-b384-3c53bc369b8b",
     "5acfa9d5-0759-4b27-80d8-58d5b8f278e8",
-    "ecb4d9a8-2091-4af7-812b-02a7f1fc8e2a"
+    "ecb4d9a8-2091-4af7-812b-02a7f1fc8e2a",
+    "a7d336c7-1daa-4aa9-8acc-00591246ea43"
 ]
 
 uuids_orange=[
