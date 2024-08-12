@@ -339,7 +339,8 @@ already_taken_uuids_netflix=[
     "5e92d7f6-7714-47c7-b4f4-97c6a55e2ad5",
     "67f9e0e1-7f74-40ef-bd13-cb660f10fc72",
     "8ecb440b-2235-497d-8978-7dfc8a79fe4d",
-    "af9ab8c4-78ae-40ce-91a7-e1dd8878e8f3"
+    "af9ab8c4-78ae-40ce-91a7-e1dd8878e8f3",
+    "9b27aa70-e1ba-4bcc-8c29-3846e0d4c399"
 ]
 
 
@@ -391,4 +392,10 @@ already_taken_uuids_amazon=[
     "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd",
     "8a077990-066e-4174-baa5-c1622c5a9330",
     "e4184a64-dc23-4270-bfdc-da13e4ddbb4e"
+]
+
+uuids_other_phishing=[
+    "3db5d45f-eec2-42da-be3a-7e18b81cb8cd",
+    "24633d98-4172-47a8-b3d0-2f8b885586b8",
+    "f559e569-c16d-49e8-bbdc-c73354ec7781"
 ]
