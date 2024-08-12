@@ -48,7 +48,6 @@ already_taken_uuids_paypal=[
 
 uuids_ameli = [
 
-
 ]
 
 already_taken_uuids_ameli=[
@@ -143,7 +142,8 @@ already_taken_uuids_ameli=[
     "bc13f0ce-079c-489e-bce0-52e3c8caee96",
     "12f7d0cd-355e-462f-92d9-97158060e58e",
     "540a1fc6-8752-4783-9913-6b39a85d5727",
-    "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db"
+    "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db",
+    "9d233823-371e-405a-ad04-27bceffa3613"
 ]
 
 uuids_luxtrust =[
@@ -175,7 +175,13 @@ already_taken_uuids_microsoft=[
     "7c9a26de-bd2d-4285-8486-6e2ed9cb2047",
     "eb7ff7e6-dd30-4abc-a252-c554390a3e6f",
     "84a4f7f5-2e21-45cc-a0db-94e15f87509d",
-    "06f26531-5455-499c-be90-d78d606de89d"
+    "06f26531-5455-499c-be90-d78d606de89d",
+    "e0eff32f-5467-4e91-be84-d769c89dca84",
+    "eff4e3a2-f6f8-4871-92d7-b584dd791597",
+    "d7218691-faf3-4dc2-a53e-9312e51338c5",
+    "3d8c85b6-3be4-4c1a-b038-c2193e887f2d",
+    "79c8b74b-2cc3-4e7f-a81d-ed3a88606dff",
+    "a6974b87-479f-4fab-b6d5-f932907adb38"
 ]
 
 uuids_atandt=[
