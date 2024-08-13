@@ -148,7 +148,8 @@ already_taken_uuids_ameli=[
     "540a1fc6-8752-4783-9913-6b39a85d5727",
     "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db",
     "9d233823-371e-405a-ad04-27bceffa3613",
-    "81663895-88bc-4fcd-809c-f53075cc5ff9"
+    "81663895-88bc-4fcd-809c-f53075cc5ff9",
+    "78863aaa-c50c-4684-831e-c7564bcf6c07"
 ]
 
 uuids_luxtrust =[
@@ -391,7 +392,8 @@ already_taken_uuids_amazon=[
     "4f407186-da1a-4e65-bbc4-dc012fa7e188",
     "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd",
     "8a077990-066e-4174-baa5-c1622c5a9330",
-    "e4184a64-dc23-4270-bfdc-da13e4ddbb4e"
+    "e4184a64-dc23-4270-bfdc-da13e4ddbb4e",
+    "d7e8fc36-37b6-4817-93ac-3dec49c086da"
 ]
 
 uuids_other_phishing=[
