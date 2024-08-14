@@ -31,7 +31,8 @@ already_taken_uuids_amendes=[
     "00b6f518-e506-4470-8665-ed76a58d3be9",
     "7628f188-da39-4d62-b905-21fffd6040c8",
     "bdb15464-2df0-4833-94a7-31f1811766cd",
-    "63eafde9-4135-44af-8395-d180d81d08df"
+    "63eafde9-4135-44af-8395-d180d81d08df",
+    "65554899-67bf-40f2-a780-252d4243b692"
 ]
 
 uuids_paypal=[
