@@ -410,7 +410,8 @@ already_taken_uuids_amazon=[
 ]
 
 uuids_other_phishing=[
-
+    "6d3b897e-9f75-44e4-a8e9-a602d01c3f33",
+    "99867704-6bed-4097-a739-2b54f13b534f"
 ]
 
 
