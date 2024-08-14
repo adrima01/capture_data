@@ -30,7 +30,8 @@ already_taken_uuids_amendes=[
     "b3e3ea7c-b05c-4306-aa67-d2a2022f1d7c",
     "00b6f518-e506-4470-8665-ed76a58d3be9",
     "7628f188-da39-4d62-b905-21fffd6040c8",
-    "bdb15464-2df0-4833-94a7-31f1811766cd"
+    "bdb15464-2df0-4833-94a7-31f1811766cd",
+    "63eafde9-4135-44af-8395-d180d81d08df"
 ]
 
 uuids_paypal=[
@@ -167,7 +168,8 @@ already_taken_uuids_luxtrust=[
     "5392c4a1-09f9-4299-b8da-99d9a99042d6",
     "27a4f03f-c6f2-4640-b006-9e541351a97b",
     "24638f05-cad1-45c0-b282-88fee5c2ac16",
-    "92310dc1-6073-4fd2-8057-1df2b610b229"
+    "92310dc1-6073-4fd2-8057-1df2b610b229",
+    "c3e7820f-2106-4917-a0ad-e302e1582775"
 ]
 
 uuids_microsoft=[
@@ -189,7 +191,9 @@ already_taken_uuids_microsoft=[
     "d7218691-faf3-4dc2-a53e-9312e51338c5",
     "3d8c85b6-3be4-4c1a-b038-c2193e887f2d",
     "79c8b74b-2cc3-4e7f-a81d-ed3a88606dff",
-    "a6974b87-479f-4fab-b6d5-f932907adb38"
+    "a6974b87-479f-4fab-b6d5-f932907adb38",
+    "87c8d7b0-37da-474c-9978-90ac86b48468",
+    "15251c49-28a2-47ae-b698-e7272e3d653e"
 ]
 
 uuids_atandt=[
@@ -239,7 +243,10 @@ already_taken_uuids_atandt=[
     "50932606-24bd-4beb-b384-3c53bc369b8b",
     "5acfa9d5-0759-4b27-80d8-58d5b8f278e8",
     "ecb4d9a8-2091-4af7-812b-02a7f1fc8e2a",
-    "a7d336c7-1daa-4aa9-8acc-00591246ea43"
+    "a7d336c7-1daa-4aa9-8acc-00591246ea43",
+    "bea79f01-560f-4cf9-abea-7cea589e0472",
+    "34d9d5f5-d1c2-45b2-9905-9ff620a6f144",
+    "9a7a7299-fcf0-4984-a37d-2ee1d369290a"
 ]
 
 uuids_orange=[
@@ -302,7 +309,10 @@ already_taken_uuids_credit_agricole=[
     "6e1d77f5-898d-4974-9445-d9df84ee842a",
     "f165cee5-ea1e-4397-b7bc-0171eb3f05b1",
     "09b76de4-5e94-4854-b6cb-294e617138d5",
-    "50283a79-bd97-45de-b21c-6348e69c0c34"
+    "50283a79-bd97-45de-b21c-6348e69c0c34",
+    "7825cfd7-079c-4c31-8fec-f01445a6cccc",
+    "736abee7-d91d-4109-ac5f-9ec9a715597f",
+    "65ece242-ea8c-4a59-a80f-f52dca180ca8"
 ]
 
 
@@ -393,7 +403,10 @@ already_taken_uuids_amazon=[
     "3da46e34-bb0d-42c4-8d77-ee0fee15f1dd",
     "8a077990-066e-4174-baa5-c1622c5a9330",
     "e4184a64-dc23-4270-bfdc-da13e4ddbb4e",
-    "d7e8fc36-37b6-4817-93ac-3dec49c086da"
+    "d7e8fc36-37b6-4817-93ac-3dec49c086da",
+    "b8f27089-e488-4be2-b42d-2d9741578805",
+    "574759f8-12d9-4e2b-814b-919253e51d7a",
+    "3db4b892-1326-48a2-9932-68ec5b424afb"
 ]
 
 uuids_other_phishing=[
