@@ -150,7 +150,8 @@ already_taken_uuids_ameli=[
     "a672cfb7-30f5-40fc-bbc4-6ff2d777a1db",
     "9d233823-371e-405a-ad04-27bceffa3613",
     "81663895-88bc-4fcd-809c-f53075cc5ff9",
-    "78863aaa-c50c-4684-831e-c7564bcf6c07"
+    "78863aaa-c50c-4684-831e-c7564bcf6c07",
+    "f3fef46e-f507-4234-9b05-70c46b2a6a99"
 ]
 
 uuids_luxtrust =[
