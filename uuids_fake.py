@@ -1,5 +1,8 @@
 uuids_amendes=[
-
+    "d7b62699-feb5-4242-b1a9-1c6ec15f4517",
+    "71e65f6a-7ba1-4767-aebf-b84b4d13fca3",
+    "121e993e-7f28-4ef5-adbb-489bc16a9dc7",
+    "00ef831c-3df2-42e9-a331-330b03ebb526"
 ]
 
 already_taken_uuids_amendes=[
@@ -36,7 +39,7 @@ already_taken_uuids_amendes=[
 ]
 
 uuids_paypal=[
-
+    "9b093e63-835a-4ad2-949d-db1a7c486b7c"
 ]
 
 already_taken_uuids_paypal=[
@@ -175,7 +178,10 @@ already_taken_uuids_luxtrust=[
 ]
 
 uuids_microsoft=[
-
+    "c84f2c9d-c121-4e1b-ab4c-a15f65af1fc4",
+    "22340a09-a9d6-4cfa-9b8e-43eac054cc11",
+    "d848b299-01fe-4979-a701-ef037e996492",
+    "0e013a64-e466-4b3d-adca-27a35ecdd50b"
 ]
 
 already_taken_uuids_microsoft=[
@@ -252,7 +258,9 @@ already_taken_uuids_atandt=[
 ]
 
 uuids_orange=[
-
+    "23b895ae-6614-4f8f-a770-42a05c64dffa",
+    "72e52c20-a54a-41db-a9b3-65ab0682c8d8",
+    "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1"
 ]
 
 already_taken_uuids_orange=[
@@ -319,7 +327,7 @@ already_taken_uuids_credit_agricole=[
 
 
 uuids_netflix=[
-
+    "6a937d2b-de01-40ab-8d0d-fb3bdf2ec4bb"
 ]
 
 
@@ -358,7 +366,9 @@ already_taken_uuids_netflix=[
 
 
 uuids_amazon=[
-
+    "31a8fe75-0e17-43e0-9da7-5f8840c45225",
+    "a56816a9-14d2-49ca-8061-447b6055539f",
+    "3d774666-435e-4034-a957-08514047d072"
 ]
 
 
