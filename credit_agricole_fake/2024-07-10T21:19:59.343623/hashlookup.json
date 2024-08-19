@@ -1,0 +1,48 @@
+{
+  "a8927ac2830b2fdd4a729eb0eb7f80923539ceb9": {
+    "CRC32": "0E916F78",
+    "FileName": "jquery.js",
+    "FileSize": "88145",
+    "KnownMalicious": "malshare.com",
+    "MD5": "2F772FED444D5489079F275BD01E26CC",
+    "OpSystemCode": "362",
+    "ProductCode": "238543",
+    "RDS:package_id": "279210",
+    "SHA-1": "A8927AC2830B2FDD4A729EB0EB7F80923539CEB9",
+    "SHA-256": "2B381363DDA049F2D49A59037B228BC865D51FFB977C8F5C3547D5C28DE48E3A",
+    "SSDEEP": "1536:JTEXXUZINXD7OPEZXKMV4SYKFMBRHZ6H5HOHCWRCELZUU7BRCKKBEQBSOJZLOPMW:JGZM0H5HO5+GCKWZYPMHQ47GKC",
+    "SpecialCode": "",
+    "db": "nsrl_android",
+    "insert-timestamp": "1655078247.8675191",
+    "source": "ios.db"
+  },
+  "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f": {
+    "CRC32": "A3A6BF43",
+    "FileName": "snap-hashlookup-import/bin/data/flutter_assets/AssetManifest.json",
+    "FileSize": "2",
+    "KnownMalicious": "malshare.com",
+    "MD5": "99914B932BD37A50B983C5E7C90AE93B",
+    "OpSystemCode": "362",
+    "ProductCode": "311",
+    "RDS:package_id": "309120",
+    "SHA-1": "BF21A9E8FBC5A3846FB05B4FA0859E0917B2202F",
+    "SHA-256": "44136FA355B3678A1146AD16F7E8649E94FB4FC21FE77E8310C060F61CAAFF8A",
+    "SHA-512": "27C74670ADB75075FAD058D5CEAF7B20C4E7786C83BAE8A32F626F9782AF34C9A33C2046EF60FD2A7878D378E29FEC851806BBD9A67878F3A9F1CDA4830763FD",
+    "SSDEEP": "3:H:H",
+    "SpecialCode": "",
+    "TLSH": "",
+    "db": "nsrl_legacy",
+    "insert-timestamp": "1715093972.704104",
+    "mimetype": "text/plain",
+    "source": "snap:MAjDgfyZldCAwLXd3u8mVay6jCnegw34_1",
+    "tar:gname": "root",
+    "tar:uname": "root"
+  },
+  "13de10f5a348efa8ff3d856f2e347eeff8a33579": {
+    "KnownMalicious": "malshare.com",
+    "MD5": "B259C4797D838ADD41DA1047021D2480",
+    "SHA-1": "13DE10F5A348EFA8FF3D856F2E347EEFF8A33579",
+    "SHA-256": "C4966AB5E78E2270952B89576C4A0A386E8A7EA673C56F0F396D620ABF4F81B8",
+    "SSDEEP": "6144:HDUEC9C93XTGHICDM2VQ8F3HLOWEHI+MRLCZEUX:O86H/D68OWEOXRLCZNX"
+  }
+}
