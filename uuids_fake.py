@@ -1,8 +1,5 @@
 uuids_amendes=[
-    "d7b62699-feb5-4242-b1a9-1c6ec15f4517",
-    "71e65f6a-7ba1-4767-aebf-b84b4d13fca3",
-    "121e993e-7f28-4ef5-adbb-489bc16a9dc7",
-    "00ef831c-3df2-42e9-a331-330b03ebb526"
+
 ]
 
 already_taken_uuids_amendes=[
@@ -35,11 +32,15 @@ already_taken_uuids_amendes=[
     "7628f188-da39-4d62-b905-21fffd6040c8",
     "bdb15464-2df0-4833-94a7-31f1811766cd",
     "63eafde9-4135-44af-8395-d180d81d08df",
-    "65554899-67bf-40f2-a780-252d4243b692"
+    "65554899-67bf-40f2-a780-252d4243b692",
+    "d7b62699-feb5-4242-b1a9-1c6ec15f4517",
+    "71e65f6a-7ba1-4767-aebf-b84b4d13fca3",
+    "121e993e-7f28-4ef5-adbb-489bc16a9dc7",
+    "00ef831c-3df2-42e9-a331-330b03ebb526"
 ]
 
 uuids_paypal=[
-    "9b093e63-835a-4ad2-949d-db1a7c486b7c"
+
 ]
 
 already_taken_uuids_paypal=[
@@ -52,7 +53,8 @@ already_taken_uuids_paypal=[
     "e85634b4-b4a9-44bb-836a-c42849196ed2",
     "bebdc094-6ba7-4d03-92f9-0a596b2b9d52",
     "5e1fa0aa-42e4-49d0-99d6-2c20e9194353",
-    "c4c1ff94-4c86-4d82-9795-09b038743e14"
+    "c4c1ff94-4c86-4d82-9795-09b038743e14",
+    "9b093e63-835a-4ad2-949d-db1a7c486b7c"
 ]
 
 uuids_ameli = [
@@ -178,10 +180,7 @@ already_taken_uuids_luxtrust=[
 ]
 
 uuids_microsoft=[
-    "c84f2c9d-c121-4e1b-ab4c-a15f65af1fc4",
-    "22340a09-a9d6-4cfa-9b8e-43eac054cc11",
-    "d848b299-01fe-4979-a701-ef037e996492",
-    "0e013a64-e466-4b3d-adca-27a35ecdd50b"
+
 ]
 
 already_taken_uuids_microsoft=[
@@ -201,7 +200,11 @@ already_taken_uuids_microsoft=[
     "79c8b74b-2cc3-4e7f-a81d-ed3a88606dff",
     "a6974b87-479f-4fab-b6d5-f932907adb38",
     "87c8d7b0-37da-474c-9978-90ac86b48468",
-    "15251c49-28a2-47ae-b698-e7272e3d653e"
+    "15251c49-28a2-47ae-b698-e7272e3d653e",
+    "c84f2c9d-c121-4e1b-ab4c-a15f65af1fc4",
+    "22340a09-a9d6-4cfa-9b8e-43eac054cc11",
+    "d848b299-01fe-4979-a701-ef037e996492",
+    "0e013a64-e466-4b3d-adca-27a35ecdd50b"
 ]
 
 uuids_atandt=[
@@ -258,9 +261,7 @@ already_taken_uuids_atandt=[
 ]
 
 uuids_orange=[
-    "23b895ae-6614-4f8f-a770-42a05c64dffa",
-    "72e52c20-a54a-41db-a9b3-65ab0682c8d8",
-    "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1"
+
 ]
 
 already_taken_uuids_orange=[
@@ -288,7 +289,10 @@ already_taken_uuids_orange=[
     "24b40fe3-79f7-472a-8223-9dbd0e0016d6",
     "391dd4aa-e917-49b6-98c2-79db28c6cbb3",
     "b2eea8c7-a044-4c7b-8627-ce283f8602fd",
-    "f50751d9-d2e3-4019-a406-82d85b156eb8"
+    "f50751d9-d2e3-4019-a406-82d85b156eb8",
+    "23b895ae-6614-4f8f-a770-42a05c64dffa",
+    "72e52c20-a54a-41db-a9b3-65ab0682c8d8",
+    "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1"
 ]
 
 uuids_credit_agricole=[
@@ -327,7 +331,6 @@ already_taken_uuids_credit_agricole=[
 
 
 uuids_netflix=[
-    "6a937d2b-de01-40ab-8d0d-fb3bdf2ec4bb"
 ]
 
 
@@ -361,14 +364,14 @@ already_taken_uuids_netflix=[
     "67f9e0e1-7f74-40ef-bd13-cb660f10fc72",
     "8ecb440b-2235-497d-8978-7dfc8a79fe4d",
     "af9ab8c4-78ae-40ce-91a7-e1dd8878e8f3",
-    "9b27aa70-e1ba-4bcc-8c29-3846e0d4c399"
+    "9b27aa70-e1ba-4bcc-8c29-3846e0d4c399",
+    "6a937d2b-de01-40ab-8d0d-fb3bdf2ec4bb"
+
 ]
 
 
 uuids_amazon=[
-    "31a8fe75-0e17-43e0-9da7-5f8840c45225",
-    "a56816a9-14d2-49ca-8061-447b6055539f",
-    "3d774666-435e-4034-a957-08514047d072"
+
 ]
 
 
@@ -418,12 +421,14 @@ already_taken_uuids_amazon=[
     "d7e8fc36-37b6-4817-93ac-3dec49c086da",
     "b8f27089-e488-4be2-b42d-2d9741578805",
     "574759f8-12d9-4e2b-814b-919253e51d7a",
-    "3db4b892-1326-48a2-9932-68ec5b424afb"
+    "3db4b892-1326-48a2-9932-68ec5b424afb",
+    "31a8fe75-0e17-43e0-9da7-5f8840c45225",
+    "a56816a9-14d2-49ca-8061-447b6055539f",
+    "3d774666-435e-4034-a957-08514047d072"
 ]
 
 uuids_other_phishing=[
-    "6d3b897e-9f75-44e4-a8e9-a602d01c3f33",
-    "99867704-6bed-4097-a739-2b54f13b534f"
+
 ]
 
 
@@ -435,5 +440,7 @@ already_taken_uuids_other_phishing=[
     "f306d51d-67c1-4232-9adf-2d777ec53e86",
     "3fdcd2c4-4e7b-4525-800c-ba56907e431b",
     "9701b784-21dd-4b8e-8a17-25948d6f32ea",
-    "add97ab9-7bd4-4184-be13-7b33eab96f6b"
+    "add97ab9-7bd4-4184-be13-7b33eab96f6b",
+    "6d3b897e-9f75-44e4-a8e9-a602d01c3f33",
+    "99867704-6bed-4097-a739-2b54f13b534f"
 ]
