@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="fr"><head>
+ <title>Authentification AmeliPro</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="Content-Script-Type" content="text/javascript">
+ <meta http-equiv="cache-control" content="no-cache">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <link rel="shortcut icon" href="/skins/cnamts/img/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" type="text/css" href="/skins/cnamts/css/amelipro-1da8ea93fd.min.css">
+ <link rel="stylesheet" type="text/css" href="/skins/cnamts/css/captchaObs-221fc093e6.css">
+ 
+  <!-- Load javascript common to all skins -->
+  <script type="text/javascript" src="/skins/common/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/skins/common/js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="/skins/common/js/jquery.base64.min.js"></script>
+  <script type="text/javascript" src="/skins/common/js/jquery.cookie.min.js"></script>
+ 
+ 
+ 
+ <script type="text/javascript">//<![CDATA[
+    var displaytab="";
+    var choicetab="";
+    var login="";
+    var newwindow="";
+    var antiframe="0";
+    var appslistorder="";
+    var scriptname="";
+    var activeTimer="";
+    var pingInterval=parseInt("");
+ //]]></script>
+
+
+  <script type="text/javascript" src="/skins/cnamts/js/skin-5358543c4c.min.js"></script>
+  <script type="text/javascript" src="/skins/cnamts/js/captchaComponent-44328fe79d.js"></script>
+  <!-- <script type="text/javascript" src="/skins/common/js/portal.min.js"></script> -->
+</head>
+
+<body style="">
+  <nav id="main-menu" class="main-menu">
+    <div class="text-right">
+      <a><span class="btn-menu glyphicon glyphicon-chevron-left"></span></a>
+    </div>
+    <ul>
+      <li><a><span class="glyphicon glyphicon-home hidden-xs"></span> ACCUEIL</a></li>
+      <li><a>ACCOMPAGNEMENTS</a></li>
+      <li><a>GÉNÉRIQUES</a></li>
+      <li><a>MA DÉCLARATION</a></li>
+      <li><a>MES RÉMUNÉRATIONS</a></li>
+      <li>
+        <a href="index.html" class="visible-xs">
+                <span class="glyphicon glyphicon-home"></span>
+                ALLER SUR AMELIPRO
+            </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="overlay">
+  </div>
+
+  <div class="global-container">
+
+
+    <header>
+      <div class="application-header">
+        <div class="container">
+          <div class="row navigation">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 flex-box-header">
+              <a class="col-xs-8 col-md-4 col-lg-4" title="Retour accueil" href="https://espacepro.ameli.fr">
+                <img src="/skins/cnamts/img/logo_am_amelipro.svg" alt="Assurance Maladie Amelipro">
+              </a>
+              <div class="flex-box-container-aide">
+                <div class="pull-right">
+                  <a class="texte-bleu-1" href="https://espacepro.ameli.fr/inscription/#/aide" target="_self">
+                    <div class="flex-box-aide-button">
+                      <span class="hidden-xs">Aide</span>
+                      <button type="button" class="pictogramme-svg-aide" aria-label="Aide">
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		<main class="main-large page-connexion no-padding-bottom">
+	<article>
+		<section class="container" id="sectionprincipale">
+			<div class="spacer row">
+				<div class="col-xs-12 col-md-10 col-md-offset-1">
+
+					<div class="page-connexion-box panel panel-default">
+						<div class="panel-body">
+							<div class="connexion-main">
+								
+									<div class="connexion-left-side">
+											<div class="form-login">
+												<div class="pull-right add-margin-bottom">* Obligatoire</div>
+												
+
+												<form action="" method="post" id="form-login">
+													<!-- Hidden fields -->
+													
+													<input type="hidden" name="url" value="">
+													<input type="hidden" name="timezone">
+													<input type="hidden" name="skin" value="cnamts">
+													<input type="hidden" name="lmAuth" value="login">
+													<label class="medium-spacer">
+														
+															Identifiant * :
+															<button type="button" id="popover-button" class="pictogramme-svg-aide margin-left-5" data-container="body" data-toggle="popover" data-placement="right" data-html="true" data-trigger="manual" data-content="Votre identifiant amelipro est votre numéro d'Assurance Maladie (AM), ou votre numéro FINESS géographique.<br/>Pour les comptables, votre identifiant reste votre adresse e-mail.<br/>Pour les autres utilisateurs bénéficiant d'une délégation, seule une identification par carte professionnelle est possible." data-original-title="" title=""></button>
+														
+														</label>
+														<input name="user" id="input-user" class="form-control" placeholder="N° sur 9 caractères" autocomplete="false">
+
+													<label class="spacer">Mot de passe * :</label>
+
+													<div class="password">
+														<input name="password" id="input-password" class="form-control" type="password" autocomplete="false">
+														<button type="button" class="show-hide-password" id="show-hide-password-btn">
+																		<span class="glyphicon"><img src="/skins/cnamts/img/picto_oeil.svg" alt="Afficher le mot de passe"></span>
+																	</button>
+													</div>
+													<div class="text-right small-spacer">
+														<a class="lien-page-connexion" title="Réinitialiser votre mot de passe" href="https://espacepro.ameli.fr/inscription/#/reinitMDP/demande">Mot de passe oublié </a>
+													</div>
+													
+														<div class="captcha-main">
+															<p class="captcha-title texte-courant-semi-gras">
+																Code de sécurité
+															</p>
+															<div id="idcaptcha">
+        <div class="captcha-media">
+            <img class="captcha-media__image" id="idcaptcha_captchaImage" src="/?captchaType=image&amp;displayCaptcha=d5b8be879665476f9c40bca9feb5882c" alt="Image du captcha (si vous ne pouvez visualiser cette image, une version audio du CAPTCHA est disponible ci-après)">
+        </div>
+    
+          <div class="captcha-form">
+              <label class="captcha-form__label" for="idcaptcha_userCaptchaInput">Caractères de l'image * :</label>
+              <input type="text" name="userCaptchaInput" id="idcaptcha_userCaptchaInput" class="captcha-form__input" aria-required="true" placeholder="Caractères de l'image">
+          </div>
+      
+          <div class="captcha-nav">
+              <span class="captcha-nav__help">Vous n'arrivez pas à lire ?</span>
+              <button type="button" class="captcha-nav__button" id="idcaptcha_reloadCaptchaBtn">Changer de captcha image</button>
+              <span class="captcha-nav__sep">ou</span>
+              <button type="button" class="captcha-nav__button" id="idcaptcha_chooseAudioBtn">Utiliser un captcha audio</button>
+              <input type="hidden" name="idInstanceCaptcha" value="d5b8be879665476f9c40bca9feb5882c">
+          </div>
+      </div>
+														</div>
+													
+													<button id="#submit-button" type="button" class="medium-spacer btn btn-connexion" aria-label="Connexion" onclick="submitFormLogin(event, captchaComponentInstance)">Vous connecter</button>
+
+													<div class="text-center small-spacer">
+														Connectez-vous avec vos identifiants où que vous soyez.
+													</div>
+												</form>
+											</div>
+									</div>
+								
+								<div class="text-center form-login-wrapper connexion-right-part">
+
+								  <div class="form-login">
+
+									<img src="/skins/cnamts/img/visuel_connexionCPS.svg" alt="Identification par carte CPS" height="165" class="connexion-imgs">
+
+									<form action="https://authcps-espacepro.ameli.fr/CPS/oauth2/" method="post" id="cps_form">
+									  <!-- Hidden fields -->
+									  
+									  <input type="hidden" name="url" value="">
+									  <input type="hidden" name="timezone">
+									  <input type="hidden" name="skin" value="cnamts">
+									  <input type="hidden" name="lmAuth" value="cps">
+
+									  <button type="button" id="#submit-button" class="btn btn-connexion btn-connexion-cps-cpe" aria-label="Connexion CPS" onclick="submitFormCPS(event)">VOUS CONNECTER PAR CARTE CPS OU CPE</button>
+									</form>
+
+
+
+									<div class="spacer  margin-right-part">
+										
+											<form action="" method="post" id="psc_form">
+												
+												<input type="hidden" name="url" value="">
+												<input type="hidden" name="timezone">
+												<input type="hidden" name="skin" value="cnamts">
+												<input type="hidden" name="lmAuth" value="ecps">
+
+												Ou s'identifier avec :<br>
+												<a id="#submit-button" onclick="submitFormPSC(event)">
+												  <img src="/skins/cnamts/img/logo_ProSanteConnect_COULEURS.svg" alt="Identification par Pro Santé Connect" class="logo-prosanteconnect-couleur">
+												</a>
+											</form>
+										
+									</div>
+
+									
+										<form action="" method="post" id="hidden_psc_form">
+											
+											<input type="hidden" name="url" value="">
+											<input type="hidden" name="timezone">
+											<input type="hidden" name="skin" value="cnamts">
+											<input type="hidden" name="lmAuth" value="ecps">
+
+											<a id="#submit-button" onclick="submitFormPSCHidden(event)" accesskey="p"></a>
+										</form>
+									
+
+
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			 </div>
+		</section>
+		<section class="container-fuild">
+			<div class="spacer row bg-blanc">
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<div class="text-center padding-20">
+						<h3>Vous n'avez pas de compte ?</h3>
+						<div class="spacer">
+							<button class="btn btn-creation btn-large" aria-label="Créer un compte" onclick="javascript:document.location.href='https://espacepro.ameli.fr/inscription/#/creationCompte'">Créer un compte</button>
+						</div>
+						<p class="medium-spacer">
+						  Si vous avez une carte CPS ou CPE transporteur,
+						  vous pouvez créer votre compte,
+						  en vous connectant à l'aide du bouton d'identification par carte.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+</main>
+
+<!-- JS library -->
+
+<script type="text/javascript" src="/skins/cnamts/js/connexion-7a9fd459ad.js"></script>
+<script>
+    watchedCaptchaData.captchaData = {
+		urlCreate: '/?getCaptcha=1',
+		urlGetImage: '/?captchaType=image&displayCaptcha=CAPTCHAID',
+		urlGetAudio: '/?captchaType=audio&displayCaptcha=CAPTCHAID',
+		querySelectorId: 'idcaptcha',
+		logLevel: 1
+    };
+	var cms_url = '/api/amrsj/public/ressources/v1/connexion/docs/messagealerte';
+	$(document).ready(function() {
+      getMessageAlert(cms_url);
+	});
+
+  </script>
+
+    
+
+
+
+    <footer id="footer" class="container-fluid">
+      <div id="btn-retour-haut" class="btn-retour-haut">
+        <a href="#" class="pictogramme-svg-retour-haut large"></a>
+      </div>
+
+      <div class="container text-center-xs">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+
+          <span>NOUS CONTACTER</span>
+
+          <div class="small-spacer footer-telephone"></div>
+
+        </div>
+
+        <div class="col-xs-12 col-md-6 text-right text-center-xs medium-spacer">
+
+          <a href="https://espacepro.ameli.fr/inscription/#/aide" target="_blank">Aide et configuration</a>
+
+          <span class="cercle-separateur cercle-bleu"></span>
+
+          <a href="https://espacepro.ameli.fr/inscription/#/mentionslegales" target="_blank">Mentions légales</a> | <a href="https://espacepro.ameli.fr/inscription/#/cgu" target="_blank"><abbr title="Condition générale d’utilisation">CGU</abbr></a> | <a href="https://espacepro.ameli.fr/inscription/#/accessibilite" target="_blank">Accessibilité : non conforme</a>
+        </div>
+      </div>
+    </div></footer>
+
+
+
+  </div>
+  <!-- JS library -->
+  <script src="/skins/cnamts/js/amelipro-806ad067c2.min.js" type="text/javascript"></script>
+
+
+
+
+</body></html>

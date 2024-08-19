@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Glossary | Amendes.gouv.fr</title>
+  <meta name="description" content="Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de télépaiement.">
+  <base href="/">
+  <script src="env/env.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="assets/fonts/open-sans/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/open-sans/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="alternate" hreflang="fr" href="https://www.amendes.gouv.fr/tai">
+  <link rel="alternate" hreflang="fr" href="https://www.amendes.gouv.fr">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+      font-family: 'opensans', Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+    #loading {
+      display: none;
+    }
+    #loading > div:first-child {
+      font-size:24px;
+    }
+    noscript p:first-child {
+      font-size: 19px;
+    }
+    noscript p:last-child > a {
+      color: #0b6ba8;
+    }
+    #skip-link {
+      overflow: auto;
+      background: #272729;
+    }
+    #skip-link a {
+      display: block;
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      overflow: hidden;
+      height: 1px;
+      margin: 0;
+      padding: 0;
+    }
+    #skip-link a:focus {
+      position: static !important;
+      clip: auto;
+      overflow: visible;
+      height: auto;
+      padding: 10px;
+      margin: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .align-center {
+      position: absolute ;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+    .spinner {
+      margin: 100px auto 0;
+      width: 70px;
+      text-align: center;
+    }
+    .spinner > div {
+      width: 10px;
+      height: 10px;
+      background-color: #414856;
+
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+    .spinner .bounce1 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    .spinner .bounce2 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+    @-webkit-keyframes sk-bouncedelay {
+      0%, 80%, 100% { -webkit-transform: scale(0) }
+      40% { -webkit-transform: scale(1.0) }
+    }
+    @keyframes sk-bouncedelay {
+      0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      } 40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+        }
+    }
+    @font-face {
+      font-family: 'opensans';
+      src: url('assets/fonts/open-sans/open-sans-regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'opensans';
+      src: url('assets/fonts/open-sans/open-sans-bold.woff2') format('woff2');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+<style>@charset "UTF-8";body,div,h1,html,img,span{margin:0;padding:0;border:0;font-style:inherit;font-feature-settings:inherit;font-variant-ligatures:inherit;font-variant-caps:inherit;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;vertical-align:baseline}img{max-width:100%;max-height:100%}*{box-sizing:border-box}.logo{display:none}@media screen and (min-width: 450px){.logo{display:block;position:relative}}#pre-bootstrap{background-color:#fff;bottom:0;left:0;position:fixed;right:0;top:0;z-index:999999}#pre-bootstrap .messaging{color:#414856;text-align:center}#pre-bootstrap h1{margin:0 0 50px}</style><link rel="stylesheet" href="styles.bd92f71559d50d7ea26a.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.bd92f71559d50d7ea26a.css"></noscript><style>.logo-wrapper[_ngcontent-ren-c38]{display:inline-block;padding:2em 0}</style></head>
+<body>
+<cnt-tai-app ng-version="12.2.17"><div id="skip-link"><ul><li><a href="javascript:void(0);">Go to content</a></li><li><a href="javascript:void(0);">Go to footer</a></li></ul></div><tai-header _nghost-ren-c38=""><header _ngcontent-ren-c38="" class="wrapper"><div _ngcontent-ren-c38="" class="logo-wrapper"><a _ngcontent-ren-c38="" routerlink="/tai" aria-label="Return to homepage" href="/tai"><img _ngcontent-ren-c38="" src="assets/img/design/logo-amendes-gouv.svg" width="500" class="logo-header" alt="French Republic Freedom Equality Fraternity - Ministry of Action and Public Accounts"></a></div><ul _ngcontent-ren-c38="" class="lang-selector no-print"><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" lang="fr" aria-label="Je souhaite cette page en français" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">FR</span></a></li><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" class="active" lang="en" aria-label="I wish to consult this web page in English" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">EN</span></a></li><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" lang="de" aria-label="Ich möchte diese Webseite auf Deutsch konsultieren" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">DE</span></a></li><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" lang="nl" aria-label="Ik wil deze webpagina in het Nederlands raadplegen" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">NL</span></a></li><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" lang="it" aria-label="Desidero consultare questo sito in italiano" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">IT</span></a></li><li _ngcontent-ren-c38=""><a _ngcontent-ren-c38="" lang="es" aria-label="Deseo consultar este página en español" href="javascript:void(0);"><span _ngcontent-ren-c38="" aria-hidden="true">ES</span></a></li><!----></ul></header></tai-header><div id="main"><router-outlet></router-outlet><glossaire><main aria-labelledby="title-main"><div class="page-info"><section><h1 id="title-main">Glossary</h1></section><dl class="definition"><section class="sommaire"><section><h2 class="faq-section-title">Summary</h2></section><ul><li><a href="tai/glossaire#mot-1">Fine</a></li><li><a href="tai/glossaire#mot-2">Fixed fine</a></li><li><a href="tai/glossaire#mot-3">Increased fixed fine</a></li><li><a href="tai/glossaire#mot-4">Reduced fixed fine</a></li><li><a href="tai/glossaire#mot-5">Tortious fixed fine</a></li><li><a href="tai/glossaire#mot-6">Increased tortious fixed fine</a></li><li><a href="tai/glossaire#mot-7">Fine notice</a></li><li><a href="tai/glossaire#mot-8">Payment notice for the post-parking fee</a></li><li><a href="tai/glossaire#mot-9">Deposit form</a></li><li><a href="tai/glossaire#mot-10">Payment form</a></li><li><a href="tai/glossaire#mot-11">Commission du Contentieux du Stationnement payant (CCSP) (Paying Parking Litigation Commission)</a></li><li><a href="tai/glossaire#mot-12">Deposit</a></li><li><a href="tai/glossaire#mot-13">Traffic offence notice</a></li><li><a href="tai/glossaire#mot-14">Automated Control (CA)</a></li><li><a href="tai/glossaire#mot-15">Encryption</a></li><li><a href="tai/glossaire#mot-16">Misdemeanour</a></li><li><a href="tai/glossaire#mot-17">Right of communications</a></li><li><a href="tai/glossaire#mot-18">Post-parking fee (« FPS »)</a></li><li><a href="tai/glossaire#mot-19">Outstanding post-parking fee (« FPS »)</a></li><li><a href="tai/glossaire#mot-20">Increased post-parking fee</a></li><li><a href="tai/glossaire#mot-21">Law No. 2003-495 of 12 June 2003 reinforcing the combat against road violence</a></li><li><a href="tai/glossaire#mot-22">Photo</a></li><li><a href="tai/glossaire#mot-23">Motion for exemption</a></li><li><a href="tai/glossaire#mot-24">Ticketing service</a></li><li><a href="tai/glossaire#mot-25">E-payment</a></li><li><a href="tai/glossaire#mot-26">Fine payment stamp</a></li><!----></ul></section><section><dt id="mot-1">Fine :</dt><dd><p> Financial penalty whereby the perpetrator of an offence or misdemeanour is bound to pay a certain amount to the Public Treasury. <!----></p></dd><!----><!----><!----><!----><dt id="mot-2">Fixed fine :</dt><dd><p> Financial sentence, the amount of which is fixed by law. <!----></p></dd><!----><!----><!----><!----><dt id="mot-3">Increased fixed fine :</dt><dd><p> Financial sentence increased by a set amount if the offender fails to pay by the fixed fine payment deadline. <!----></p></dd><!----><!----><!----><!----><dt id="mot-4">Reduced fixed fine :</dt><dd><p> Financial sentence reduced by a set amount if the offender pays the fine by a set shorter deadline. <!----></p></dd><!----><!----><!----><!----><dt id="mot-5">Tortious fixed fine :</dt><dd><p> Financial sentence whereby the perpetrator of an offence or misdemeanour is bound to pay a certain amount to the Public Treasury. <!----></p></dd><!----><!----><!----><!----><dt id="mot-6">Increased tortious fixed fine :</dt><dd><p> Financial sentence increased by a set amount if the deadlines for the fixed fine payment imposed for a crime are not respected. <!----></p></dd><!----><!----><!----><!----><dt id="mot-7">Fine notice :</dt><dd><p> Document that informs a person that he/she has committed an offence and specifies the corresponding penalty. This is sent to the alleged perpetrator of the said offence by the reporting body that recorded the offence. <!----></p></dd><!----><!----><!----><!----><dt id="mot-8">Payment notice for the post-parking fee :</dt><dd><p> Document informing the person liable for the amount of the post-parking fee to be paid. The document can be either affixed to the windscreen of the concerned vehicle or sent by post to the debtor's place of residence (in certain cases, it can also be sent electronically). <!----></p></dd><!----><!----><!----><!----><dt id="mot-9">Deposit form :</dt><dd><p> Detachable document located at the bottom of the exemption request form to be used imperatively to pay a deposit in case of a offence notice dispute. <!----></p></dd><!----><!----><!----><!----><dt id="mot-10">Payment form :</dt><dd><p> Tear-off slip at the bottom of the offence notice, to be used in case of payment. <!----></p></dd><!----><!----><!----><!----><dt id="mot-11">Commission du Contentieux du Stationnement payant (CCSP) (Paying Parking Litigation Commission) :</dt> The liable person can refer to the specialised administrative jurisdiction to dispute: <ul><li>the decision taken by the competent authority following a compulsory preliminary administrative appeal;</li><li>or the executory title that is issued in the absence of payment of the post-parking fee within 3 months.</li><!----></ul><!----><!----><!----><!----><dt id="mot-12">Deposit :</dt><dd><p> According to Article L 529-10 of the Code of Criminal procedure, the deposit corresponds to the payment of the fixed fine amount. This is mandatory and preliminary to establish the admissibility of the exemption request. If a court issues a refund decision, the amount of the deposit is reimbursed by a designated treasury accountant. <!----></p></dd><!----><!----><!----><!----><dt id="mot-13">Traffic offence notice :</dt><dd><p> On the scale of penalties, traffic offence notices penalize less serious offenses. <!----></p></dd><!----><!----><!----><!----><dt id="mot-14">Automated Control (CA) :</dt><dd><p> A device that facilitates the radar detection of certain offences of the Highway Code (non-respect of red lights and the safety distance behind vehicles) and which directly sends the offence notices to the owners of the vehicles that committed the offenses. See the road safety website: <a href="https://www.securite-routiere.gouv.fr/" target="_blank" rel="noopener" class="link-external" title="securite-routiere.gouv.fr - New window">www.securite-routiere.gouv.fr/</a><!----></p></dd><!----><!----><!----><!----><dt id="mot-15">Encryption :</dt><dd><p> Security mode protecting the data entered during the e-payment by the liable person. These data are encoded using an algorithm based on a string called the encryption key. <!----></p></dd><!----><!----><!----><!----><dt id="mot-16">Misdemeanour :</dt><dd><p> A misdemeanour means an offense tried by the Criminal Court. The penalty for the most serious misdemeanours shall not exceed a maximum imprisonment term of 10 years. <!----></p></dd><!----><!----><!----><!----><dt id="mot-17">Right of communications :</dt><dd><p> It is the right of the tax administrator to take note of and copy documents held or kept by the liable persons themselves or by third parties. They can be used for the recovery of fines and monetary sentences since the Finance Act of 1987 which makes a reference to the Livre des procédures fiscales (Book of Tax Procedures) (Articles 81 et seq.). <!----></p></dd><!----><!----><!----><!----><dt id="mot-18">Post-parking fee (« FPS ») :</dt><dd><p> Deferred payment modality of the parking fee. Its amount is fixed by the competent community. It must be paid within 3 months from the date of the payment notice. <!----></p></dd><!----><!----><!----><!----><dt id="mot-19">Outstanding post-parking fee (« FPS ») :</dt><dd><p> Outstanding post-parking fee not paid in full within 3 months from the date of the payment notice. <!----></p></dd><!----><!----><!----><!----><dt id="mot-20">Increased post-parking fee :</dt><dd><p> Outstanding post-parking fee not paid in full within 3 months from the date of the payment notice, increased in accordance with the legal provisions. <!----></p></dd><!----><!----><!----><!----><dt id="mot-21">Law No. 2003-495 of 12 June 2003 reinforcing the combat against road violence :</dt> This law provided for the following measures that apply as of now: <ul><li>increased penalties in the event of a fatal or bodily accident caused by the driver's negligence</li><li>withdrawing the possibility of obtaining a 'permit blanc' for drivers who have behaved in a dangerous manner</li><li>a sensitization course at the Sécurité routière (Road safety) on vehicle immobilization... new complementary penalties to improve collective awareness</li><li>the tightening of the rules applicable to repeat offenders</li><li>the final confiscation of the vehicle in case of serious misconduct</li><li>the retention of the driving license in case of driving under the influence of narcotics</li><li>the increase in penalties for professionals selling radar detectors or unclamping kits for mopeds</li><li>provisions on the protection of driving license inspectors and road safety</li><li>to better penalize driving under the influence of alcohol</li><li>an improvement of the road litigation treatment</li><!----></ul><!----><!----><p>See <a href="http://www.securite-routiere.gouv.fr/" target="_blank" rel="noopener" class="link-external" title="securite-routiere.gouv.fr - New window"> www.securite-routiere.gouv.fr/ </a></p><!----><!----><dt id="mot-22">Photo :</dt><dd><p> You have the right of access to the snapshot taken by the automated control devices requested by you via post addressed to the Centre Automatisé de Constatation des Infractions(Automated Centre of Observations of Offences) whose address appears on the traffic offence notice. The exercise of this right does not impact payment deadlines or possible delays. <!----></p></dd><!----><!----><!----><!----><dt id="mot-23">Motion for exemption :</dt><dd><p> As provided in Article 529-2 of the Code of criminal procedures, disputing the infringement is allowed. The exemption request form is attached to the traffic offence notice. <!----></p></dd><!----><!----><!----><!----><dt id="mot-24">Ticketing service :</dt><dd><p> Authorized authority to record offences (especially services that depend mainly on the Ministry of the Interior of the Ministry of Defence...). <!----></p></dd><!----><!----><!----><!----><dt id="mot-25">E-payment :</dt><dd><p> Remote payment either via the internet or via the voice server. <!----></p></dd><!----><!----><!----><!----><dt id="mot-26">Fine payment stamp :</dt><dd><p> ”Label” affixed to a report; this payment method is no longer accepted where the offence results in service of an offence notification to the debtor's address (e.g. speed camera penalties). <!----></p></dd><!----><!----><!----><!----><!----></section></dl></div></main></glossaire><!----></div><tai-footer><footer role="contentinfo" id="footer-tai" class="no-print"><div class="block-container wrapper"><div class="block-item"><h3>Information</h3><ul><li><a href="/tai/aide">Website help</a></li><li><a href="/tai/confidentialite">Privacy / Personal information / Cookies and other trackers</a></li><li><a href="/tai/securite">Information security</a></li><li><a href="/tai/glossaire">Glossary</a></li><!----></ul></div><div class="block-item"><h3>Quality of service</h3><ul><li><a href="/tai/accessibilite">Accessibility</a></li><li><a href="/tai/engagement">The commitments of the DGFiP</a></li></ul></div><div class="block-item"><h3>Other websites</h3><ul><li><a rel="noopener" target="_blank" class="link-external" title="antai.gouv.fr - New window" href="https://www.antai.gouv.fr/en">ANTAI: (Agence nationale de traitement automatisé des infractions) National Agency for Automated Treatment of Offenses</a></li><li><a href="https://stationnement.gouv.fr/" rel="noopener" target="_blank" class="link-external" title="stationnement.gouv.fr - New window">Post-parking fee</a></li></ul></div></div><div class="footer-external-sites"><ul><li><a href="https://www.service-public.fr/" rel="noopener" target="_blank" class="link-external" title="service-public.fr - New window">Service-public.fr</a></li><li><a href="https://www.legifrance.gouv.fr/" rel="noopener" target="_blank" class="link-external" title="legifrance.gouv.fr - New window">Legifrance.gouv.fr</a></li></ul></div><div class="footer-copyright"><p> © Direction générale des Finances publiques - <a id="mention-legales" class="xt" href="/tai/mention-legales">Legal statements</a></p></div></footer></tai-footer></cnt-tai-app>
+<script>
+    document.getElementById('loading').style.display = "block"
+</script>
+<script src="runtime-es2017.0a9dd8cbf8112828d189.js" type="module"></script><script src="runtime-es5.0a9dd8cbf8112828d189.js" nomodule="" defer=""></script><script src="polyfills-es5.76e2aab6ac4a43c93ca5.js" nomodule="" defer=""></script><script src="polyfills-es2017.8a382612081b1748ae07.js" type="module"></script><script src="main-es2017.3405943e0baf6e5076d4.js" type="module"></script><script src="main-es5.3405943e0baf6e5076d4.js" nomodule="" defer=""></script>
+</body></html>

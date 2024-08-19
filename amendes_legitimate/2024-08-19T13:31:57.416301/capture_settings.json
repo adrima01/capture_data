@@ -1,0 +1,88 @@
+{
+  "url": "https://www.amendes.gouv.fr/tai/confidentialite",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.18 Safari/537.36",
+  "cookies": [
+    {
+      "path": "/",
+      "name": "ameli_espace",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "rubrique_assure"
+    },
+    {
+      "path": "/",
+      "name": "ameli_localisation_counter",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "0"
+    },
+    {
+      "path": "/",
+      "name": "ameli_localisation_regen",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "1"
+    },
+    {
+      "path": "/",
+      "name": "_pcid",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "%7B%22browserId%22%3A%22m00wc0osky9mco1x%22%2C%22_t%22%3A%22mfpb9i0u%7Cm00wc0ou%22%7D"
+    },
+    {
+      "path": "/",
+      "name": "_pctx",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAE0RXSwH18yBbAGYAHAEYBOegAYwAH35SpAdwDGUymBABfIA"
+    },
+    {
+      "path": "/",
+      "name": "ameli_localisation",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "1396"
+    },
+    {
+      "path": "/",
+      "name": "pa_privacy",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "%22optin%22"
+    },
+    {
+      "path": "/",
+      "name": "tarteaucitron",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T13:27:38Z",
+      "domain": "www.ameli.fr",
+      "value": "!drupal_piano=true!drupal_googletagmanager=true!drupal_addtoany=true!vimeo=true"
+    }
+  ],
+  "with_favicon": true,
+  "allow_tracking": false,
+  "force": false,
+  "recapture_interval": 300,
+  "priority": 0,
+  "depth": 0,
+  "rendered_hostname_only": true,
+  "listing": true,
+  "not_queued": false,
+  "os": "Windows 10"
+}
