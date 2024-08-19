@@ -1,0 +1,187 @@
+{
+  "url": "https://www.credit-agricole.fr/particulier/compte/carte-bancaire/carte-mastercard-standard-debit-differe.html",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.18 Safari/537.36",
+  "cookies": [
+    {
+      "path": "/",
+      "name": "tc_last_RegistrationID",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": ""
+    },
+    {
+      "path": "/",
+      "name": "tc_env_tech_iframe",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "Production"
+    },
+    {
+      "path": "/",
+      "name": "TCPID",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "124811411276080705252"
+    },
+    {
+      "path": "/",
+      "name": "TC_PRIVACY",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "0%40009%7C86%7C3315%401%2C2%2C3%40%401724069489319%2C1724069489319%2C1739621489319%40"
+    },
+    {
+      "path": "/",
+      "name": "TC_PRIVACY_CENTER",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "1%2C2%2C3"
+    },
+    {
+      "path": "/",
+      "name": "isSNallowed",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "true"
+    },
+    {
+      "path": "/",
+      "name": "atuserid",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "%7B%22name%22%3A%22atuserid%22%2C%22val%22%3A%2285d94ec3-2c11-4c20-923e-af14207c90ff%22%2C%22options%22%3A%7B%22end%22%3A%222025-02-17T12%3A11%3A29.323Z%22%2C%22path%22%3A%22%2F%22%7D%7D"
+    },
+    {
+      "path": "/",
+      "name": "tc_privacy_ca",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "86%4085d94ec3-2c11-4c20-923e-af14207c90ff"
+    },
+    {
+      "path": "/",
+      "name": "at_check",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "true"
+    },
+    {
+      "path": "/",
+      "name": "TCID",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "124811411296857537462"
+    },
+    {
+      "path": "/",
+      "name": "TCSESSION",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "124811411291805501514"
+    },
+    {
+      "path": "/",
+      "name": "tc_cj_v2",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "m_iZZZ%22**%22%27%20ZZZKQLNJPSNRSNORZZZ%5D"
+    },
+    {
+      "path": "/",
+      "name": "tc_cj_v2_cmp",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": ""
+    },
+    {
+      "path": "/",
+      "name": "tc_cj_v2_med",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": ""
+    },
+    {
+      "path": "/",
+      "name": "__trossion",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "1724069489_1800_1__95219a6f-bfea-43e2-a618-0b1a5445fec0%3A1724069489_1724069489_2_"
+    },
+    {
+      "path": "/",
+      "name": "__troRUID",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "95219a6f-bfea-43e2-a618-0b1a5445fec0"
+    },
+    {
+      "path": "/",
+      "name": "mbox",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "session#71bfa69c7d8b4ee981fedbe12ce76a72#1724071350|PC#71bfa69c7d8b4ee981fedbe12ce76a72.37_0#1739848290"
+    },
+    {
+      "path": "/",
+      "name": "mboxEdgeCluster",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "37"
+    },
+    {
+      "path": "/",
+      "name": "__troSYNC",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T14:34:09Z",
+      "domain": ".credit-agricole.fr",
+      "value": "1"
+    }
+  ],
+  "with_favicon": true,
+  "allow_tracking": false,
+  "force": false,
+  "recapture_interval": 300,
+  "priority": 0,
+  "depth": 0,
+  "rendered_hostname_only": true,
+  "listing": true,
+  "not_queued": false,
+  "os": "Windows 10"
+}

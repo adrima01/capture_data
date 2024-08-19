@@ -2,16 +2,17 @@ import csv
 from csv import writer
 import zipfile
 from pylookyloo import Lookyloo
-from uuids_legitimate import uuids_amazon, uuids_ameli, uuids_amendes, uuids_atandt, uuids_credit_agricole
+from uuids_legitimate import uuids_amazon, uuids_ameli, uuids_amendes, uuids_atandt, uuids_credit_agricole, \
+    uuids_luxtrust, uuids_microsoft, uuids_netflix
 
 lookyloo = Lookyloo("http://0.0.0.0:5100/")
 
 if lookyloo.is_up:
     #name of the institution so that we do not have to change the paths in the code
-    institution = "credit_agricole"
+    institution = "netflix"
 
     #need to change the uuid list manually
-    for uuid in uuids_credit_agricole:
+    for uuid in uuids_netflix:
 
         #saving the capture in the corresponding folder
         zip_buffer = lookyloo.get_complete_capture(uuid)

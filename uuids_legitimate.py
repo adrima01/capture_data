@@ -80,6 +80,10 @@ uuids_atandt_done=[
 ]
 
 uuids_credit_agricole=[
+
+]
+
+uuids_credit_agricole_done=[
     "13926f7b-17aa-4cd5-860d-2dee146e65e7",
     "012cfde2-947d-4e86-a196-40b116eb3268",
     "4d5038d0-e213-4362-a5a3-0d86fa60105b",
@@ -97,6 +101,84 @@ uuids_credit_agricole=[
     "700abc66-c0cd-45de-9f6c-65a85174c5ad"
 ]
 
-uuids_credit_agricole_done=[
+uuids_luxtrust=[
+
+]
+
+uuids_luxtrust_done=[
+    "642f59a8-2217-43b3-a170-24612216d98f",
+    "23434c40-6433-4c6c-bf04-1d8c760dac3d",
+    "8ad572f5-4124-4378-bad7-439d3359e705",
+    "242425bd-a7f7-4c7e-8660-11a8a66e91d7",
+    "5e514e91-6231-40ca-9dd1-ad548b791ea0",
+    "0cc164d9-e15e-43b0-a9ef-1481f06638fb",
+    "f8db25ba-2906-477b-98d6-e128475f13fe",
+    "de2c5fed-bd53-48f6-9395-d5e93ded0d8a",
+    "899b7354-9a18-40de-902e-9f031713c3d5",
+    "62e41e66-d576-42f9-93ea-5e6403e53b22",
+    "482a3ec2-8a7e-4fe3-9536-f33e0996bc9f",
+    "3208ac6e-ddae-4da5-884e-ee78bdadb7c9",
+    "cbcc847e-b4f8-4a04-af41-06ad8411c320",
+    "7d551f4c-e7e0-423d-ab31-62f5e8a538ab",
+    "fb7db5d0-db3b-4101-a356-97920c98ce64"
+]
+
+uuids_microsoft=[
+
+]
+
+uuids_microsoft_done=[
+    "f7805022-7c39-493e-a1a3-8a9f9710c14d",
+    "d1297a5f-0ce5-4baa-bab6-6980c230da5a",
+    "d5bc7e21-568b-4187-af12-6e3d48a7aef0",
+    "36d66c39-d23b-42af-9027-07ccb63e70aa",
+    "61e20388-d3a4-48dd-81f3-3b071d1773af",
+    "cce5f2d5-4a3f-42e2-ae06-eaa2fe836c68",
+    "d5a1f1c5-cd37-4e17-8a73-087206f56318",
+    "63b3e059-118f-427f-9d92-f2b82d243e20",
+    "41e064fd-e690-4e76-a64a-b164c8c5ae93",
+    "b4357576-fb15-465c-9bbf-dc7c5d18e085",
+    "a940a4fb-6d77-4472-8473-644961bf8b95",
+    "17cd54fe-43bf-49f2-9af7-3531d9dd4b5d",
+    "c7ba1cbd-9407-4ea5-b327-51cc721dc6aa",
+    "643bcb93-8494-4253-88c1-c5eb05d5fd16",
+    "8cd7399f-17cc-4faf-ae65-01ce7d3360ce"
+]
+
+uuids_netflix=[
+    "6ac495d2-d62d-457c-b6bb-a6116fc94515",
+    "d810731b-7f4c-4415-bc37-5b442280b00a",
+    "fe8b6d22-ae54-489b-8cd9-020773df46e9",
+    "5b0037aa-7f46-4603-b464-6520850f4c4d",
+    "ebbc84e2-56b0-416b-9db0-86fa06dd5562",
+    "0893fb4e-3459-485d-856d-37fc0b4dec9b",
+    "514a22ad-5b63-457c-91ab-779658f4f5b6",
+    "6f835dbe-a636-4ac6-a715-eafcab3f8dd9",
+    "e655081b-314d-4329-aa80-38f8bb68d6e0",
+    "458a7bb2-945c-4db2-a7f9-45721e715e6d",
+    "92950041-c418-40de-b2a1-05d9140398ac",
+    "282cca44-2bde-4836-8318-f4ad6a0f646d",
+    "85bfbdb9-e3cc-4004-9c0a-ea506441e3c9",
+    "5d0c6987-26db-4510-8cbc-34ace6030a45",
+    "6d1496c0-4b79-4e3d-8ecd-e9300b89ab4e"
+]
+
+uuids_netflix_done=[
+
+]
+
+uuids_orange=[
+
+]
+
+uuids_orange_done=[
+
+]
+
+uuids_paypal=[
+
+]
+
+uuids_paypal_done=[
 
 ]
