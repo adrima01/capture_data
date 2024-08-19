@@ -1,54 +1,17 @@
 import csv
-import time
-import re
 from csv import writer
 import zipfile
-
-from bs4 import BeautifulSoup
 from pylookyloo import Lookyloo
-
-
-def finding_links(path: str) -> set:
-    soup = BeautifulSoup(path, "html.parser")
-    hrefs = {link.get("href") for link in soup.find_all("a")}
-    return hrefs
+from uuids_legitimate import uuids_amazon
 
 lookyloo = Lookyloo("http://0.0.0.0:5100/")
 
 if lookyloo.is_up:
     #name of the institution so that we do not have to change the paths in the code
-    institution = "amendes"
-
-    url = input("Enter an URL: ")
-    uuid = lookyloo.submit(url=url, quiet=True)
-    while lookyloo.get_status(uuid)['status_code'] != 1:
-        time.sleep(1)
-
-    csv_file = institution + '_uuids.csv'
-    with open(csv_file, 'a') as f_object:
-        writer_object = writer(f_object)
-        writer_object.writerow([institution])
-        writer_object.writerow([uuid])
-
-
-    html = lookyloo.get_html(uuid).read()
-    hrefs = finding_links(html)
-    hostname = lookyloo.get_info(uuid)['url']
-    count = 0
-    for href in hrefs:
-        if isinstance(href, str) and re.match("^/", href):
-            # putting together the url
-            new_url = hostname + href
-            new_uuid = lookyloo.submit(url=new_url, quiet=True)
-            count += 1
-            with open(csv_file, 'a') as f_object:
-                writer_object = writer(f_object)
-                writer_object.writerow([new_uuid])
-
-    print(f"{count} capture(s) ongoing")
+    institution = "amazon"
 
     #need to change the uuid list manually
-    """for uuid in uuids_netlfix:
+    for uuid in uuids_amazon:
 
         #saving the capture in the corresponding folder
         zip_buffer = lookyloo.get_complete_capture(uuid)
@@ -79,5 +42,4 @@ if lookyloo.is_up:
             writer_object = writer(f_object)
             writer_object.writerow([uuid])
             writer_object.writerow(lookyloo.get_takedown_information(uuid))
-            f_object.close()"""
-
+            f_object.close()
