@@ -146,6 +146,10 @@ uuids_microsoft_done=[
 ]
 
 uuids_netflix=[
+
+]
+
+uuids_netflix_done=[
     "6ac495d2-d62d-457c-b6bb-a6116fc94515",
     "d810731b-7f4c-4415-bc37-5b442280b00a",
     "fe8b6d22-ae54-489b-8cd9-020773df46e9",
@@ -163,20 +167,44 @@ uuids_netflix=[
     "6d1496c0-4b79-4e3d-8ecd-e9300b89ab4e"
 ]
 
-uuids_netflix_done=[
-
-]
-
 uuids_orange=[
 
 ]
 
 uuids_orange_done=[
-
+    "ff190c55-da30-4e7a-bda5-67fcb6bb509a",
+    "714fa7d0-3511-49e5-a624-4ff243edd979",
+    "97285488-342b-4ec9-ab44-f498bd260ed1",
+    "6f4bd4d5-29aa-418a-84ea-3d09c5b35c44",
+    "5bc94e05-3d8d-4181-9009-ee7db48f62d1",
+    "2ff580d5-3061-438d-b5d3-ff7bee6100d1",
+    "222affc3-7cc4-44d5-a802-92f39d854635",
+    "1a1a123f-765c-4241-9c78-4658b2b15e40",
+    "fdea47b3-f7a5-4134-963e-82a7facf7358",
+    "70c5d480-95c9-4374-b6a4-0234be3d1f42",
+    "9013c0ad-3a61-4c5e-a522-55fd9184651c",
+    "bead4481-a25f-4d84-8393-b78c8f95181c",
+    "08140600-3fd5-4f68-a56a-cde602d14513",
+    "a8f7cf02-e116-45ea-96a9-ca2ddaeb10b7",
+    "6b9ee092-ddee-4785-ae37-694ecd20d2d2"
 ]
 
 uuids_paypal=[
-
+    "f31c0b70-b927-489e-9fd4-fea778e627cb",
+    "cbd4eae9-097a-4919-9fc6-d706abff4af0",
+    "305bf5cf-2f95-450c-b7cf-0169b9146c96",
+    "64ab128c-9e71-4837-9044-260c2c90fd62",
+    "ca369562-b6c4-4c9f-8238-2bb956b3acb7",
+    "8fe6922f-8923-4b1b-a8d7-b87aade935f3",
+    "125ecaf6-436e-41a7-b4a1-99e8fe2f2288",
+    "07557083-731e-4e62-a148-cb59773345bc",
+    "45cb8516-da26-4105-b311-e57452a35868",
+    "ae9db33f-9ec1-436d-a63f-4886bb92d8a0",
+    "9ba7c583-dafd-4ac9-b862-2523e95d6107",
+    "b258e69e-7ae4-46e1-974c-d54360b99731",
+    "144b222e-d33f-4cc6-928d-3dcec41edac2",
+    "813cbab3-d92c-49cc-80e0-fa802322b742",
+    "8f1b5380-ae3a-4d47-acef-dd71bf3ff602"
 ]
 
 uuids_paypal_done=[

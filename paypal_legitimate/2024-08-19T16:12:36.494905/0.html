@@ -1,0 +1,1162 @@
+<!DOCTYPE html><html id="4de20d972f56c4a52c2973ff7587a43137717dfb" class="StudioLegacy Legacy" xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><title>
+	PayPal, Inc. - How We Work - Issues &amp; Advocacy
+</title><meta content="text/html; charset=UTF-8" http-equiv="Content-type"><meta content="RevealTrans(Duration=0,Transition=0)" http-equiv="Page-Enter"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="fz_QHfDY2EeO0oKOOXgk-xftut1ktcQ-wOK20vwHV5o" name="google-site-verification"><meta content="0Z6OhC4vfKdSCpQLCmCYg9EHhBORZV-YJ2uPZTcHL_E" name="google-site-verification"><!--[if lte IE 8]>
+<link id="respond-proxy" rel="respond-proxy" media="screen" href="//s202.q4cdn.com/805890769/files/js/respond-proxy.html" />
+<link id="respond-redirect" rel="respond-redirect" media="screen" href="https://about.pypl.com/js/respond.proxy.gif" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+<link type="image/x-icon" rel="icon" media="" href="//s202.q4cdn.com/805890769/files/favicon.ico">
+<link type="image/x-icon" rel="shortcut icon" media="" href="//s202.q4cdn.com/805890769/files/favicon.ico">
+<link rel="stylesheet" media="print" href="//s202.q4cdn.com/805890769/files/css/print.css">
+<link type="text/css" rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Paytone+One&amp;amp;display=swap">
+<link id="htmlGlobalLinkCss" type="text/css" rel="stylesheet" media="all" href="//s202.q4cdn.com/805890769/files/css/global.css?v=54497"><link id="htmlClientLinkCss" type="text/css" rel="stylesheet" media="all" href="//s202.q4cdn.com/805890769/files/css/client.css?v=54476"><link id="htmlLinkPrintCss" type="text/css" rel="stylesheet" media="print" href="//s202.q4cdn.com/805890769/files/css/print.css"><link id="htmlLinkEvergreenCss" type="text/css" rel="stylesheet" media="all" href="/css/evergreen/dist/default/evergreen.1.0.0.min.css"><link type="text/css" rel="stylesheet" href="/GlobalBranding.ashx"><script type="text/javascript" src="/js/module/widgets/dist/dependencies/evergreen.core.1.0.0.min.js"></script>
+<script type="text/javascript" src="/js/module/widgets/dist/dependencies/evergreen.app.1.0.0.min.js"></script>
+<script type="text/javascript" src="/js/module/widgets/dist/latest/evergreen.q4Api.min.js"></script>
+<script type="text/javascript" src="/js/module/widgets/dist/latest/evergreen.q4Pager.min.js"></script>
+<script type="text/javascript" src="/js/module/widgets/dist/latest/evergreen.q4Slideshow.min.js"></script>
+<script type="text/javascript" src="/js/typescript/dist/index.js"></script>
+<script type="text/javascript" src="/js/typescript/dist/q4CookieConsent/index.js"></script>
+<script type="text/javascript" src="//s202.q4cdn.com/805890769/files/js/q4.core.1.1.0.min.js"></script>
+<script type="text/javascript" src="//s202.q4cdn.com/805890769/files/js/q4.app.1.1.0.min.js"></script>
+<script type="text/javascript" src="https://widgets.q4app.com/widgets/q4.api.1.13.5.min.js"></script>
+<script type="text/javascript" src="//s202.q4cdn.com/805890769/files/js/pypl/PYPLCookieBanner.js"></script><script type="application/json" id="policy-data">{"policies":["CookieBanner"],"nonce":"","tenant":"paypal-about","policyData":{"country":"US","language":"en"}}</script><script src="https://www.paypalobjects.com/ncs/ncs.js"></script>
+<script type="text/javascript" src="//s202.q4cdn.com/805890769/files/js/pypl/CookiePreferences.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://about.pypl.com/js/respond.proxy.js"></script>
+<![endif]-->
+
+<script type="text/javascript">function GetGlobalBrandingOptions(){ return '{"dateFormat":{"moment":{"date":"MMMM D, YYYY","time":"h:mm A"},"datePicker":{"date":"MM d, yy"}}}'; }
+</script><script type="text/javascript">var trackingCodes = [];
+var ipSessStorageKey = 'ipApiInfo';
+// The Q4 Snowplow lib which Q4Blizzard utilises also makes a call to the ip-api and sets the info in LS.
+// So it's beneficial to check there too, to prevent redundant calls to ip-api.
+var q4SnowplowLib_ipLocStorageKey = 'q4spisp';
+var ipJsonStringified = sessionStorage.getItem(ipSessStorageKey) || localStorage.getItem(q4SnowplowLib_ipLocStorageKey);
+
+// Only load google analytics if we have tracking codes configured
+if (trackingCodes.length) {
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+}
+
+(function ($) {
+  const initialisedV4Codes = [];
+
+  function initGaTracking(isp, org) {
+    // Only load google analytics if we have tracking codes configured
+    if (!trackingCodes.length) return;
+
+    isp = isp || '(not set)';
+    org = org || '(not set)';
+    $.each(trackingCodes, function (i, data) {
+      if (data.qualifier === "Q4") {
+        ga('create', data.trackingCode, 'auto'); // Q4 tracker
+        ga('set', { 'dimension1': isp });
+        ga('set', { 'dimension2': org });
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Q4 tracker
+      } else if (data.qualifier === 'V4Client') {
+        // This is to prevent a script tag from being added more than once
+        if (initialisedV4Codes.indexOf(data.trackingCode) === -1) {
+          // Add gtag script to DOM
+          const gtagScriptTag = document.createElement("script");
+          gtagScriptTag.async = true;
+          gtagScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=" + data.trackingCode;
+          document.head.appendChild(gtagScriptTag);
+
+          // Instance this gtag
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          const secureCookieTag = 'SameSite=None;Secure';
+          gtag("js", new Date());
+          gtag('set', {cookie_flags: secureCookieTag});
+          gtag("config", data.trackingCode, { anonymize_ip: true });
+          initialisedV4Codes.push(data.trackingCode);
+        }
+      } else {
+        ga('create', data.trackingCode, 'auto', { 'name': data.qualifier }); // Client tracker
+        ga(data.qualifier + '.set', 'anonymizeIp', true);
+        ga(data.qualifier + '.send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Client tracker
+      }
+    });
+  }
+
+  if (ipJsonStringified) {
+    try {
+      var ipJsonParsed = JSON.parse(ipJsonStringified);
+      initGaTracking(ipJsonParsed.isp, ipJsonParsed.org);
+    } catch (e) {
+      console.error('Failed to JSON parse IP API session storage data\n', e);
+      initGaTracking();
+    }
+  } else {
+    $.getJSON('https://pro.ip-api.com/json/?key=6KddQSe576qrfNb&fields=isp,org')
+      .done(function (ipJson) {
+        sessionStorage.setItem(ipSessStorageKey, JSON.stringify(ipJson));
+        initGaTracking(ipJson.isp, ipJson.org);
+      })
+      .fail(function () {
+        initGaTracking();
+      });
+  }
+})(jQuery || $tudio);
+
+(function () {
+  Q4Blizzard.initProps({
+    appId: "Q4WebPaypal2022corpcr",
+    collectorUrl: "https://" + window.location.hostname + "/x0k461",
+    cookieName: "__uxq412__",
+    organizationId: "f785162c-e3aa-4b92-9623-67dfb0a3720b",
+    postPath: "/e6c1b/xc9",
+    productVersion: "5.132.2.2",
+    enableDOMListener: "False"
+  });
+
+  window.addEventListener("load", () => {
+    Q4Tracker.init("False");
+  });
+})();
+</script><script id="cookieMapping" src="https://www.paypalobjects.com/ncs/paypal-about/mapping.js"></script><script id="cookieMapping" src="https://www.paypalobjects.com/ncs/paypal-about/mapping.js"></script></head>
+<body style="margin: 0px" class="BodyBackground ccpaCookieBanner-acceptedAll">
+    <input name="hdnRedirectToLoginUrl" type="hidden" id="hdnRedirectToLoginUrl" value="https://login.q4inc.com/authorize?client_id=gKrDY1E9BUSWfU7DGuW2CO4rjdskiNg7&amp;pendoQ4PId=_q4pidval_&amp;projectId=studio&amp;step=login&amp;companyName=PayPal%2c+Inc.&amp;projectIdentifier=PayPal%2c+Inc.&amp;mainColor=%230F5CA3&amp;scope=openid+profile+email&amp;helpUrl=https%3a%2f%2fhelp.events.q4inc.com%2fen%2fir-website.html&amp;response_type=code&amp;response_mode=query&amp;nonce=XIeqPgnGbthGHq7eBitg6ARFOuc&amp;skipUrl=https%3a%2f%2fabout.pypl.com%2fhow-we-work%2fissues-and-advocacy%2fdefault.aspx&amp;userEmail=_q4lemail_&amp;redirect_uri=https%3a%2f%2fauth.platform.q4inc.com%2fauth%2fpublicAuthRedirect%3fstate%3deyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5VcmwiOiJodHRwczovL2Fib3V0LnB5cGwuY29tL2hvdy13ZS13b3JrL2lzc3Vlcy1hbmQtYWR2b2NhY3kvZGVmYXVsdC5hc3B4IiwiZXhwIjoxNzI5MjY0NjA0LjAsImlhdCI6MTcyNDAwNTAwNC4wLCJpc3MiOiJRNC5XZWIuUHVibGljLlNpdGUiLCJhdWQiOiJ1cHN0cmVhbS5jZG4ud2ViLnByZC5xNGluYy5jb20ifQ.sJ0ddT1-W9DRpwO_cecspbFWeJdtf2XlAe_Bo3Fk_qI">
+
+    <input type="hidden" id="__RequestVerificationToken">
+    
+    
+    <div id="pageClass" class="Sectionhow-we-work PageDefault PageHowWeWorkIssuesAdvocacy LayoutOneColumnLayout Languageen-US Sectionpage-how-we-work section-how-we-work page-issue-adv">
+        <div class="PageDefaultInner">
+            <div id="litPageDiv" class="PageHowWeWorkIssuesampAdvocacy SectionHowWeWorkIssuesampAdvocacy ParentSection_how-we-work">
+                
+                <form action="default.aspx" method="post" id="fmForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['fmForm1'];
+if (!theForm) {
+    theForm = document.fmForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function GetViewType(){ return '2'; }
+function GetRevisionNumber(){ return '1'; }
+function GetLanguageId(){ return '1'; }
+function GetVersionNumber(){ return '5.132.2.2'; }
+function GetPoweredBy(){return 'q4inc';}
+function GetViewDate(){{ return ''; }}
+function GetSignature(){{ return ''; }}
+//]]>
+</script>
+
+                    
+                    
+                    
+<div class="layout layout--one-column js--header-small">
+    <div class="layout_inner">
+        <div class="layout_header">
+            <div class="pane pane--header grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPaneDiv"><span class="HeaderPaneDiv1"><div id="_ctrl0_ctl06_divModuleContainer" class="module module-embed module-skip">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a class="module-skip_link" href="#maincontent">Skip to main content</a>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv2"><div id="_ctrl0_ctl09_divModuleContainer" class="module module-embed module-logo grid_col grid_col--1-of-6 grid_col--lc-1-of-2 grid_col--md-1-of-2 grid_col--sm-3-of-4">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="dark">
+    <a href="/">
+        <span class="background-dark"><img src="//s202.q4cdn.com/805890769/files/design/logos/paypal_logo_white.png" alt="PayPal Logo"></span>
+<!--         <span class="background-light"><img src="//s202.q4cdn.com/805890769/files/design/logos/About-logo.svg" alt="PayPal Logo"></span> -->
+              <span class="background-light"><img src="//s202.q4cdn.com/805890769/files/design/logos/About-logo.png" alt="PayPal Logo"></span>
+    </a>
+</div>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv3"><nav class="nav nav--main grid_col grid_col--5-of-6"><ul class="level1 sf-js-enabled" style="touch-action: pan-y;">
+	<li class="has-children"><a href="https://about.pypl.com/who-we-are/default.aspx" class="sf-with-ul">Who We Are</a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/who-we-are/mission-vision-values/default.aspx">Mission &amp; Values</a></li><li><a href="https://about.pypl.com/who-we-are/history-and-facts/default.aspx">History &amp; Facts</a></li><li><a href="https://about.pypl.com/who-we-are/executive-leadership/default.aspx">Executive Leadership</a></li><li><a href="https://investor.pypl.com/governance/board-of-directors/default.aspx" target="_blank">Board of Directors</a></li>
+	</ul></li><li class="has-children expanded"><a href="https://about.pypl.com/how-we-work/default.aspx" class="sf-with-ul">How We Work</a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/how-we-work/trust-and-privacy/default.aspx">Trust &amp; Privacy</a></li><li><a href="https://about.pypl.com/how-we-work/responsible-business-practices/default.aspx">Responsible Business Practices</a></li><li><a href="https://about.pypl.com/how-we-work/employees-and-culture/default.aspx">Employees &amp; Culture</a></li><li class="selected"><a href="https://about.pypl.com/how-we-work/issues-and-advocacy/default.aspx">Issues &amp; Advocacy</a></li><li><a href="https://about.pypl.com/how-we-work/reporting/default.aspx">Reporting &amp; Other Resources</a></li>
+	</ul></li><li class="has-children"><a href="/our-impact/Communities" class="sf-with-ul">Our Impact </a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/our-impact/customers/default.aspx">Customers</a></li><li class="has-children"><a href="https://about.pypl.com/our-impact/Communities/default.aspx" class="sf-with-ul">Communities</a><ul class="level3" style="display: none;">
+			<li><a href="https://about.pypl.com/our-impact/Communities/powering-giving/default.aspx">Enabling Generosity</a></li><li><a href="https://about.pypl.com/our-impact/Communities/strengthening-communities/default.aspx">Strengthening Communities</a></li><li><a href="https://about.pypl.com/our-impact/Communities/environmental-sustainability/default.aspx">Environmental Sustainability</a></li>
+		</ul></li>
+	</ul></li><li><a href="https://investor.pypl.com/home/default.aspx" target="_blank">Investors</a></li><li><a href="https://newsroom.paypal-corp.com/" target="_blank">Newsroom</a></li><li><a href="https://www.paypal.com/us/webapps/mpp/jobs" target="_blank">Work With Us</a></li>
+</ul></nav></span><span class="HeaderPaneDiv4"><div id="_ctrl0_ctl15_divModuleContainer" class="module module-search" role="search">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl15_lblTitle" class="module_title" tabindex="0" aria-expanded="false"><span id="_ctrl0_ctl15_lblModuleTitle" class="ModuleTitle"><span class="sr-only">Site Search</span><span class="q4-icon_search"></span></span></h2>
+        <div class="module_container module_container--inner" aria-hidden="true">
+            <span id="_ctrl0_ctl15_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl15$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl15_txtSearchInput" class="module_input module-search_input" title="Search query" placeholder="Search" value="">
+            <input type="submit" name="_ctrl0$ctl15$btnSearch" value="Search" id="_ctrl0_ctl15_btnSearch" class="module_button module-search_button">
+            
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv5"><div id="_ctrl0_ctl18_divModuleContainer" class="module module-embed layout_toggle grid_col grid_col--1-of-1 grid_col--sm-1-of-4">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_menu1" tabindex="0" aria-expanded="false"></i>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--banner grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPane2Div6"><div id="_ctrl0_ctl21_divModuleContainer" class="module module-page-title">
+    <div class="module_container module_container--outer">
+        <div class="module_container module_container--inner">
+            <h1>Issues &amp; Advocacy</h1>
+        </div>
+    </div>
+</div></span><span class="HeaderPane2Div1"><div id="_ctrl0_ctl51_divModuleContainer" class="module module-html module-banner-text">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <p>PayPal is engaged on a wide range of public policy issues around the world — working with governments, regulators, the private sector, academia, and others to promote the interests of customers, employees, and communities. </p>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--navigation">
+                <div class="pane_inner"><span class="NavigationPaneDiv7"><div id="_ctrl0_ctl24_divModuleContainer" class="module module-breadcrumb">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="https://about.pypl.com/about-us/default.aspx" id="_ctrl0_ctl24_hrefHome" class="module-breadcrumb_home-link">About Us</a>
+            
+                    <span id="_ctrl0_ctl24_repeaterLinks_ctl00_lblSeparator" class="module-breadcrumb_separator">•</span>
+                    <a id="_ctrl0_ctl24_repeaterLinks_ctl00_link" href="https://about.pypl.com/how-we-work/default.aspx">How We Work</a>
+                    
+                
+                    <span id="_ctrl0_ctl24_repeaterLinks_ctl01_lblSeparator" class="module-breadcrumb_separator">•</span>
+                    
+                    Issues &amp; Advocacy
+                
+        </div>
+    </div>
+</div></span><span class="NavigationPaneDiv8"><nav class="nav nav--secondary"><ul class="level1 sf-js-enabled" style="touch-action: pan-y;">
+	<li class="has-children"><a href="https://about.pypl.com/who-we-are/default.aspx" class="sf-with-ul">Who We Are</a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/who-we-are/mission-vision-values/default.aspx">Mission &amp; Values</a></li><li><a href="https://about.pypl.com/who-we-are/history-and-facts/default.aspx">History &amp; Facts</a></li><li><a href="https://about.pypl.com/who-we-are/executive-leadership/default.aspx">Executive Leadership</a></li><li><a href="https://investor.pypl.com/governance/board-of-directors/default.aspx" target="_blank">Board of Directors</a></li>
+	</ul></li><li class="has-children expanded"><a href="https://about.pypl.com/how-we-work/default.aspx" class="sf-with-ul">How We Work</a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/how-we-work/trust-and-privacy/default.aspx">Trust &amp; Privacy</a></li><li><a href="https://about.pypl.com/how-we-work/responsible-business-practices/default.aspx">Responsible Business Practices</a></li><li><a href="https://about.pypl.com/how-we-work/employees-and-culture/default.aspx">Employees &amp; Culture</a></li><li class="selected"><a href="https://about.pypl.com/how-we-work/issues-and-advocacy/default.aspx">Issues &amp; Advocacy</a></li><li><a href="https://about.pypl.com/how-we-work/reporting/default.aspx">Reporting &amp; Other Resources</a></li>
+	</ul></li><li class="has-children"><a href="/our-impact/Communities" class="sf-with-ul">Our Impact </a><ul class="level2" style="display: none;">
+		<li><a href="https://about.pypl.com/our-impact/customers/default.aspx">Customers</a></li><li class="has-children"><a href="https://about.pypl.com/our-impact/Communities/default.aspx" class="sf-with-ul">Communities</a><ul class="level3" style="display: none;">
+			<li><a href="https://about.pypl.com/our-impact/Communities/powering-giving/default.aspx">Enabling Generosity</a></li><li><a href="https://about.pypl.com/our-impact/Communities/strengthening-communities/default.aspx">Strengthening Communities</a></li><li><a href="https://about.pypl.com/our-impact/Communities/environmental-sustainability/default.aspx">Environmental Sustainability</a></li>
+		</ul></li>
+	</ul></li><li><a href="https://investor.pypl.com/home/default.aspx" target="_blank">Investors</a></li><li><a href="https://newsroom.paypal-corp.com/" target="_blank">Newsroom</a></li><li><a href="https://www.paypal.com/us/webapps/mpp/jobs" target="_blank">Work With Us</a></li>
+</ul></nav></span><span class="NavigationPaneDiv9"><div id="_ctrl0_ctl30_divModuleContainer" class="module module-search" role="search">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl30_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl30$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl30_txtSearchInput" class="module_input module-search_input" title="Search query" placeholder="Search" value="">
+            <input type="submit" name="_ctrl0$ctl30$btnSearch" value="Search" id="_ctrl0_ctl30_btnSearch" class="module_button module-search_button">
+            
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+        <div class="layout_content" id="maincontent">
+            <div class="pane pane--breadcrumb">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--left">
+                <div class="pane_inner"><span class="LeftPaneDiv"></span></div>
+            </div>
+            <div class="pane pane--content">
+                <div class="pane_inner"><span class="ContentPaneDiv"><span class="ContentPaneDiv2"><div id="_ctrl0_ctl54_divModuleContainer" class="module module-html module-policy-priorities">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_containner--grid grid">
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 container--text grid_col--am text-left">
+        <div class="container--text-wrap">
+<!--p>
+We empower entrepreneurs and small businesses to participate in the global economy. Our <a href="https://publicpolicy.paypal-corp.com/" target="_blank">PayPal advocacy group</a> engages with policymakers around the world to make moving money, selling and shopping, simple, personalized and secure.   
+</p>
+<p>
+We are actively involved in supporting policies that align with our values and advance our mission to revolutionize commerce, as well as promoting the issues that matter to employees, customers, and communities. As a financial services leader, we are committed to thought leadership that explores the products and solutions that can help people join and thrive in the global economy. 
+</p-->
+
+<p>At PayPal, our mission is to revolutionize commerce globally. Central to that work is fostering trusted relationships with global policymakers, regulatory authorities, nonprofit organizations, and other stakeholders. Our efforts are focused on driving sustainable growth for the communities we serve by protecting the integrity of the financial system and enhancing economic opportunities for our customers.</p>
+<p>PayPal's Global Government Relations team leads collaborative and forward-thinking engagement with policymakers worldwide to advance PayPal’s mission. Our comprehensive approach to our policy priority areas reflects our commitment to our customers on critical issues in the financial ecosystem. By engaging with policymakers across the world, we aim to empower individuals and businesses, driving inclusive economic growth on a global scale.</p>
+        </div>
+    </div>
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 container--image grid_col--am text-right">
+        <img src="//s202.q4cdn.com/805890769/files/design/Issues-Advocacy-Image-1.jpg" alt="Issues-Advocacy-Image-1">
+    </div>
+
+
+<!--div class="grid_col grid_col--1-of-1 background--grey grid_col--rounded priorities-list">
+  <h3 class="module_inner-heading">Our Policy Priorities</h3>
+            <div class="module_description">
+                <ul class="list list--regular-font">
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/anti-money-laundering-know-your-customer" target="_blank">Anti-Money Laundering </a></li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/financial-participation-health" target="_blank">Financial Participation and Health</a></li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/remittances" target="_blank">Remittances</a>
+                </li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/cross-border-trade" target="_blank">Cross-Border Trade</a></li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/mobile-payments" target="_blank">Mobile
+                        Payments</a></li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/small-business-lending" target="_blank">Small
+                        Business Lending</a></li>
+            </div>
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/cybersecurity" target="_blank">Cybersecurity</a></li>
+            </div>
+          
+          
+            <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-1">
+                <li><a href="https://publicpolicy.paypal-corp.com/issues/privacy" target="_blank">Privacy</a></li>
+            </div>
+          
+           
+        </ul>
+            </div>
+
+</div-->
+
+<div class="grid_col grid_col--1-of-1 background--grey grid_col--rounded priorities-list">
+  <h3 class="module_title" style="text-align: center">Our Policy Priorities</h3>
+    <div class="module_description module--priority-grid">
+        <div class="module_container--grid grid">
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2 module_wrap_item">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                    <img src="//s202.q4cdn.com/805890769/files/design/2024/innovative-blue.png" alt="Future of Money graphic image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading">The Future of Money</h3>
+                    <p>Modernizing payment systems across the globe through new policy frameworks, digital currencies, and cross-border payment initiatives.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2 module_wrap_item">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                    <img src="//s202.q4cdn.com/805890769/files/design/2024/expand-global-blue.png" alt="Cross border Trade Enablement graphic image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading">Cross-Border Trade Enablement</h3>
+                    <p>Facilitating seamless and secure international trade by advocating for policies that break down barriers and streamline processes for businesses and consumers alike.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2 module_wrap_item">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                    <img src="//s202.q4cdn.com/805890769/files/design/2024/seller-profile-blue.png" alt="Small Business Empowerment graphic image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading">Small Business Empowerment</h3>
+                    <p>Supporting the growth and sustainability of small enterprises through innovative policies and initiatives that provide them with the tools and resources they need to thrive.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2 module_wrap_item">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                    <img src="//s202.q4cdn.com/805890769/files/design/2024/protection-blue.png" alt="Data Security and Privacy graphic image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading">Data Security and Privacy</h3>
+                    <p>Safeguarding consumer data and promoting responsible approaches to AI and data governance with security and privacy by design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2 module_wrap_item">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                    <img src="//s202.q4cdn.com/805890769/files/design/2024/manage-risk-blue.png" alt="Fraud Prevention and Protection graphic image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading">Fraud Prevention and Protection</h3>
+                    <p>Ensuring the highest standards of security and trust in financial transactions by working with key stakeholders to implement robust measures against fraud and cyber threats.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_col grid_col--1-of-3 grid_col--md-1-of-2">
+            <div class="module_item--wrap">
+                <div class="module_item--image">
+                </div>
+                <div class="module_item--text">
+                    <h3 class="item_heading"></h3>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+</div>
+</div>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv3"><div id="_ctrl0_ctl57_divModuleContainer" class="module module-html dark background--brand module-political-transparency">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_containner--grid grid">
+
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am container--image">
+        <img src="//s202.q4cdn.com/805890769/files/images/vaues_in_action/1701222685613.jpg" alt="picture of an iphone featuring a screengrab from a paypal app">
+    </div>
+
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am   container--text">
+        <div class="container--text-wrap">
+             <h3 class="module_title">Political Transparency</h3>
+            <div class="module_description">
+                <p>We believe it is important to disclose our lobbying and political activity in a clear and transparent fashion. We provide updates on PayPal's political contributions and expenditures, trade association memberships, and lobbying information, as well as our internal policies regarding these activities.</p>
+                <p><a href="/how-we-work/reporting/default.aspx" class="module_link-more" target="_blank">Political Transparency Reporting</a></p>
+                <p><a href="//s202.q4cdn.com/805890769/files/doc_downloads/politicalTransparency/2024/Political-Engagement-and-Transparency-Policy-2.pdf" class="module_link-more" target="_blank">PayPal’s Political Engagement and Transparency Policy</a></p>
+            </div>
+            </div>
+        </div>
+
+
+
+    </div>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv4"><div id="_ctrl0_ctl60_divModuleContainer" class="module module-html module-policy-priorities">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_containner--grid grid">
+
+
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am   container--text">
+        <div class="container--text-wrap">
+             <h3 class="module_title">PayPal’s Advocacy</h3>
+            <div class="module_description">
+                <p>We share our perspectives on the policy issues impacting the future of money on the PayPal Newsroom and in our archive of consultation responses.</p>
+                <p><a href="https://newsroom.paypal-corp.com/stories-public-policy" class="module_link-more" target="_blank">Public Policy News</a></p>
+                <p><a href="https://newsroom.paypal-corp.com/Consultation-Responses" class="module_link-more" target="_blank">Consultation Responses </a></p>
+            </div>
+            </div>
+        </div>
+
+
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am container--image">
+        <img src="//s202.q4cdn.com/805890769/files/design/Issues-Advocacy-Image-3.png" alt="picture of an iphone featuring a screengrab from a paypal app">
+    </div>
+
+    </div>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv5"><div id="_ctrl0_ctl63_divModuleContainer" class="module module-html module-policy-priorities dark background--brand">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_containner--grid grid">
+
+<div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am container--image">
+	  <img src="//s202.q4cdn.com/805890769/files/images/vaues_in_action/2024/invest-in-next-gen.png" alt="Advancing women's economic equity and empowerment">
+</div>
+
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 grid_col--am   container--text">
+        <div class="container--text-wrap">
+             <h3 class="module_title">Advancing women's economic equity and empowerment</h3>
+            <div class="module_description">
+                <!--p>We promote the role of women in the financial system and advance economic equity through our resources, platforms, and tools. As the private sector lead for the Economic Justice and Rights Action Coalition of the U.N. Women’s Generation Equality Forum, PayPal&nbsp;<a href="https://newsroom.paypal-corp.com/2021-06-30-PayPal-Commits-Over-100-Million-to-Advance-Financial-Inclusion-and-Economic-Empowerment-of-Women-and-Girls" target="_blank">committed $108 million</a>&nbsp;to advance financial inclusion and economic empowerment for women and girls by 2026.</p>
+                <p>PayPal employees serve as mentors for women entrepreneurs from low- and middle- income countries around the world as part of our partnership with the&nbsp;<a href="https://cherieblairfoundation.org/" target="_blank">Cherie Blair Foundation for Women</a>.</p-->
+                <p>We believe improving the economic lives of women globally can empower their families, communities, and the overall economy. PayPal has made several notable investments toward advancing access to finance for women and girls around the world through employee volunteering, partnerships, grantmaking and internal evaluation of the company's policies and benefits.&nbsp;</p>
+                <p>As part of this ongoing work, PayPal has completed more than 32,000 employee volunteer hours with organizations that support women and girls such as Black Girl Ventures, Her Academy, Narika, The Cherie Blair Foundation for Women, and more.</p>
+                <p>The company has also partnered with Women’s World Banking to fund technical assistance and research on critical topics such as identifying gender biases in credit scoring.</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv6"><div id="_ctrl0_ctl66_divModuleContainer" class="module module-embed module-additional-resources module-additional-resources-images  background--grey">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <h3 class="module_title">Additional Resources</h3>
+<div class="module_container--widget module-boxes_container"><div class="module-boxes_container grid grid--flex"><div class="grid_col grid_col--1-of-3 grid_col--lc-1-of-2 grid_col--md-1-of-1 module_item-box"><div class="module_item-box--wrap"><div class="module_item-box_image-thumb"><img src="https://s202.q4cdn.com/805890769/files/images/vaues_in_action/icons/download-blue.png"></div><div class="module_item-box_text"><h5 class="item-box_heading">Policies to Improve Financial Health and Expand Economic Opportunity in America</h5><a class="module_link-more" href="https://s202.q4cdn.com/805890769/files/doc_downloads/2022/PayPal-Global-Public-Policy-and-Research-Policies-to-Improve-Financial-Health-and-Expand-Economic-Opportunity-in-America-May.zip" target="_blank"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div><div class="grid_col grid_col--1-of-3 grid_col--lc-1-of-2 grid_col--md-1-of-1 module_item-box"><div class="module_item-box--wrap"><div class="module_item-box_image-dl"><img src="https://s202.q4cdn.com/805890769/files/images/vaues_in_action/icons/download-blue.png"></div><div class="module_item-box_text"><h5 class="item-box_heading">Reducing the Racial Financial Health Gap: The Opportunity for Responsible Fintech</h5><a class="module_link-more" href="https://publicpolicy.paypal-corp.com/sites/default/files/2021-11/PP-Reducing-the-Racial-Financial-Health-Gap.pdf" target="_blank"><span class="module_link-text">Download PDF</span><span class="sr-only">(opens in new window)</span></a></div></div></div><div class="grid_col grid_col--1-of-3 grid_col--lc-1-of-2 grid_col--md-1-of-1 module_item-box"><div class="module_item-box--wrap"><div class="module_item-box_image-dl"><img src="https://s202.q4cdn.com/805890769/files/images/vaues_in_action/icons/download-blue.png"></div><div class="module_item-box_text"><h5 class="item-box_heading">Alternative SMB Financing: Fueling Underserved Entrepreneurs</h5><a class="module_link-more" href="https://s202.q4cdn.com/805890769/files/doc_downloads/additional_resources/Alternative_SMB_Financing_Fueling_Underserved_Entrepreneurs.pdf" target="_blank"><span class="module_link-text">Download PDF</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div></div>
+
+<script>
+$('.module-additional-resources .module_container--widget').downloads({
+    usePublic: GetViewType() != "0",
+    append: false,
+    downloadType: 'Additional resources Issues',
+    showAllYears: true,
+    template: (
+        /* beautify preserve:start */
+      '<div class="module-boxes_container grid grid--flex">'+
+                '{{#items}}' +
+                    '<div class="grid_col grid_col--1-of-3 grid_col--lc-1-of-2 grid_col--md-1-of-1 module_item-box">'+
+                        '<div class="module_item-box--wrap">'+
+      '{{#pdfLink}}'+
+                            // '<div class="module_item-box_image module_item-box_image-dl"></div>'+
+                            '<div class="module_item-box_image-dl"><img src="{{thumb}}"></div>'+
+
+        '{{/pdfLink}}'+
+        '{{^pdfLink}}'+
+        // '<div class="module_item-box_image"></div>'+
+        '<div class="module_item-box_image-thumb"><img src="{{thumb}}"></div>'+
+        '{{/pdfLink}}'+
+                            '<div class="module_item-box_text">'+
+                                '<h5 class="item-box_heading">{{{title}}}</h5><a class="module_link-more" href="{{url}}"{{#blank}} target="_blank"{{/blank}}>' +
+                                  '{{#pdfLink}}'+ 
+                                   '<span class="module_link-text">Download PDF</span>' +
+        '{{/pdfLink}}'+
+        '{{^pdfLink}}'+
+         '<span class="module_link-text">Read more</span>' +
+        '{{/pdfLink}}'+
+                                    '{{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}'+
+                                '</a>' +'</div>'+
+                        '</div>'+
+                    '</div>'+
+                '{{/items}}' +
+            '</div>'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+    $.each(data.items, function(idx, item) {
+        var url = item.url.toLowerCase().split('.');
+
+        if ( url[url.length-1] == 'pdf' ) {
+            item.blank = true;
+            item.pdfLink=true;
+        }
+        
+        if (url.indexOf('aspx') == -1) {
+            item.blank = true;
+        }
+    });
+    },
+});
+</script>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv7"><div id="_ctrl0_ctl69_divModuleContainer" class="module module-embed module-featured-stories module-featured-stories-issues background--brand">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl69_lblTitle" class="module_title"><span id="_ctrl0_ctl69_lblModuleTitle" class="ModuleTitle">Featured Stories</span></h2>
+        <div class="module_container module_container--inner">
+            <div class="module_container--widget module-boxes_container slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous Slide" type="button" style=""><span class="sr-only">Previous Slide</span></button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 6210px; transform: translate3d(-1242px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">August 25, 2022</span><h5 class="item-box_heading" "="">PayPal Launches Grant Payments, Enabling Charities to Quickly Receive Funds from Grantmakers</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-08-25-PayPal-Launches-Grant-Payments,-Enabling-Charities-to-Quickly-Receive-Funds-from-Grantmakers" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">July 28, 2022</span><h5 class="item-box_heading" "="">PayPal Joins the Economic Opportunity Coalition as Founding Member to Align Historic Investments in Underserved Communities</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-07-28-PayPal-Joins-the-Economic-Opportunity-Coalition-as-Founding-Member-to-Align-Historic-Investments-in-Underserved-Communities" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">January 30, 2022</span><h5 class="item-box_heading" "="">How We Strengthened our Communities in 2022</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/1-30-2023-How-We-Strengthened-our-Communities-in-2022" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 414px;" id="slick-slide00"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">March 8, 2023</span><h5 class="item-box_heading" "="">Advancing Economic Equity for Women and Girls: How PayPal is Helping to Create a More Inclusive Future</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2023-03-08-How-PayPal-is-Helping-to-Create-a-More-Inclusive-Future" target="_blank" tabindex="0"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 414px;" id="slick-slide01"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">November 1, 2022</span><h5 class="item-box_heading" "="">PayPal Announces Recipients of Second Annual Maggie Lena Walker Award</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-11-01-PayPal-Announces-Recipients-of-Second-Annual-Maggie-Lena-Walker-Award" target="_blank" tabindex="0"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 414px;" id="slick-slide02"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">October 25, 2022</span><h5 class="item-box_heading" "="">Inclusive Hiring: Building Opportunity for Returning Citizens</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-10-25-Inclusive-Hiring-Building-Opportunity-for-Returning-Citizens" target="_blank" tabindex="0"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 414px;" tabindex="-1" id="slick-slide03"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">August 25, 2022</span><h5 class="item-box_heading" "="">PayPal Launches Grant Payments, Enabling Charities to Quickly Receive Funds from Grantmakers</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-08-25-PayPal-Launches-Grant-Payments,-Enabling-Charities-to-Quickly-Receive-Funds-from-Grantmakers" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 414px;" tabindex="-1" id="slick-slide04"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">July 28, 2022</span><h5 class="item-box_heading" "="">PayPal Joins the Economic Opportunity Coalition as Founding Member to Align Historic Investments in Underserved Communities</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-07-28-PayPal-Joins-the-Economic-Opportunity-Coalition-as-Founding-Member-to-Align-Historic-Investments-in-Underserved-Communities" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 414px;" tabindex="-1" id="slick-slide05"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">January 30, 2022</span><h5 class="item-box_heading" "="">How We Strengthened our Communities in 2022</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/1-30-2023-How-We-Strengthened-our-Communities-in-2022" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">March 8, 2023</span><h5 class="item-box_heading" "="">Advancing Economic Equity for Women and Girls: How PayPal is Helping to Create a More Inclusive Future</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2023-03-08-How-PayPal-is-Helping-to-Create-a-More-Inclusive-Future" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">November 1, 2022</span><h5 class="item-box_heading" "="">PayPal Announces Recipients of Second Annual Maggie Lena Walker Award</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-11-01-PayPal-Announces-Recipients-of-Second-Annual-Maggie-Lena-Walker-Award" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">October 25, 2022</span><h5 class="item-box_heading" "="">Inclusive Hiring: Building Opportunity for Returning Citizens</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-10-25-Inclusive-Hiring-Building-Opportunity-for-Returning-Citizens" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">August 25, 2022</span><h5 class="item-box_heading" "="">PayPal Launches Grant Payments, Enabling Charities to Quickly Receive Funds from Grantmakers</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-08-25-PayPal-Launches-Grant-Payments,-Enabling-Charities-to-Quickly-Receive-Funds-from-Grantmakers" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">July 28, 2022</span><h5 class="item-box_heading" "="">PayPal Joins the Economic Opportunity Coalition as Founding Member to Align Historic Investments in Underserved Communities</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/2022-07-28-PayPal-Joins-the-Economic-Opportunity-Coalition-as-Founding-Member-to-Align-Historic-Investments-in-Underserved-Communities" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 414px;" tabindex="-1"><div><div class="module_item-box" style="width: 100%; display: inline-block;"><div class="module_item-box--wrap background--light"><span class="item-date">January 30, 2022</span><h5 class="item-box_heading" "="">How We Strengthened our Communities in 2022</h5><a class="module_link-more" href="https://newsroom.paypal-corp.com/1-30-2023-How-We-Strengthened-our-Communities-in-2022" target="_blank" tabindex="-1"><span class="module_link-text">Read more</span><span class="sr-only">(opens in new window)</span></a></div></div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next Slide" type="button" style=""><span class="sr-only">Next Slide</span></button><ul class="slick-dots" style=""><li class="slick-active"><button type="button" id="slick-slide-control00" aria-label="Slide 1 of 2"><span class="sr-only">Slide 1</span></button></li><li><button type="button" id="slick-slide-control01" aria-label="Slide 2 of 2"><span class="sr-only">Slide 2</span></button></li></ul></div>
+
+<script>
+$('.module-featured-stories .module_container--widget').downloads({
+    usePublic: GetViewType() != "0",
+    append: false,
+     dateFormat: 'MM d, yy',
+    downloadType: 'Featured stories Issues',
+    showAllYears: true,
+    template: (
+        /* beautify preserve:start */
+                '{{#items}}' +
+                    '<div class="module_item-box">'+
+                        '<div class="module_item-box--wrap background--light">'+
+        '<span class="item-date">{{date}}</span>'+
+                            '<h5 class="item-box_heading"">{{{title}}}</h5>'+
+                            '<a class="module_link-more" href="{{url}}" target="_blank">' +
+                                '<span class="module_link-text">Read more</span>' +
+                                '<span class="sr-only">(opens in new window)</span>'+
+                            '</a>' +
+                        '</div>'+
+                    '</div>'+
+                '{{/items}}' 
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+    $.each(data.items, function(idx, item) {
+        var url = item.url.toLowerCase().split('.');
+
+        if ( url[url.length-1] == 'pdf' ) {
+            item.blank = true;
+        }
+        
+        if (url.indexOf('aspx') == -1) {
+            item.blank = true;
+        }
+    });
+    },
+    complete: function(e) {
+        $(e.target).slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: false,
+            arrows: true,
+            dots: true,
+            responsive: [{
+                breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }]
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--right">
+                <div class="pane_inner"><span class="RightPaneDiv"></span></div>
+            </div>
+        </div>
+        <div class="layout_footer" role="contentinfo">
+            <div class="pane pane--footer grid--no-gutter">
+                <div class="pane_inner"><span class="FooterPaneDiv"><span class="FooterPaneDiv10"><div id="_ctrl0_ctl33_divModuleContainer" class="module module-embed grid_col grid_col--2-of-12 grid_col--lg-1-of-1">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module-logo">
+    <a href="/"><img src="//s202.q4cdn.com/805890769/files/design/logos/PayPal_LOGO.png" alt="PayPal Logo"></a>
+</div>
+<div class="module-action">
+    <a href="https://www.paypal.com/us/webapps/mpp/jobs" target="_blank" class="button button--inverted">Work With Us</a>
+</div>
+        </div>
+    </div>
+</div></span><span class="FooterPaneDiv11"><div id="_ctrl0_ctl36_divModuleContainer" class="module module-embed module-footer-nav grid_col grid_col--8-of-12 grid_col--lg-1-of-1 ">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_container--nav">
+    <nav class="nav nav--footer">
+        <ul class="level1 sf-js-enabled" style="touch-action: pan-y;">
+            <li class="has-children">
+                <a href="/who-we-are/default.aspx" class="nav--footer_heading-link sf-with-ul">Who We Are</a>
+                <ul class="level2" style="display: none;">
+                    <li><a href="/who-we-are/mission-vision-and-values/default.aspx">Mission &amp; Values</a></li>
+                    <li><a href="/who-we-are/history-and-facts/default.aspx">History &amp; Facts</a></li>
+                    <li><a href="/who-we-are/executive-leadership/default.aspx">Executive Leadership</a></li>
+                    <li><a href="https://investor.pypl.com/governance/board-of-directors/default.aspx" target="_blank">Board of Directors</a></li>
+                    <!--<li><a href="/who-we-are/family-of-brands/default.aspx">Family of Brands</a></li>-->
+                   
+                </ul>
+            </li>
+            <li class="has-children">
+                <a href="/how-we-work/default.aspx" class="nav--footer_heading-link sf-with-ul">How We Work</a>
+                <ul class="level2" style="display: none;">
+                    <li><a href="/how-we-work/trust-and-privacy/default.aspx">Trust &amp; Privacy</a></li>
+                    <li><a href="/how-we-work/responsible-business-practices/default.aspx">Responsible Business Practices</a></li>
+                    <li><a href="/how-we-work/employees-and-culture/default.aspx">Employees &amp; Culture</a></li>
+                    <!--<li><a href="/how-we-work/diversity-and-inclusion/default.aspx">Diversity, Inclusion, Equity & Belonging</a></li>-->
+                    <!--<li><a href="/how-we-work/environmental-sustainability/default.aspx">Environmental Sustainability</a></li>-->
+                     <!--<li><a href="https://paypal.vc/home/default.aspx">PayPal Ventures</a></li>-->
+                    <li><a href="/how-we-work/issues-and-advocacy/default.aspx">Issues &amp; Advocacy</a></li>
+                    <li><a href="/how-we-work/reporting/default.aspx">Reporting &amp; Other Resources</a></li>
+                </ul>
+            </li>
+            <!-- replaces section with Our Impact
+            <li class="has-children">
+                <a href="/values-in-action/default.aspx" class="nav--footer_heading-link">Values in Action</a>
+                <ul class="level2">
+                    <li><a href="/values-in-action/improving-financial-health/default.aspx">Creating Economic Opportunity</a></li>
+                    <li><a href="/values-in-action/empowering-small-businesses/default.aspx">Empowering Small Businesses</a></li>
+                    <li><a href="/values-in-action/powering-giving/default.aspx">Enabling Generosity</a></li>
+                    <li><a href="/values-in-action/strengthening-communities/default.aspx">Strengthening Communities</a></li>
+                    <li><a href="/values-in-action/building-an-equitable-future/default.aspx">Building an Equitable Future</a></li>
+                    <li><a href="/values-in-action/issues-and-advocacy/default.aspx">Issues & Advocacy</a></li>
+                    <li><a href="/values-in-action/reporting/default.aspx">Reporting</a></li>
+                </ul>
+            </li>-->
+            <li class="has-children">
+                <a href="/our-impact/Communities/default.aspx" class="nav--footer_heading-link sf-with-ul">Our Impact</a>
+                <ul class="level2" style="display: none;">
+                    <li><a href="/values-in-action/improving-financial-health/default.aspx">Customers</a></li>
+                    <li><a href="/values-in-action/powering-giving/default.aspx">Enabling Generosity</a></li>
+                    <li><a href="/values-in-action/strengthening-communities/default.aspx">Strengthening Communities</a></li>
+                    <li><a href="/values-in-action/environmental-sustainability/default.aspx">Environmental Sustainability</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a class="nav--footer_heading-link sf-with-ul">Resources</a>
+                <ul class="level2" style="display: none;">
+                    <li><a href="https://investor.pypl.com/home/default.aspx" target="_blank">Investors</a></li>
+                    <li><a href="https://newsroom.paypal-corp.com/" target="_blank">Newsroom</a></li>
+                    <li><a href="https://paypal.vc/home/default.aspx" target="_blank">PayPal Ventures</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+        </div>
+    </div>
+</div></span><span class="FooterPaneDiv12"><div id="_ctrl0_ctl39_divModuleContainer" class="module module-embed module-social-media grid_col grid_col--2-of-12 grid_col--lg-1-of-1">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl39_lblTitle" class="module_title"><span id="_ctrl0_ctl39_lblModuleTitle" class="ModuleTitle">Stay Connected</span></h2>
+        <div class="module_container module_container--inner">
+            <div class="list--reset social-links_container">
+    <ul>
+        <li><a href="https://www.facebook.com/PayPal" class="social-media_link" target="_blank"><span class="q4-icon_facebook"></span><span class="sr-only">Facebook</span></a></li>
+        <li><a href="https://www.linkedin.com/company/paypal" class="social-media_link" target="_blank"><span class="q4-icon_linkedin"></span><span class="sr-only">LinkedIn</span></a></li>
+        <li><a href="https://twitter.com/PayPal" class="social-media_link" target="_blank"><span class="q4-icon_twitter"></span><span class="sr-only">Twitter</span></a></li>
+        <li><a href="https://www.instagram.com/paypal/" class="social-media_link" target="_blank"><span class="q4-icon_instagram"></span><span class="sr-only">Instagram</span></a></li>
+    </ul>
+</div>
+
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--footer2">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--credits">
+                <div class="pane_inner"><span class="Q4FooterDiv13"><div id="_ctrl0_ctl42_divModuleContainer" class="module module-html module-footer-links grid_col ">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="copyright">
+  © 1999-<span class="copyright_year">2024</span>
+</div>
+<div class="list--reset module-legal-links">
+  <ul>
+      <li><a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full" target="_blank">Privacy</a></li>
+      <li><a href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full" target="_blank">Legal</a></li>
+      <li><a href="/site-map/default.aspx">Site Map</a></li>
+      <li><a href="https://www.paypal.com/">PayPal.com</a></li>
+      <li><a href="#" cookieprefs="">Cookies</a></li>
+  </ul>
+</div>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv14"><div id="_ctrl0_ctl45_divModuleContainer" class="module module-q4-credits grid_col">
+    <div class="module_container module_container--outer">
+        <div class="module_container module_container--inner">
+            <a href="https://www.q4inc.com/Powered-by-Q4/" id="_ctrl0_ctl45_hrefWebsiteRecording" class="module-q4-credits-link" target="_blank">
+                <span id="_ctrl0_ctl45_lblWebsiteRecording" class="module-q4-credits_powered-text">Powered By Q4 Inc.</span>
+                <span id="_ctrl0_ctl45_lblVersion" class="module-q4-credits_version-text">5.132.2.2</span>
+                <span class="sr-only">(opens in new window)</span>
+            </a>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv15"><div id="_ctrl0_ctl48_divModuleContainer" class="module module-embed hidden">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+    var q4App = $.extend(true, q4Defaults, {
+        options: {
+            headerOffset: function() {
+                return $('.pane--header').outerHeight();
+            },
+        },
+        scrollingTable: function(selector) {
+            $(selector).not(selector + ' table').wrap('<div class="table-wrapper" />');
+        },
+        meetingFancy: function($selector, trigger){
+            var meetingCookie = sessionStorage.getItem('requestMeeting');
+            if (meetingCookie != 'closed') {
+                $selector.removeClass('js--hidden');
+            }
+            $selector.on('click', '.button--cookie', function () {
+                $selector.addClass('js--hidden');
+                sessionStorage.setItem("requestMeeting", 'closed');
+            });
+            $selector.on('click', trigger, function(e){
+                e.preventDefault();
+                $.fancybox.open({
+                    type: 'iframe',
+                    src: '/request-meeting-iframe/default.aspx',
+                    opts: {
+                        margin: [10, 0],
+                        slideClass: 'fancybox-slide--form',
+                        parentEl: 'form'
+                    }
+                });
+            });
+            window.addEventListener('message', function (event) {
+                if (event.data == 'close-fancybox') {                
+                    $.fancybox.close();
+                }
+            }, false);
+        },
+    
+        stickyNavBar: function() {
+            var inst = this,
+                $window = $(window),
+                $layout = $('.layout'),
+                $header = $('.pane--header');
+    
+            $window.on('scroll',function(){
+                if ( $window.scrollTop() > 0 ) {
+                    $layout.addClass('js--header-small');
+                } else {
+                    $layout.removeClass('js--header-small');
+                }
+                
+            });
+        },
+        iconFix: function(){
+            $('.q4icons .module_link').each(function(){
+                if (!$(this).children('.q4icons_icon').length) {
+                    $(this).prepend('<span class="q4icons_icon" aria-hidden="true"></span>');
+                }
+            });
+        },
+        scrollDownButton: function() {
+            var $headerOffset = $('.pane--header').outerHeight();
+            $('.button-scroll-down').on('click', function(e) {
+                $('body,html').animate({
+                    scrollTop: $('.layout_content').offset().top - $headerOffset - 17
+                }, 1000);
+            });
+        },
+        toggleContainer: function() {
+            $(".module_item-trigger").on("click", function(e) {
+                // e.preventDefault();
+                if (!$(this).parent().hasClass("js--open")) {
+                    $(this).parent().addClass("js--open").siblings().removeClass("js--open");
+                } else {
+                    $(this).parent().removeClass("js--open").siblings().removeClass("js--open");
+                }
+            });
+        },
+        androidTap: function (selector) {
+            if (q4App.isMobile.Android()) {
+                $(selector).on('touch touchstart', '.level1 > li.has-children > a, .level1 > li.has-children.no-link > span', function (e) {
+                    var $this = $(this),
+                        $parent = $this.parent();
+                    if (!$parent.hasClass('sfHover')) {
+                        e.preventDefault();
+                        $parent.siblings().removeClass('sfHover');
+                        $parent.addClass('sfHover');
+                    }
+                });
+            }
+        },
+        _onMobileMenuExpand: function ($nav, toggler1, respSearch, navBeforeSearch) {
+            
+            var isTouchMove = false;
+            $nav.on('touchmove', '.level1 > li.has-children:not(.home) > a, .level1 > li.has-children.no-link:not(.home) > span', function (e) {
+                isTouchMove = true;
+                var $this = $(this),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('js--expanded') && !isTouchMove) {
+                    e.preventDefault();
+                    $parent.siblings().removeClass('js--expanded');
+                    $parent.addClass('js--expanded');
+                }
+            });
+            $nav.on('touchend', '.level1 > li.has-children:not(.home) > a, .level1 > li.has-children.no-link:not(.home) > span', function (e) {
+                var $this = $(this),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('js--expanded') && !isTouchMove) {
+                    e.preventDefault();
+                    $parent.siblings().removeClass('js--expanded');
+                    $parent.addClass('js--expanded');
+                }
+                isTouchMove = false;
+            });
+        },
+        tabs: function ($container, triggerContainer, trigger, content, select, useHash, useKBTabs) {
+            // display specific tab using hash from url
+            var hash = window.location.hash.split('#')[1],
+                hashTargetExists = $(content + '.' + hash).length > 0,
+                changeHash = useHash != undefined ? useHash : true,
+                first,
+                $hiddenContent = function () {
+                    return $(content).addClass('js--hidden').attr('aria-hidden', 'true');
+                };
+            // accessibility 
+            $(triggerContainer).attr('role', 'tablist');
+            $(trigger).attr('role', 'tab').attr('aria-selected', 'false');  
+    
+            if (hash && hashTargetExists) {
+                $hiddenContent().filter('.' + hash).removeClass('js--hidden').attr('aria-hidden', 'false');
+                if (trigger) $(trigger).attr('tabindex', '0').filter('[data-tab=".' + hash + '"]').addClass('js--selected').attr('aria-selected', 'true');
+                if (select) $(select + ' option[value=".' + hash + '"]').attr('selected', true);
+            } else {
+                $hiddenContent();
+            }
+    
+            // if trigger is used/defined
+            if (trigger) {
+                first = $(trigger).first().data('tab');
+    
+                if (!hash || !hashTargetExists) {
+                    $(trigger).attr('tabindex', '0').first().addClass('js--selected').attr('aria-selected', 'true');
+                    $(first).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    // change hash on load
+                    if (changeHash) window.location.hash = first.split('.')[1];
+                }
+    
+                $container.on('click keypress', trigger, function (e) {
+                    if (changeHash) window.location.hash = $(this).data('tab').split('.')[1];
+                    if ($(trigger).is('a, button')) e.preventDefault();
+                    $(this).addClass('js--selected').attr('aria-selected', 'true').closest($container).find('.js--selected').not(this).removeClass('js--selected').attr('aria-selected', 'false');
+                    $hiddenContent().filter($(this).data('tab')).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    // update select
+                    if (select) {
+                        $(select).val($(this).data('tab'));
+                    }
+                });
+            }
+    
+            // if select is used/defined
+            if (select) {
+                first = $(select + ' option:first-child').val();
+    
+                if (!hash || !hashTargetExists) {
+                    $(select + ' option:first-child').attr('selected', true);
+                    $(first).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    // change hash on load
+                    if (changeHash) window.location.hash = first.split('.')[1];
+                }
+    
+                $container.on('change', select, function () {
+                    var tab = $(this).val();
+                    if (changeHash) window.location.hash = $(this).val().split('.')[1];
+                    $hiddenContent().filter(tab).removeClass('js--hidden').attr('aria-hidden', 'false');
+                    if (trigger) $(trigger).removeClass('js--selected').filter('[data-tab="' + tab + '"]').addClass('js--selected');
+                });
+            }
+    
+            if (useKBTabs || useKBTabs === undefined) {
+                var tabs = document.querySelectorAll('[role="tab"]');
+                var tabList = document.querySelector('[role="tablist"]');
+    
+                // Add a click event handler to each tab
+                tabs.forEach( function(tab) { 
+                    var tabContentID = tab.getAttribute("data-tab").replace(".",""),
+                        tabContentIDs = "";
+    
+                    $("." + tabContentID).each(function(i) {
+                        $(this).attr("id", tabContentID + "-" + i);
+                        tabContentIDs += (tabContentID + "-" + i + " ");
+                    });
+    
+                    tab.setAttribute("aria-controls", tabContentIDs);
+                    tab.setAttribute("tabindex", -1);  
+                    tab.addEventListener("click", changeTabs);   
+                });
+                $('[role="tab"][aria-selected="true"]').attr("tabindex", 0);
+              
+                // Enable arrow navigation between tabs in the tab list
+                var tabFocus = 0;
+              
+                tabList.addEventListener("keydown", function(e) {
+                  // Move right
+                  if (e.keyCode === 39 || e.keyCode === 37) {
+                    tabs[tabFocus].setAttribute("tabindex", -1);
+                    if (e.keyCode === 39) {
+                      tabFocus++;
+                      // If we're at the end, go to the start
+                      if (tabFocus >= tabs.length) {
+                        tabFocus = 0;
+                      }
+                      // Move left
+                    } else if (e.keyCode === 37) {
+                      tabFocus--;
+                      // If we're at the start, move to the end
+                      if (tabFocus < 0) {
+                        tabFocus = tabs.length - 1;
+                      }
+                    }
+              
+                    tabs[tabFocus].setAttribute("tabindex", 0);
+                    tabs[tabFocus].focus();
+                  }
+                });
+            }          
+             
+             function changeTabs(e) {
+               var target = e.target;
+               var parent = target.closest('[role="tablist"]');
+               var grandparent = parent.parentNode;
+             
+               // Remove all current selected tabs
+               parent
+                 .querySelectorAll('[aria-selected="true"]')
+                 .forEach( function(t) {t.setAttribute("aria-selected", false);} );
+             
+               // Set this tab as selected
+               target.setAttribute("aria-selected", true);
+             
+               // Hide all tab panels
+               grandparent
+                 .querySelectorAll('[role="tabpanel"]')
+                 .forEach( function(p) {p.setAttribute("hidden", true);} );
+             
+               // Show the selected panels
+               var tabContentIDArr = target.getAttribute("aria-controls").split(" ");
+               $.each(tabContentIDArr, function(index, value ){
+                   if (value && value != "") $('#' + value ).removeAttr("hidden");
+               });
+                 
+            }
+        },
+        _onMobileMenuExpand: function ($nav) {
+            var isTouchMove = false;
+            $nav.on('touchmove', 'li.has-children:not(.home) > a, li.has-children.no-link:not(.home) > span', function (e) {
+                isTouchMove = true;
+                var $this = $(this),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('js--expanded') && !isTouchMove) {
+                    e.preventDefault();
+                    $parent.siblings().removeClass('js--expanded');
+                    $parent.addClass('js--expanded');
+                }
+            });
+            $nav.on('touchend', 'li.has-children:not(.home) > a, li.has-children.no-link:not(.home) > span', function (e) {
+                var $this = $(this),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('js--expanded') && !isTouchMove) {
+                    e.preventDefault();
+                    $parent.siblings().removeClass('js--expanded');
+                    $parent.addClass('js--expanded');
+                }
+                isTouchMove = false;
+            });
+        },
+        cookiePrefToggle: function(selector) {
+            $(selector).on('click', function(e) {
+                e.preventDefault();
+                manageCookiePreferences();
+            });
+        },
+        init: function() {
+            var app = this;
+    
+            app.cleanUp();
+            app.submitOnEnter('.module-unsubscribe');
+            app.submitOnEnter('.module-search');
+            app.validateSubmit('.module-search');
+            app.superfish($('.nav--main .level1'), {cssArrows: false});
+            if(!app.isMobile.any()){
+                app.superfish($('.nav--secondary .level1'), {cssArrows: false});
+            }else{
+                app._onMobileMenuExpand($('.nav--secondary .level1'));
+            }
+    
+            if(!app.isMobile.any()){
+                app.superfish($('.nav--footer .level1'), {cssArrows: false}, 1200);
+            }else{
+                app._onMobileMenuExpand($('.nav--footer .level1'));
+            }
+            app.mobileMenuToggle($('.layout'), '.pane--navigation', '.layout_toggle i');
+            app.cleanQuickLinks($('.module-links'));
+            app.copyright($('.copyright_year'));
+            app.reveal('.pane--footer .module-subscribe', '.module_input', '.module-subscribe_mailing-list, .module_actions', true);
+            app.stickyNavBar();
+            app.docTracking();
+            app.fancySignup();
+            app.resetDate(['.nav a[href*="s4.q4web.com"]:not([href$=".pdf"])']);
+            app.previewToolbar();
+            app.reveal('.pane--header', '.module-search h2','.module-search .module_container--inner', false);
+            app.sections();
+            app.scrollDownButton();
+            // app.contrast.init();
+            app.meetingFancy($('.module-cta'),'.button--meeting');
+            app.toggleContainer();
+            app.iconFix();
+            app.cookiePrefToggle('[cookiePrefs]');
+        }
+    });
+        var q4Helpers = {
+        alphaSort: function(array, key) {
+            if (!!key) {
+                return array.sort(function(a, b) {
+                    a = a[key].toLowerCase();
+                    b = b[key].toLowerCase();
+                    if (a < b) return -1;
+                    if (a > b) return 1;
+                    return 0;
+                });
+            }
+            return array.sort();
+        }
+    };
+    
+    q4App.init();
+</script>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <input type="hidden" name="__antiCSRF" id="__antiCSRF" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/anti-csrf.js">
+    </script>
+
+    <iframe id="q4l-iframe" title="IFrame" style="position: absolute; width: 0px; height: 0px; border: 0; left: -999px; top: -999px;" src="https://login.q4inc.com/authorize?client_id=gKrDY1E9BUSWfU7DGuW2CO4rjdskiNg7&amp;scope=openid+profile+email&amp;response_type=code&amp;response_mode=query&amp;nonce=Y9j7roKYRDGoEuBmKRi6Zw0w38&amp;state=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5VcmwiOiJodHRwczovL2Fib3V0LnB5cGwuY29tL3E0bG9naW5jYWxsYmFjay5hc3B4IiwiZXhwIjoxNzI5MjY0NjA0LjAsImlhdCI6MTcyNDAwNTAwNC4wLCJpc3MiOiJRNC5XZWIuUHVibGljLlNpdGUiLCJhdWQiOiJ1cHN0cmVhbS5jZG4ud2ViLnByZC5xNGluYy5jb20ifQ.FWHgEdgfVB7byPj8IpaYTAP0u2vvt1ESYj-fgJ32qRI&amp;redirect_uri=https%3a%2f%2fauth.platform.q4inc.com%2fauth%2fpublicAuthRedirect&amp;prompt=none"></iframe>
+
+    <script>
+        Q4Login.IframeRedirectURI = "https://login.q4inc.com/authorize?client_id=gKrDY1E9BUSWfU7DGuW2CO4rjdskiNg7&scope=openid+profile+email&response_type=code&response_mode=query&nonce=Y9j7roKYRDGoEuBmKRi6Zw0w38&state=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5VcmwiOiJodHRwczovL2Fib3V0LnB5cGwuY29tL3E0bG9naW5jYWxsYmFjay5hc3B4IiwiZXhwIjoxNzI5MjY0NjA0LjAsImlhdCI6MTcyNDAwNTAwNC4wLCJpc3MiOiJRNC5XZWIuUHVibGljLlNpdGUiLCJhdWQiOiJ1cHN0cmVhbS5jZG4ud2ViLnByZC5xNGluYy5jb20ifQ.FWHgEdgfVB7byPj8IpaYTAP0u2vvt1ESYj-fgJ32qRI&redirect_uri=https%3a%2f%2fauth.platform.q4inc.com%2fauth%2fpublicAuthRedirect&prompt=none";
+        (function () {
+            if (window.location.hash.includes("login=true")) {
+                // q4pid is set in the modal so it should already be there
+                const pendoId = window.localStorage.getItem("q4pid");
+
+                // email is also from modal
+                const email = window.localStorage.getItem("q4l_email");
+
+                let redirectUrl = $('#hdnRedirectToLoginUrl').val();
+                redirectUrl = redirectUrl.replace("_q4pidval_", pendoId);
+                redirectUrl = redirectUrl.replace("_q4lemail_", email);
+
+                window.location.replace(redirectUrl);
+            }
+        })();
+    </script>
+
+
+<div><style nonce="">@font-face { font-family: "PayPalOpen-Regular"; font-style: normal; font-display: swap; src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2') format('woff2'), url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff') format('woff'), url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.otf') format('opentype'); } #ccpaCookieBanner { font-family: PayPalOpen-Regular, sans-serif; } @keyframes slideInFromBottom { 0% { transform: translateY(100%); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } } .ccpaCookieBanner_container { animation: 1s ease-in 0s 1 slideInFromBottom; width: 84%; margin-left: 8%; position: fixed; bottom: 2em; background-color: #FFFFFF; z-index: 1051; display: flex; align-items: center; justify-content: center; min-height: 6em; box-shadow: 0px 12px 28px rgb(0 0 0 / 16%); border-radius: 12px; font-size: 16px; } .ccpaCookieBanner_rtlContainer{ direction : rtl; } .ccpaCookieBanner_content-container { padding: 1.875em 4em 1.875em 5em; } .ccpaCookieBanner_content { color: #000000; font-family: 'PayPalOpen-Regular'; font-size: 14px; line-height: 20px; margin: 0; padding: 0; } #manageCookiesLink { text-decoration: underline; color: #0070ba; font-family: PayPalOpen-Regular; font-weight: 500; } .ccpaCookieBanner_content a:focus, .ccpaCookieBanner_buttonGroup button:focus { outline: 0.125rem solid #0070BA; outline-offset: 0.125rem; } .ccpaCookieBanner_buttonGroup { padding-right: 5em; position: static; display: flex; flex-direction: column; } .ccpaCookieBanner_rtlContainer .ccpaCookieBanner_buttonGroup { padding-left: 5em; padding-right: 0; } .ccpaCookieBanner_rtlContainer .ccpaCookieBanner_content-container { padding: 1.875em 5em 1.875em 4em; } button.ccpaCookieBanner_button { font-size: 14px; line-height: 24px; font-weight: 600; color: #FFFFFF; background: #0070BA; border: 1px solid #0070BA; border-radius: 24px; min-width: 6.8em; min-height: 2.285em; cursor: pointer; padding: 0px 2.285em; font-family: PayPalOpen-Regular, sans-serif; white-space: nowrap; } button.ccpaCookieBanner_decline-button { margin-top: 0.5rem; } .ccpaCookieBanner-acceptedAll { height: auto; padding-bottom: 8em; } @media only screen and (max-width: 768px) { .ccpaCookieBanner_container{ width: 92%; margin-left: 4%; display: block; bottom: 1em; } .ccpaCookieBanner_content-container { padding: 0.75em 2.5em 0.75em 1.25em } .ccpaCookieBanner_rtlContainer .ccpaCookieBanner_content-container { padding: 0.75em 1.25em 0.75em 2.5em } .ccpaCookieBanner_buttonGroup { text-align: center; padding: 0 0 0.75em 0; display: block; } .ccpaCookieBanner_rtlContainer .ccpaCookieBanner_buttonGroup { padding: 0 0 0.75em 0; } button.ccpaCookieBanner_decline-button { margin: 0  0 0 1.25rem } } @media only screen and (max-width: 600px) { .ccpaCookieBanner-acceptedAll { height: auto; padding-bottom: 12em; } } @media only screen and (max-width: 575.98px) { .ccpaHideCookieBannerMobile { display:none; } } @media only screen and (max-width: 336px){ .ccpaCookieBanner_buttonGroup { display: flex; flex-direction: column; align-items: center; } button.ccpaCookieBanner_decline-button { margin: 0.5rem 0 0 0; } }</style></div><div><div id="ccpaCookieBanner" class="ccpaCookieBanner_container "><div id="ccpaCookieContent_wrapper" class="ccpaCookieBanner_content-container"><p class="ccpaCookieBanner_content">We use cookies to improve your experience on our site. May we use marketing cookies to show you personalized ads? <a id="manageCookiesLink" href="#" pagename="PayPal, Inc. - How We Work - Issues &amp; Advocacy|managecookies">Manage all cookies</a></p></div><div class="ccpaCookieBanner_buttonGroup"><button id="acceptAllButton" class="ccpaCookieBanner_button" pagename="PayPal, Inc. - How We Work - Issues &amp; Advocacy|acceptcookies">Yes, I accept</button><button id="bannerDeclineButton" aria-label="decline" class="ccpaCookieBanner_button ccpaCookieBanner_decline-button">No, I decline</button></div></div></div><script id="bannerScript" nonce="">(function () { var bannerFptiData = {}; function getFptiReqData () { if(!false) return true; return window && window.fpti && window.PAYPAL && window.PAYPAL.analytics && window.PAYPAL.analytics.Analytics && window.PAYPAL.analytics.Analytics.prototype } function reasonToHideBanner(){ let reason = ''; try { if (false && true && !navigator.cookieEnabled){ reason = 'cookies are disabled'; } else if(sessionStorage.getItem("isUserAccepted")){ reason = 'User accepted or declined'; } else if(sessionStorage.getItem("isBannerClosed")){ reason = 'Banner Closed'; } else if(sessionStorage.getItem("isInvisibleBanner")){ reason = 'Invisible banner loaded'; } } catch (error) { reason=''; } return reason; } function cookieDisabled() { if (navigator.cookieEnabled === false) return "true"; else if (navigator.cookieEnabled === true) return "false"; else return "undefined"; }; function addCookie(value) { document.cookie = 'cookie_prefs' +"=" + value + "; max-age=" + 31536000 + ";path=/; domain=.pypl.com"; } function manageCookie(value){ addCookie(value); cookieFilter("paypal-about", "cookie_prefs" ); } function bindGdprEvents () { var acceptAllButton = document.getElementById('acceptAllButton'); var bannerDeclineButton = document.getElementById('bannerDeclineButton'); var bannerCloseButton = document.getElementById('bannerCloseButton'); var manageCookiesLink = document.getElementById('manageCookiesLink'); var cookieLanguage = document.getElementById('ccpaCookieContent_wrapper'); var cookieBanner = document.getElementById('ccpaCookieBanner'); var cookieBannerAcceptAll = document.getElementsByClassName("ccpaCookieBanner-acceptedAll"); var trackingPageName = '' || (window.fpti && window.fpti.pgrp) ||document.title; if (manageCookiesLink) { manageCookiesLink.onclick = function() { if(false){ var manageCookiesData = { e: 'cl', link: 'managecookies', pglk: trackingPageName + '|managecookies', pgln: trackingPageName + '|managecookies', event_name: 'paypal-about_cookie_banner_managecookies_clicked' }; for(var key in bannerFptiData){ manageCookiesData[key] = bannerFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.recordClick({data: manageCookiesData}); } return manageCookiePreferences(); }; } if(bannerCloseButton && cookieBanner && cookieLanguage){ bannerCloseButton.onclick = function() { hideBanner(); sessionStorage.setItem('isBannerClosed',true); if(false){ var closebannerFptiData = { e: 'cl', link: 'closeBanner', pglk: trackingPageName + '|closeBanner', pgln: trackingPageName + '|closeBanner', event_name: 'paypal-about_cookie_banner_close_clicked' }; for(var key in bannerFptiData){ closebannerFptiData[key] = bannerFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.recordClick({ data: closebannerFptiData }); } }; } if (acceptAllButton && cookieBanner && cookieLanguage) { acceptAllButton.onclick = function() { hideBanner(); manageCookie('T%3D1%2CP%3D1%2CF%3D1%2Ctype%3Dexplicit_banner'); if(false){ var acceptbannerFptiData = { e: 'cl', link: 'acceptcookies', pglk: trackingPageName + '|acceptcookies', pgln: trackingPageName + '|acceptcookies', c_prefs: 'T=1,P=1,F=1,type=explicit_banner', event_name: 'paypal-about_cookie_banner_accept_clicked' }; for(var key in bannerFptiData){ acceptbannerFptiData[key] = bannerFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.recordClick({ data: acceptbannerFptiData }); var winFptiData = JSON.parse(JSON.stringify((window && window.fpti) || {})); var updatedFptiData = { cookiebannerhidden: 'true', c_prefs: 'T=1,P=1,F=1,type=explicit_banner' }; for(var key in bannerFptiData){ updatedFptiData[key] = bannerFptiData[key]; }; for(var key in updatedFptiData){ winFptiData[key] = updatedFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.logActivity(winFptiData); } }; } if (bannerDeclineButton && cookieBanner && cookieLanguage) { bannerDeclineButton.onclick = function() { hideBanner(); manageCookie('T%3D0%2CP%3D1%2CF%3D1%2Ctype%3Dexplicit_banner'); if(false){ var bannerDeclineData = { e: 'cl', link: 'declinecookies', pglk: trackingPageName + '|declinecookies', pgln: trackingPageName + '|declinecookies', c_prefs: 'T=0,P=1,F=1,type=explicit_banner', event_name: 'paypal-about_cookie_banner_decline_clicked' }; for(var key in bannerFptiData){ bannerDeclineData[key] = bannerFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.recordClick({ data: bannerDeclineData }); var winFptiData = JSON.parse(JSON.stringify((window && window.fpti) || {})); var updatedFptiData = { cookiebannerhidden: 'true', c_prefs: 'T=0,P=1,F=1,type=explicit_banner' }; for(var key in bannerFptiData){ updatedFptiData[key] = bannerFptiData[key]; }; for(var key in updatedFptiData){ winFptiData[key] = updatedFptiData[key]; }; window.PAYPAL.analytics.Analytics.prototype.logActivity(winFptiData); } }; } window.hideGdprBanner = function () { var cookieBannerUi = document.getElementById('ccpaCookieBanner'); if (cookieBannerUi && cookieBannerUi.className.indexOf('ccpaHideCookieBannerMobile') === -1) { cookieBannerUi.className += " ccpaHideCookieBannerMobile"; } }; window.showGdprBanner = function () { var cookieBannerUi = document.getElementById('ccpaCookieBanner'); if (cookieBannerUi) { cookieBannerUi.className = cookieBannerUi.className.replace("ccpaHideCookieBannerMobile",""); } }; document.body.addEventListener("focus", function (event) { if (event.target.type === 'text' || event.target.type === 'number' || event.target.type === 'password' || event.target.type === 'email' || event.target.type === 'select-one') { window.hideGdprBanner(); } }, true); }; function adjustPaddingTop(){ var cookieBannerAcceptAll = document.getElementsByClassName("ccpaCookieBanner-acceptedAll"); if(cookieBannerAcceptAll.length > 0){ var cookieBanner = document.getElementById('ccpaCookieBanner'); var bannerHeight = cookieBanner ? cookieBanner.clientHeight : 0; if(cookieBannerAcceptAll && cookieBannerAcceptAll[0] && bannerHeight){ cookieBannerAcceptAll[0].style.paddingTop = bannerHeight/16 +'em'; } } }; var isPaddingBottomAdded = false, bannerPaddingBottom = ""; function adjustPaddingBottom(addListener){ if (undefined || !false) { return; } function adjustPaddingBottomEvent() { var cookieBannerAcceptAll = document.getElementsByClassName("ccpaCookieBanner-acceptedAll"); if(cookieBannerAcceptAll.length > 0){ var bodyPaddingBottom = cookieBannerAcceptAll[0].style.paddingBottom; var cookieBanner = document.getElementById('ccpaCookieBanner'); if(cookieBannerAcceptAll && cookieBannerAcceptAll[0] && cookieBanner.style.display != 'none') { if (bodyPaddingBottom === "" || (isPaddingBottomAdded && bannerPaddingBottom === bodyPaddingBottom)) { var cookieBannerContainer = document.getElementsByClassName('ccpaCookieBanner_container'); var bannerBottomHeight = cookieBannerContainer.length > 0 ? parseInt(window.getComputedStyle(cookieBannerContainer[0]).bottom.replace("px", "")) : 0; var bannerHeight = cookieBanner ? cookieBanner.clientHeight : 0; bannerPaddingBottom = ((bannerHeight + bannerBottomHeight) / 16) + 'em'; cookieBannerAcceptAll[0].style.paddingBottom = bannerPaddingBottom; isPaddingBottomAdded = true; } else if (isPaddingBottomAdded && bannerPaddingBottom !== bodyPaddingBottom) { isPaddingBottomAdded = false; } } } }  if (addListener) { adjustPaddingBottomEvent(); window.addEventListener('resize', adjustPaddingBottomEvent);  } else { var cookieBannerAcceptAll = document.getElementsByClassName("ccpaCookieBanner-acceptedAll"); if(cookieBannerAcceptAll && cookieBannerAcceptAll[0]){ window.removeEventListener('resize', adjustPaddingBottomEvent); adjustPaddingBottomEvent(); if (isPaddingBottomAdded && cookieBannerAcceptAll[0].style.paddingBottom === bannerPaddingBottom) { cookieBannerAcceptAll[0].style.removeProperty('padding-bottom'); } } } }; window.bindGdprEvents = bindGdprEvents; function gdprSetup () { var cookieLanguage = document.getElementById('ccpaCookieContent_wrapper'); var cookieBanner = document.getElementById('ccpaCookieBanner'); var manageLink = document.getElementById('manageCookiesLink'); var acceptAllLink = document.getElementById('acceptAllButton'); var trackingPageName = '' || (window.fpti && window.fpti.pgrp) ||document.title; if(!sessionStorage.getItem('isBannerClosed')){ document.body.className = document.body.className += " ccpaCookieBanner-acceptedAll"; if(undefined){ adjustPaddingTop(); window.addEventListener('resize', adjustPaddingTop);   } enableEvents(true); } var pageName = trackingPageName ||  document.title; if(false){ var winFptiData = JSON.parse(JSON.stringify((window && window.fpti) || {})); bannerFptiData = { page:  'main:privacy:policy:ccpa', pgrp:  'main:privacy:policy', displaypage: (window.fpti && window.fpti.pgrp) ||document.title, ppage: 'privacy_banner', bannertype: 'cookiebanner', ccpg: 'US', flag: 'ccpa', bannerversion: 'v4', bannersource: 'ConsentNodeServ', bannervariant: '', xe: '', xt: '', eligibility_reason: 'true', cookie_disabled: cookieDisabled(), reason_to_hide: reasonToHideBanner(), tenant_code: 'paypal-about' }; for(var key in bannerFptiData){ winFptiData[key] = bannerFptiData[key]; }; winFptiData['event_name'] = 'paypal-about_cookie_banner_shown'; window.PAYPAL.analytics.Analytics.prototype.logActivity(winFptiData); } if (manageLink) { manageLink.setAttribute('pagename', (pageName + '|managecookies')); } if (acceptAllLink) { acceptAllLink.setAttribute('pagename', (pageName + '|acceptcookies')); } bindGdprEvents(); }; function hideBanner() { var cookieLanguage = document.getElementById('ccpaCookieContent_wrapper'); var cookieBanner = document.getElementById('ccpaCookieBanner'); if(cookieLanguage && cookieBanner){ cookieLanguage.style.display = 'none'; cookieBanner.style.display = 'none'; }else { return false; } window.removeEventListener('resize', adjustPaddingTop); var cookieBannerAcceptAll = document.getElementsByClassName("ccpaCookieBanner-acceptedAll"); if(cookieBannerAcceptAll && cookieBannerAcceptAll[0]){ cookieBannerAcceptAll[0].style.removeProperty('padding-top'); } enableEvents(false); document.body.className = document.body.className.replace("ccpaCookieBanner-acceptedAll",""); return true; } function isPageReady () { var cookieBannerUi = document.getElementById('ccpaCookieBanner'); return !!(cookieBannerUi && getFptiReqData()); } function enableFocusEvent(addListener){ if(!false || undefined){ return; } var cookieBanner = document.getElementById('ccpaCookieBanner'); function focusIn(e) { if(cookieBanner && cookieBanner.style.display != 'none'){ var activeElement = document.activeElement; if(((activeElement.getBoundingClientRect().bottom) > (cookieBanner.getBoundingClientRect().top)) && !activeElement.parentElement.nodeName.includes("UL")){ activeElement.scrollIntoView({block: 'center'}); } }else{ document.removeEventListener("focusin", focusIn); } } if(addListener){ document.addEventListener("focusin",focusIn); } } function enableEvents(enable){ adjustPaddingBottom(enable); enableFocusEvent(enable); } var maxRetries = 34, bannerhidden=false; function triggerBanner() { if(false){ sessionStorage.setItem('isBannerClosed',true); } if (isPageReady()) { if (sessionStorage.getItem('isBannerClosed')) { hideBanner(); } gdprSetup(); } else { if (sessionStorage.getItem('isBannerClosed') && !bannerhidden ) { bannerhidden=hideBanner(); } if (maxRetries-- > 0) { setTimeout(triggerBanner, 150); } else { if (sessionStorage.getItem('isBannerClosed')) { hideBanner(); } if(!sessionStorage.getItem('isBannerClosed') && document.getElementById('ccpaCookieBanner') && !document.body.className.includes("ccpaCookieBanner-acceptedAll")){ document.body.className = document.body.className += " ccpaCookieBanner-acceptedAll"; if(undefined){ adjustPaddingTop(); window.addEventListener('resize', adjustPaddingTop);   } enableEvents(true); } var acceptAllButton = document.getElementById('acceptAllButton'); var bannerDeclineButton = document.getElementById('bannerDeclineButton'); var bannerCloseButton = document.getElementById('bannerCloseButton'); var cookieBanner = document.getElementById('ccpaCookieBanner'); var manageCookiesLink = document.getElementById('manageCookiesLink'); if ( acceptAllButton ) { acceptAllButton.onclick = function() { hideBanner(); manageCookie('T%3D1%2CP%3D1%2CF%3D1%2Ctype%3Dexplicit_banner'); }; } if ( bannerDeclineButton ) { bannerDeclineButton.onclick = function() { hideBanner(); manageCookie('T%3D0%2CP%3D1%2CF%3D1%2Ctype%3Dexplicit_banner'); }; } if ( bannerCloseButton ) { bannerCloseButton.onclick = function() { hideBanner(); sessionStorage.setItem('isBannerClosed',true); } } if (manageCookiesLink) { manageCookiesLink.onclick = function() { return manageCookiePreferences(); }; } } } } triggerBanner(); })();</script></body></html>

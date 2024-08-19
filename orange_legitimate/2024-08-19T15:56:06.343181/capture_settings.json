@@ -1,0 +1,14 @@
+{
+  "url": "https://login.orange.fr/?return_url=https%3A%2F%2Fledigitaletvous.orange.fr%2F%3Futx_source%3Dhporange%26utx_medium%3Dmegamenu%26utx_campaign%3Dle-digital-et-vous",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.18 Safari/537.36",
+  "with_favicon": true,
+  "allow_tracking": false,
+  "force": false,
+  "recapture_interval": 300,
+  "priority": 0,
+  "depth": 0,
+  "rendered_hostname_only": true,
+  "listing": true,
+  "not_queued": false,
+  "os": "Windows 10"
+}
