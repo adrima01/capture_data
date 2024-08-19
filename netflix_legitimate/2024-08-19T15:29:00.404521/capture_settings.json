@@ -1,0 +1,79 @@
+{
+  "url": "https://media.netflix.com/en/",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.18 Safari/537.36",
+  "cookies": [
+    {
+      "path": "/",
+      "name": "flwssn",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "37aa65af-8b45-4f79-835f-9842fb5e2451"
+    },
+    {
+      "path": "/",
+      "name": "nfvdid",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "BQFmAAEBENlDT2eHxXkP1tuscGAwjFdAWZ9ZWeLawsCtev1ISPgmXFgXAdtUmoAvkyX47tlQszYtt1IMEJ2wrCC3EO3h7MYVdQtP80O5liiipKLH5dqIrA%3D%3D"
+    },
+    {
+      "path": "/",
+      "name": "SecureNetflixId",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "v%3D3%26mac%3DAQEAEQABABQIxViCum_iPqQb7eQpflv3tYaq0ZtVUu8.%26dt%3D1724073647190"
+    },
+    {
+      "path": "/",
+      "name": "NetflixId",
+      "httpOnly": false,
+      "secure": true,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "v%3D3%26ct%3DBgjHlOvcAxK-Aa6WfA5yV9V2ryXFniu-ENC5Ytv2MbqJ-ecf3wydObQIKPRLM3wfwBSCKHB6-HGq88v1oCuvZfLr5VNK_5hNA4z8P9vO0jR7d1HkVBQqWisewtrwsLIxgcKcgsdxXEA8nJBNbwaeIcA62DqKLo31KAH4dW5YlYtze99jdbQJV25Fy3M_fibwmvp6fN8qaWQBg9W2xfqZmUqI7jiu_uUoQx20QuONUDbTuIFJT513szs6o8FYg4ZMiErWFtBM8cwYBiIOCgzX2c6gLOuPJ41m1bQ."
+    },
+    {
+      "path": "/",
+      "name": "netflix-sans-bold-3-loaded",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "true"
+    },
+    {
+      "path": "/",
+      "name": "OptanonAlertBoxClosed",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "2024-08-19T13:20:50.413Z"
+    },
+    {
+      "path": "/",
+      "name": "OptanonConsent",
+      "httpOnly": false,
+      "secure": false,
+      "expires": "2024-08-29T15:25:16Z",
+      "domain": ".netflix.com",
+      "value": "isGpcEnabled=0&datestamp=Mon+Aug+19+2024+15%3A20%3A50+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=202406.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c05b9411-2a66-4e15-aa69-7a9fcf0e366f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1"
+    }
+  ],
+  "with_favicon": true,
+  "allow_tracking": false,
+  "force": false,
+  "recapture_interval": 300,
+  "priority": 0,
+  "depth": 0,
+  "rendered_hostname_only": true,
+  "listing": true,
+  "not_queued": false,
+  "os": "Windows 10"
+}
