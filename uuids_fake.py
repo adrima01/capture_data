@@ -55,7 +55,10 @@ already_taken_uuids_paypal=[
     "5e1fa0aa-42e4-49d0-99d6-2c20e9194353",
     "c4c1ff94-4c86-4d82-9795-09b038743e14",
     "9b093e63-835a-4ad2-949d-db1a7c486b7c",
-    "d8f5144f-e409-4591-8572-ca3eb63bda5c"
+    "d8f5144f-e409-4591-8572-ca3eb63bda5c",
+    "3d02c54b-faf7-43de-b34f-8e82bbc14535",
+    "08d5bcb0-59bc-4f7e-b3c4-d4e6178c0637",
+    "66ce40c8-de1c-468c-8f3e-cedfe166393a"
 ]
 
 uuids_ameli = [
@@ -177,7 +180,8 @@ already_taken_uuids_luxtrust=[
     "27a4f03f-c6f2-4640-b006-9e541351a97b",
     "24638f05-cad1-45c0-b282-88fee5c2ac16",
     "92310dc1-6073-4fd2-8057-1df2b610b229",
-    "c3e7820f-2106-4917-a0ad-e302e1582775"
+    "c3e7820f-2106-4917-a0ad-e302e1582775",
+    "3d62dd21-ef80-4817-b9b9-5289c61c202b"
 ]
 
 uuids_microsoft=[
@@ -206,7 +210,15 @@ already_taken_uuids_microsoft=[
     "22340a09-a9d6-4cfa-9b8e-43eac054cc11",
     "d848b299-01fe-4979-a701-ef037e996492",
     "0e013a64-e466-4b3d-adca-27a35ecdd50b",
-    "61e45dee-85f7-4208-a7f1-407bcd540d22"
+    "61e45dee-85f7-4208-a7f1-407bcd540d22",
+    "fde2d1e1-ead1-4ce9-8d9a-280fbb346d35",
+    "c8253d21-435b-45a1-90ee-ac1c5238d518",
+    "e1344092-04bb-46ea-8cc5-1e05fcf5843e",
+    "51f43193-0fe6-403c-a29d-ffce8c3e11c4",
+    "ea20b20e-9079-42a7-8678-a4eb4ceff799",
+    "27dd56b2-31b5-4a70-9e08-a8145ddc8bf0",
+    "a1b2e2e6-94fb-4c32-adf7-86c1ef412365",
+    "4765b078-8c0c-47a1-8705-18c59ec9d8d1"
 ]
 
 uuids_atandt=[
@@ -259,7 +271,11 @@ already_taken_uuids_atandt=[
     "a7d336c7-1daa-4aa9-8acc-00591246ea43",
     "bea79f01-560f-4cf9-abea-7cea589e0472",
     "34d9d5f5-d1c2-45b2-9905-9ff620a6f144",
-    "9a7a7299-fcf0-4984-a37d-2ee1d369290a"
+    "9a7a7299-fcf0-4984-a37d-2ee1d369290a",
+    "bc742281-9e20-49d3-91eb-4752e88647f9",
+    "125e6426-5866-4189-a07c-7d8996b3dc43",
+    "891c77a9-a5f3-43d5-bc2c-334ec0d75897",
+    "cf3e783e-824a-4112-abdf-00753b27a167"
 ]
 
 uuids_orange=[
@@ -373,7 +389,10 @@ already_taken_uuids_netflix=[
     "9b27aa70-e1ba-4bcc-8c29-3846e0d4c399",
     "6a937d2b-de01-40ab-8d0d-fb3bdf2ec4bb",
     "c21f531c-2c20-4e5d-ab2b-25fb978155b0",
-    "857a9c3c-3767-4ad8-9aa8-007724160971"
+    "857a9c3c-3767-4ad8-9aa8-007724160971",
+    "868e809b-b5e5-4960-b58f-07aa79d230cd",
+    "8a333ce2-c2e1-435a-a8c1-1c18e5817256",
+    "076d2132-e561-4562-9013-48519b938f3e"
 
 ]
 
