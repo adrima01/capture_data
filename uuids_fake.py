@@ -279,7 +279,7 @@ already_taken_uuids_atandt=[
 ]
 
 uuids_orange=[
-    "ddacd6e8-ea1b-438b-b14a-597746e92e3f"
+
 ]
 
 already_taken_uuids_orange=[
@@ -310,7 +310,8 @@ already_taken_uuids_orange=[
     "f50751d9-d2e3-4019-a406-82d85b156eb8",
     "23b895ae-6614-4f8f-a770-42a05c64dffa",
     "72e52c20-a54a-41db-a9b3-65ab0682c8d8",
-    "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1"
+    "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1",
+    "ddacd6e8-ea1b-438b-b14a-597746e92e3f"
 ]
 
 uuids_credit_agricole=[
