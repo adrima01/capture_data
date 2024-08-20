@@ -275,7 +275,8 @@ already_taken_uuids_atandt=[
     "bc742281-9e20-49d3-91eb-4752e88647f9",
     "125e6426-5866-4189-a07c-7d8996b3dc43",
     "891c77a9-a5f3-43d5-bc2c-334ec0d75897",
-    "cf3e783e-824a-4112-abdf-00753b27a167"
+    "cf3e783e-824a-4112-abdf-00753b27a167",
+    "a5737ee8-43df-4adc-8da0-eb259b09bb2b"
 ]
 
 uuids_orange=[
