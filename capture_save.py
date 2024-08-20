@@ -9,10 +9,10 @@ lookyloo = Lookyloo()
 
 if lookyloo.is_up:
     #name of the institution so that we do not have to change the paths in the code
-    institution = "netflix"
+    institution = "orange"
 
     #need to change the uuid list manually
-    for uuid in uuids_netflix:
+    for uuid in uuids_orange:
 
         #saving the capture in the corresponding folder
         zip_buffer = lookyloo.get_complete_capture(uuid)
