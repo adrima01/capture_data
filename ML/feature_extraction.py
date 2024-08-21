@@ -1,4 +1,7 @@
+import ast
+import csv
 import os
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 import hashlib
@@ -29,9 +32,9 @@ def get_variations_list(company):
         list = file.read()
     return list
 
-def check_list(list, uuid):
-    hostname = lookyloo.get_info(uuid)['url']
-    return "1" if hostname in list else "0"
+def check_list(list, path):
+    domain = get_domain(path)
+    return "1" if domain in list else "0"
 
 def get_3rd_party_responses(uuid):
         response = lookyloo.get_modules_responses(uuid)
@@ -83,7 +86,41 @@ def get_3rd_party_responses(uuid):
             return "0"
         return len(modules)
 
+def getthis(path):
+    html_path = path + "/0.html"
+    with open(path, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+    soup = BeautifulSoup(html_content, 'html.parser')#?????????????????????????????????????
 
+
+def get_domain(path):
+    last_redirect_path= path + "/0.last_redirect.txt"
+    with open(last_redirect_path, 'r') as file:
+        url = file.readline().strip()
+    parsed_url = urlparse(url)
+    domain = parsed_url.netloc
+    return domain
+
+def get_takedown_info(company, nature, uuid):
+    takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
+    with open(takedown_path, mode='r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        rows = list(reader)
+
+        for i in range(0, len(rows), 2):
+            uuid_row = rows[i]
+            info_row = rows[i + 1] if i + 1 < len(rows) else None
+
+            if uuid_row and len(uuid_row) > 0 and uuid_row[0] == uuid:
+                if info_row and len(info_row) > 0:
+                    try:
+                        info_dict = ast.literal_eval(info_row[0])
+                        return info_dict
+                    except (ValueError, SyntaxError) as e:
+                        print("Error")
+                        return None
+
+    return None
 
 lookyloo = Lookyloo()
 
@@ -99,16 +136,24 @@ if lookyloo.is_up:
                 dir_path = os.path.join(root, dir_name)
                 print(dir_path)
                 uuid = read_uuid(dir_path)
-
                 features = []
 
                 #1 when the hostname is contained in the typosquatting list
-                features.append(check_list(typosquatting, uuid))
+                features.append(check_list(typosquatting, dir_path))
 
                 #getting the number of how often the url was found in other phishing databases
                 features.append(get_3rd_party_responses(uuid))
 
+                #getting the domain length
+                features.append(len(get_domain(dir_path)))
+
+                #host based features
+                takedown_info = get_takedown_info(company, "fake", uuid) #dict with takedown information
+
+
+
                 features.append("1") #1 means that it is a fake website
+
 
                 for company_dataset in companies:
                     if company_dataset == company:
