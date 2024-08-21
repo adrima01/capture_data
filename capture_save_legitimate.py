@@ -5,7 +5,7 @@ from pylookyloo import Lookyloo
 from uuids_legitimate import uuids_amazon, uuids_ameli, uuids_amendes, uuids_atandt, uuids_credit_agricole, \
     uuids_luxtrust, uuids_microsoft, uuids_netflix, uuids_orange, uuids_paypal
 
-lookyloo = Lookyloo("http://0.0.0.0:5100/")
+lookyloo = Lookyloo()
 
 if lookyloo.is_up:
     #name of the institution so that we do not have to change the paths in the code

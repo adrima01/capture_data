@@ -169,7 +169,6 @@ already_taken_uuids_ameli=[
 ]
 
 uuids_luxtrust =[
-
 ]
 
 already_taken_uuids_luxtrust=[
@@ -185,7 +184,9 @@ already_taken_uuids_luxtrust=[
     "24638f05-cad1-45c0-b282-88fee5c2ac16",
     "92310dc1-6073-4fd2-8057-1df2b610b229",
     "c3e7820f-2106-4917-a0ad-e302e1582775",
-    "3d62dd21-ef80-4817-b9b9-5289c61c202b"
+    "3d62dd21-ef80-4817-b9b9-5289c61c202b",
+    "bbdf8a95-fcf7-4fac-93e7-832d5bba1448"
+
 ]
 
 uuids_microsoft=[
