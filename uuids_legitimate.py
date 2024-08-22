@@ -449,7 +449,17 @@ uuids_microsoft_done=[
     "b221d6da-300c-4979-9202-7c188ea1e6f8",
     "535af488-ed1e-474a-a438-932f68b57c03",
     "f8ff4c96-5836-42ca-a55e-9a5e333827a4",
-    "3569ccff-3cef-46e7-8508-bc7aff0c38be"
+    "3569ccff-3cef-46e7-8508-bc7aff0c38be",
+    "5ed8224d-eef9-4318-881b-8f5461d6334b",
+    "1aaa0fe0-7a3c-4f6c-a75f-ba4e8b866482",
+    "276f5134-139d-4a20-a3f3-6a464872e360",
+    "763066b7-d8c3-4bf2-bc71-833f42417ef1",
+    "250a8f68-b408-4f2d-a38b-b0e8918dba3e",
+    "f139e42c-e0d0-4e92-94b9-124f70fa9500",
+    "ddce784d-9b06-4347-ae6c-d71ac82f20f3",
+    "81411216-606b-4d7e-b00c-4cdff1fe2c59",
+    "77859b8e-70d6-4059-bf65-563c918fb2fe",
+    "cea1eabd-78b4-4265-9a14-0693ea507244"
 ]
 
 uuids_netflix=[
