@@ -1,5 +1,4 @@
 uuids_amendes=[
-
 ]
 
 already_taken_uuids_amendes=[
@@ -36,11 +35,12 @@ already_taken_uuids_amendes=[
     "d7b62699-feb5-4242-b1a9-1c6ec15f4517",
     "71e65f6a-7ba1-4767-aebf-b84b4d13fca3",
     "121e993e-7f28-4ef5-adbb-489bc16a9dc7",
-    "00ef831c-3df2-42e9-a331-330b03ebb526"
+    "00ef831c-3df2-42e9-a331-330b03ebb526",
+    "2dcbd941-af19-4e78-819e-8b958c721603"
+
 ]
 
 uuids_paypal=[
-
 ]
 
 already_taken_uuids_paypal=[
@@ -62,7 +62,10 @@ already_taken_uuids_paypal=[
     "f52bb13c-c54b-456a-b52c-765c04c82dfa",
     "0af75821-642d-4f5d-9692-f7f3ce3ad114",
     "69370789-d7e6-4b7f-bd0d-17f784593c18",
-    "4b565878-1bff-4453-a315-16cbf403d0e6"
+    "4b565878-1bff-4453-a315-16cbf403d0e6",
+    "3710a4c3-eae5-4b2a-a295-776a74f3b411",
+    "0f710f96-1c1e-4a80-93aa-c969f49731bc"
+
 ]
 
 uuids_ameli = [
@@ -223,7 +226,10 @@ already_taken_uuids_microsoft=[
     "ea20b20e-9079-42a7-8678-a4eb4ceff799",
     "27dd56b2-31b5-4a70-9e08-a8145ddc8bf0",
     "a1b2e2e6-94fb-4c32-adf7-86c1ef412365",
-    "4765b078-8c0c-47a1-8705-18c59ec9d8d1"
+    "4765b078-8c0c-47a1-8705-18c59ec9d8d1",
+    "048b44d5-cdc8-4979-b559-fdecdd6f8a5a",
+    "3ab4dd42-48f3-41c7-9c22-447713b23e79",
+    "42fbb1e4-bf01-45f7-be0a-71a017cd71b1"
 ]
 
 uuids_atandt=[
@@ -317,7 +323,10 @@ already_taken_uuids_orange=[
     "23b895ae-6614-4f8f-a770-42a05c64dffa",
     "72e52c20-a54a-41db-a9b3-65ab0682c8d8",
     "b5cde49d-04de-4c4f-bff6-b4aa0db0a3b1",
-    "ddacd6e8-ea1b-438b-b14a-597746e92e3f"
+    "ddacd6e8-ea1b-438b-b14a-597746e92e3f",
+    "91a52b59-6c3f-4b12-9903-cdaf526ca38d",
+    "ac1d6a50-494c-420f-b577-ca1510a70463",
+    "f618fede-b504-43d7-bb78-37f7a392a20e"
 ]
 
 uuids_credit_agricole=[
@@ -354,7 +363,19 @@ already_taken_uuids_credit_agricole=[
     "65ece242-ea8c-4a59-a80f-f52dca180ca8",
     "44aa6b92-b608-4418-97ee-4902afcae0b1",
     "62d1698c-ade4-460c-b32f-086cf3bcb0a4",
-    "f90a2454-b479-405a-95a1-d39ea9a319db"
+    "f90a2454-b479-405a-95a1-d39ea9a319db",
+    "0c2a4b86-3223-44b1-a7a2-90f7749c94b5",
+    "0302c980-1f10-4ce5-99e4-917678e82928",
+    "5e1b851b-26dd-40ed-994c-4a6334543529",
+    "9c63279c-83ad-412a-8305-017184724a74",
+    "23f900ae-6fbc-4c71-a28f-48e2e8b5e018",
+    "6536c70e-f966-4609-9888-e19cce3a6567",
+    "c3505d1e-beba-4b38-92bc-57ab1f7c122d",
+    "b3199fc2-58cf-4680-b690-f54149a7cd32",
+    "43cf4fe6-206c-4f90-90bf-cbd07cfdb9f3",
+    "466f4b35-58b4-4635-935b-03e2bf9a8277",
+    "ad37b60a-1331-4817-a55c-6d9aa662e51e",
+    "b04e6fb2-dab1-46e0-b30c-909e488a1dc1"
 ]
 
 
@@ -399,7 +420,11 @@ already_taken_uuids_netflix=[
     "857a9c3c-3767-4ad8-9aa8-007724160971",
     "868e809b-b5e5-4960-b58f-07aa79d230cd",
     "8a333ce2-c2e1-435a-a8c1-1c18e5817256",
-    "076d2132-e561-4562-9013-48519b938f3e"
+    "076d2132-e561-4562-9013-48519b938f3e",
+    "72b909df-e296-4e31-b1ab-42423ef0465b",
+    "2b4cfcc0-f92d-48d3-b408-5fd4e620bcaf",
+    "921af6ea-bf0c-46a2-b8e5-6eb4431433c8",
+    "fe8bb716-ba77-4f81-8af2-f3eb8b7ab519"
 
 ]
 
@@ -461,7 +486,18 @@ already_taken_uuids_amazon=[
     "3d774666-435e-4034-a957-08514047d072",
     "5fdea3e4-12dc-4159-9a2a-63df625f526e",
     "df18860d-0159-4946-b16b-181b306c03fd",
-    "5626760c-e417-4167-af39-226effb86ade"
+    "5626760c-e417-4167-af39-226effb86ade",
+    "a4f970f6-1315-42ec-b326-af695ac4149e",
+    "f15205f2-d1fc-4a1f-a5ae-a108d168eeb9",
+    "a05cc2e9-c5f9-441c-b206-16c711eb7ce4",
+    "54c2c7af-f333-41b2-851c-d66278d09aa0",
+    "d9f60334-2c24-4d0c-aa46-04c9d1050733",
+    "6821f4b6-52d4-477e-8d11-c2fb18c04a70",
+    "0920c707-b728-4b13-914e-e9a4475f6581",
+    "8c8518bb-b0d5-41b1-a4df-d9abd51d13ac",
+    "c3cd045b-9830-4026-b2a0-2f0f1a594fd6",
+    "53992a09-ac25-4587-8029-83a29d2cd2ce",
+    "a3c8d8e5-236d-4593-961b-e8e3e565cf4b"
 ]
 
 uuids_other_phishing=[
