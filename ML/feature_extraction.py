@@ -1,10 +1,13 @@
 import ast
 import csv
 import os
+import geocoder
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 import hashlib
+
+from imagedominantcolor import DominantColor
 from pylookyloo import Lookyloo
 from csv import writer
 
@@ -86,11 +89,17 @@ def get_3rd_party_responses(uuid):
             return "0"
         return len(modules)
 
-def getthis(path):
+def html_information(path, company):
     html_path = path + "/0.html"
-    with open(path, 'r', encoding='utf-8') as file:
+    with open(html_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
-    soup = BeautifulSoup(html_content, 'html.parser')#?????????????????????????????????????
+    soup = BeautifulSoup(html_content, 'html.parser')
+    name_presence = "1" if company in soup.get_text().lower() else "0"
+    form_presence = "1" if soup.find('input') else "0"
+    links = soup.find_all('a')
+    number_links = len(links)
+    empty_links = [link for link in links if link.get('href') == '#']
+    return name_presence, form_presence, number_links, len(empty_links)
 
 
 def get_domain(path):
@@ -102,7 +111,7 @@ def get_domain(path):
     return domain
 
 def get_takedown_info(company, nature, uuid):
-    takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
+    """takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
     with open(takedown_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
         rows = list(reader)
@@ -119,13 +128,42 @@ def get_takedown_info(company, nature, uuid):
                     except (ValueError, SyntaxError) as e:
                         print("Error")
                         return None
+    return None"""
+    return lookyloo.get_takedown_information(uuid)
 
+def get_ips(takedown_info, path):
+    domain = get_domain(path)
+    for redirect in takedown_info:
+        if redirect['hostname'] == domain:
+            return list(redirect['ips'].keys())
     return None
+
+#getting only the first ip
+def get_geolocation(ips):
+    latitude, longitude = None, None
+    geo = geocoder.ip(ips[0])
+    latitude, longitude = geo.latlng[0], geo.latlng[1]
+    return latitude, longitude
+
+def dominant_color(path):
+    screenshot_file_path = path + "/0.png"
+    if os.path.exists(screenshot_file_path):
+        dominantcolor = DominantColor(screenshot_file_path)
+        return dominantcolor.r, dominantcolor.g, dominantcolor.b
+
+
 
 lookyloo = Lookyloo()
 
 
 if lookyloo.is_up:
+    for company in companies:
+        file_name = "datasets/" + company + "_dataset.csv"
+        feature_list = ["uuid","typosquatting_list","3rd_party_hits","domain_length","name_presence","form_presence","number_links","number_empty_links","latitude","longitude","red_value","green_value","blue_value","malicious","company_site"]
+        with open(file_name, 'a') as f_object:
+            writer_object = writer(f_object)
+            writer_object.writerow(feature_list)
+            f_object.close()
     for company in companies:
         print(company)
         typosquatting = get_variations_list(company)
@@ -135,20 +173,42 @@ if lookyloo.is_up:
             for dir_name in dirs:
                 dir_path = os.path.join(root, dir_name)
                 print(dir_path)
-                uuid = read_uuid(dir_path)
                 features = []
 
+                uuid = read_uuid(dir_path)
+                takedown_info = get_takedown_info(company, "fake", uuid)  # dict with takedown information
+
+
+
+                #adding features
+
+                #adding uuid
+                features.append(uuid)
                 #1 when the hostname is contained in the typosquatting list
                 features.append(check_list(typosquatting, dir_path))
-
                 #getting the number of how often the url was found in other phishing databases
                 features.append(get_3rd_party_responses(uuid))
-
                 #getting the domain length
                 features.append(len(get_domain(dir_path)))
+                # form presence
+                name_presence,form_presence, number_links, empty_links = html_information(dir_path, company)
+                features.append(name_presence)
+                features.append(form_presence)
+                features.append(number_links)
+                features.append(empty_links)
+                #adding latitude and longitude
+                latitude, longitude = get_geolocation(get_ips(takedown_info, dir_path))
+                features.append(latitude)
+                features.append(longitude)
+                #adding r,g,b values of dominant color
+                r, g, b = dominant_color(dir_path)
+                features.append(r)
+                features.append(g)
+                features.append(b)
 
-                #host based features
-                takedown_info = get_takedown_info(company, "fake", uuid) #dict with takedown information
+
+                #print(takedown_info)
+                #print(get_ips(takedown_info, dir_path))
 
 
 
