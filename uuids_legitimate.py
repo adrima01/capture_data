@@ -209,34 +209,56 @@ uuids_amendes_done=[
 ]
 
 uuids_atandt=[
-"c75d4f98-c32e-4763-ae0b-d0c47fc7ae4f",
-"5dd944a7-2fb4-47df-8b72-d7e97f503aef",
-"1a6e933c-0a9e-4cf9-9b5f-8dd2ddf392e0",
-"ddd7e2e0-b6d5-4dd1-ab57-41f816afeea1",
-"09342310-f987-4edb-bf0e-68bd79a99095",
-"2ef97545-de7b-445f-9858-b226491e16af",
-"6c6e7d20-cf7e-4394-899c-89611d8d9749",
-"d6c13fcd-318f-4657-ba89-adb8c192085c",
-"1854058b-7c73-421f-9b03-57bbc9e7b50e",
-"59339f7f-becc-4262-a0d7-af9a1587e195",
-"412de429-b21e-43b1-8673-be18b1c8bd4a",
-"ca4fc99f-ca96-417c-8036-8681d948459c",
-"9a0a91d3-91a0-4e85-92bf-8daf27596706",
-"ffabe624-3589-4450-8de4-6776006167f6",
-"59f2108b-f904-48b5-86e0-fc824fce5dff",
-"3f2835b6-3ed2-4c66-a65a-d958c9812ba6",
-"75887648-6367-47e3-aae1-bbae0284575f",
-"fde637b1-3ca1-475c-ae0a-2218d25977b3",
-"7be47b11-463e-41a4-9383-419aa2b76e11",
-"56e563ff-ae41-4043-8ff1-b203859c8f5e",
-"95f98bb9-f070-4d43-92b3-9d8ab52fa196",
-"0310b1f2-a19d-4b9c-9abd-23f3bdff050f",
-"0f7a748a-a4c0-4829-b9d9-8b3e475eddab",
-"8c3ec264-2a3c-4433-befb-c153831b2a2d"
+
 ]
 
 uuids_atandt_done=[
-
+    "c75d4f98-c32e-4763-ae0b-d0c47fc7ae4f",
+    "5dd944a7-2fb4-47df-8b72-d7e97f503aef",
+    "1a6e933c-0a9e-4cf9-9b5f-8dd2ddf392e0",
+    "ddd7e2e0-b6d5-4dd1-ab57-41f816afeea1",
+    "09342310-f987-4edb-bf0e-68bd79a99095",
+    "2ef97545-de7b-445f-9858-b226491e16af",
+    "6c6e7d20-cf7e-4394-899c-89611d8d9749",
+    "d6c13fcd-318f-4657-ba89-adb8c192085c",
+    "1854058b-7c73-421f-9b03-57bbc9e7b50e",
+    "59339f7f-becc-4262-a0d7-af9a1587e195",
+    "412de429-b21e-43b1-8673-be18b1c8bd4a",
+    "ca4fc99f-ca96-417c-8036-8681d948459c",
+    "9a0a91d3-91a0-4e85-92bf-8daf27596706",
+    "ffabe624-3589-4450-8de4-6776006167f6",
+    "59f2108b-f904-48b5-86e0-fc824fce5dff",
+    "3f2835b6-3ed2-4c66-a65a-d958c9812ba6",
+    "75887648-6367-47e3-aae1-bbae0284575f",
+    "fde637b1-3ca1-475c-ae0a-2218d25977b3",
+    "7be47b11-463e-41a4-9383-419aa2b76e11",
+    "56e563ff-ae41-4043-8ff1-b203859c8f5e",
+    "95f98bb9-f070-4d43-92b3-9d8ab52fa196",
+    "0310b1f2-a19d-4b9c-9abd-23f3bdff050f",
+    "0f7a748a-a4c0-4829-b9d9-8b3e475eddab",
+    "8c3ec264-2a3c-4433-befb-c153831b2a2d",
+    "90bc4dd7-ead3-475b-a4b9-90abd4f34067",
+    "8a0d4881-0d05-4618-a787-b93108628e18",
+    "fb5a498a-8d4a-4457-97f6-ce0a261e15b3",
+    "79bb17c8-7e62-4773-8dc2-1d73daff9270",
+    "52d0f185-e032-4d1a-9d42-d3663b00a322",
+    "0910bed4-cba6-413e-89e7-860a0e341213",
+    "75bb6730-ae8b-43f3-ae07-6a0f3ff966ad",
+    "a33cd2af-74b4-4ecd-9e71-49928ab4f6a1",
+    "1d6e3d93-c47b-41f4-b572-f6ecdcd9a697",
+    "e6ab566a-5724-4408-af4b-2b8a8299cff8",
+    "f1ddd72d-19dc-481d-82bd-0ecb5879ee4d",
+    "ef4c61c4-6912-4ab3-ba4c-2775409c1719",
+    "83c6419a-850b-46c8-bf57-d0f148849cd2",
+    "e9dc7445-ad63-49df-a641-1148213674b1",
+    "84e0493e-6b22-4638-a1e5-a64a8126743d",
+    "fb200abd-1a4a-4eb4-8a94-97868acdf136",
+    "de3f47fa-602d-4486-be54-f7886c133a98",
+    "7c00c0c6-275a-4785-a931-5856eca334c6",
+    "d9cd45c3-64cd-475f-a6e7-ef9c1f077c3f",
+    "9b8becca-98cd-4033-9c60-974f743e3721",
+    "80a21fc6-6f5c-4576-9652-16c67ae7261b",
+    "420e4272-9a06-4ec2-b261-3041c7a145c4"
 ]
 
 uuids_credit_agricole=[
@@ -503,7 +525,17 @@ uuids_netflix_done=[
     "e34ff55c-2a57-4ae8-913a-d4a2f790ba54",
     "1d369f3a-c7de-4bb8-89c9-8367cab94106",
     "9cc55e89-bd90-457d-914e-040b34e2fa26",
-    "ad2fbff9-eb4b-49d5-a190-d2123d214494"
+    "ad2fbff9-eb4b-49d5-a190-d2123d214494",
+    "8c6f6be8-48b5-4e69-8f61-8b7e2ef1fd4b",
+    "f5634836-e9e0-491a-80ed-11b9d6d973d2",
+    "179c0b4d-28d5-4ca2-9076-11116a2fc27d",
+    "eb5acd4d-fb35-4f83-b00c-15a3753f47fc",
+    "88e175d8-de10-4c10-ba25-76f3133c4cdd",
+    "e7a7b920-bb2e-477c-9fc6-20e0d5f46b5e",
+    "f2c00d15-710a-4d65-ad04-73af7cd5fb47",
+    "0f885acd-b3ff-471f-8a9f-ffa04d1f3a72",
+    "ec895699-e8be-44f7-b218-694d251d2763",
+    "725df4a3-25cb-4189-827e-11e547a56725"
 ]
 
 uuids_orange=[

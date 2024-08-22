@@ -46,3 +46,47 @@ fde637b1-3ca1-475c-ae0a-2218d25977b3
 "{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2a02:26f0:480:d9b::2db1': [], '104.90.25.120': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:480:d93::2db1': []}, 'asns': {}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
 8c3ec264-2a3c-4433-befb-c153831b2a2d
 "{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2a02:26f0:480:d9b::2db1': [], '104.90.25.120': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:480:d93::2db1': []}, 'asns': {}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+90bc4dd7-ead3-475b-a4b9-90abd4f34067
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+8a0d4881-0d05-4618-a787-b93108628e18
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+fb5a498a-8d4a-4457-97f6-ce0a261e15b3
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+79bb17c8-7e62-4773-8dc2-1d73daff9270
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+52d0f185-e032-4d1a-9d42-d3663b00a322
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+0910bed4-cba6-413e-89e7-860a0e341213
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+75bb6730-ae8b-43f3-ae07-6a0f3ff966ad
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+a33cd2af-74b4-4ecd-9e71-49928ab4f6a1
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+1d6e3d93-c47b-41f4-b572-f6ecdcd9a697
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+e6ab566a-5724-4408-af4b-2b8a8299cff8
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+f1ddd72d-19dc-481d-82bd-0ecb5879ee4d
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68b::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+ef4c61c4-6912-4ab3-ba4c-2775409c1719
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68b::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+83c6419a-850b-46c8-bf57-d0f148849cd2
+"{'hostname': 'www.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+e9dc7445-ad63-49df-a641-1148213674b1
+"{'hostname': 'investors.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2.20.142.59': [], '2.20.142.50': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com']}"
+84e0493e-6b22-4638-a1e5-a64a8126743d
+"{'hostname': 'investors.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2.20.142.59': [], '2.20.142.50': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com']}"
+fb200abd-1a4a-4eb4-8a94-97868acdf136
+"{'hostname': 'investors.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2.20.142.59': [], '2.20.142.50': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com']}"
+de3f47fa-602d-4486-be54-f7886c133a98
+"{'hostname': 'investors.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'2.20.142.59': [], '2.20.142.50': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com']}"
+7c00c0c6-275a-4785-a931-5856eca334c6
+"{'hostname': 'about.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+d9cd45c3-64cd-475f-a6e7-ef9c1f077c3f
+"{'hostname': 'about.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+9b8becca-98cd-4033-9c60-974f743e3721
+"{'hostname': 'about.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+80a21fc6-6f5c-4576-9652-16c67ae7261b
+"{'hostname': 'about.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
+420e4272-9a06-4ec2-b261-3041c7a145c4
+"{'hostname': 'about.att.com', 'contacts': ['att-domains@att.com', 'domainabuse@cscglobal.com'], 'ips': {'72.246.169.113': ['abuse@akamai.com', 'ip-admin@akamai.com'], '2a02:26f0:ab00:6a3::2db1': [], '2a02:26f0:ab00:68c::2db1': []}, 'asns': {'20940': []}, 'all_emails': ['att-domains@att.com', 'domainabuse@cscglobal.com', 'ip-admin@akamai.com', 'abuse@akamai.com']}"
