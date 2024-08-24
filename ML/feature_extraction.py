@@ -145,13 +145,26 @@ def get_geolocation(ips):
     latitude, longitude = geo.latlng[0], geo.latlng[1]
     return latitude, longitude
 
-def dominant_color(path):
-    screenshot_file_path = path + "/0.png"
-    if os.path.exists(screenshot_file_path):
-        dominantcolor = DominantColor(screenshot_file_path)
+def dominant_color(path, type):
+    if type == "screenshot":
+        file_path = path + "/0.png"
+    elif type == "favicon":
+        file_path = path + "/0.potential_favicons.ico"
+    if os.path.exists(file_path):
+        dominantcolor = DominantColor(file_path)
         return dominantcolor.r, dominantcolor.g, dominantcolor.b
 
+def calculate_file_hash(file_path, hash_algorithm='sha256'):
+    # Unterstützte Hash-Algorithmen
+    hash_func = getattr(hashlib, hash_algorithm)()
 
+    # Datei im Binärmodus lesen und den Hash berechnen
+    with open(file_path, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_func.update(chunk)
+
+    # Hexadezimale Darstellung des Hashs zurückgeben
+    return hash_func.hexdigest()
 
 lookyloo = Lookyloo()
 
@@ -159,7 +172,24 @@ lookyloo = Lookyloo()
 if lookyloo.is_up:
     for company in companies:
         file_name = "datasets/" + company + "_dataset.csv"
-        feature_list = ["uuid","typosquatting_list","3rd_party_hits","domain_length","name_presence","form_presence","number_links","number_empty_links","latitude","longitude","red_value","green_value","blue_value","malicious","company_site"]
+        feature_list = ["uuid",
+                        "typosquatting_list",
+                        "3rd_party_hits",
+                        "domain_length",
+                        "name_presence",
+                        "form_presence",
+                        "number_links",
+                        "number_empty_links",
+                        "latitude",
+                        "longitude",
+                        "red_value_screenshot",
+                        "green_value_screenshot",
+                        "blue_value_screenshot",
+                        "red_value_favicon",
+                        "green_value_favicon",
+                        "blue_value_favicon",
+                        "malicious",
+                        "company_site"]
         with open(file_name, 'a') as f_object:
             writer_object = writer(f_object)
             writer_object.writerow(feature_list)
@@ -200,11 +230,15 @@ if lookyloo.is_up:
                 latitude, longitude = get_geolocation(get_ips(takedown_info, dir_path))
                 features.append(latitude)
                 features.append(longitude)
-                #adding r,g,b values of dominant color
-                r, g, b = dominant_color(dir_path)
-                features.append(r)
-                features.append(g)
-                features.append(b)
+                #adding r,g,b values of dominant color of the screenshot and favicon
+                r_screenshot, g_screenshot, b_screenshot = dominant_color(dir_path,"screenshot")
+                features.append(r_screenshot)
+                features.append(g_screenshot)
+                features.append(b_screenshot)
+                r_favicon, g_favicon, b_favicon = dominant_color(dir_path,"favicon")
+                features.append(r_favicon)
+                features.append(g_favicon)
+                features.append(b_favicon)
 
 
                 #print(takedown_info)
