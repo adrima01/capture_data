@@ -99,7 +99,13 @@ def html_information(path, company):
     links = soup.find_all('a')
     number_links = len(links)
     empty_links = [link for link in links if link.get('href') == '#']
-    return name_presence, form_presence, number_links, len(empty_links)
+    domain = get_domain(path)
+    domain_links = 0
+    hrefs = [tag.get('href') for tag in soup.find_all(href=True)]
+    for href in hrefs:
+        if domain in href:
+            domain_links += 1
+    return name_presence, form_presence, number_links, len(empty_links), domain_links
 
 
 def get_domain(path):
@@ -140,10 +146,9 @@ def get_ips(takedown_info, path):
 
 #getting only the first ip
 def get_geolocation(ips):
-    latitude, longitude = None, None
     geo = geocoder.ip(ips[0])
-    latitude, longitude = geo.latlng[0], geo.latlng[1]
-    return latitude, longitude
+    lat, long = geo.latlng[0], geo.latlng[1]
+    return lat, long
 
 def dominant_color(path, type):
     if type == "screenshot":
@@ -180,6 +185,7 @@ if lookyloo.is_up:
                         "form_presence",
                         "number_links",
                         "number_empty_links",
+                        "number_links_domain",
                         "latitude",
                         "longitude",
                         "red_value_screenshot",
@@ -188,6 +194,8 @@ if lookyloo.is_up:
                         "red_value_favicon",
                         "green_value_favicon",
                         "blue_value_favicon",
+                        "hash_screenshot",
+                        "hash_favicon",
                         "malicious",
                         "company_site"]
         with open(file_name, 'a') as f_object:
@@ -221,11 +229,12 @@ if lookyloo.is_up:
                 #getting the domain length
                 features.append(len(get_domain(dir_path)))
                 # form presence
-                name_presence,form_presence, number_links, empty_links = html_information(dir_path, company)
+                name_presence,form_presence, number_links, empty_links, domain_links = html_information(dir_path, company)
                 features.append(name_presence)
                 features.append(form_presence)
                 features.append(number_links)
                 features.append(empty_links)
+                features.append(domain_links)
                 #adding latitude and longitude
                 latitude, longitude = get_geolocation(get_ips(takedown_info, dir_path))
                 features.append(latitude)
@@ -239,6 +248,9 @@ if lookyloo.is_up:
                 features.append(r_favicon)
                 features.append(g_favicon)
                 features.append(b_favicon)
+                #hashes
+                features.append(int(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'),16))
+                features.append(int(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'),16))
 
 
                 #print(takedown_info)
