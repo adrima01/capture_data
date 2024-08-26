@@ -169,7 +169,7 @@ def calculate_file_hash(file_path, hash_algorithm='sha256'):
             hash_func.update(chunk)
 
     # Hexadezimale Darstellung des Hashs zurückgeben
-    return hash_func.hexdigest()
+    return int(hash_func.hexdigest(),16)
 
 lookyloo = Lookyloo()
 
@@ -249,8 +249,8 @@ if lookyloo.is_up:
                 features.append(g_favicon)
                 features.append(b_favicon)
                 #hashes
-                features.append(int(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'),16))
-                features.append(int(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'),16))
+                features.append(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'))
+                features.append(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'))
 
 
                 #print(takedown_info)
