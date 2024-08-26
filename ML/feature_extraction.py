@@ -4,6 +4,7 @@ import os
 import geocoder
 from urllib.parse import urlparse
 from similarius import get_website, extract_text_ressource, sk_similarity, ressource_difference, ratio
+from ip2geotools.databases.noncommercial import DbIpCity
 
 
 from bs4 import BeautifulSoup
@@ -120,36 +121,40 @@ def get_domain(path):
 
 def get_takedown_info(company, nature, uuid):
     takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
-    with open(takedown_path, mode='r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        rows = list(reader)
+    if os.path.exists(takedown_path):
+        with open(takedown_path, mode='r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            rows = list(reader)
 
-        for i in range(0, len(rows), 2):
-            uuid_row = rows[i]
-            info_row = rows[i + 1] if i + 1 < len(rows) else None
+            for i in range(0, len(rows), 2):
+                uuid_row = rows[i]
+                info_row = rows[i + 1] if i + 1 < len(rows) else None
 
-            if uuid_row and len(uuid_row) > 0 and uuid_row[0] == uuid:
-                if info_row and len(info_row) > 0:
-                    try:
-                        dict_list = [ast.literal_eval(item) for item in info_row]
+                if uuid_row and len(uuid_row) > 0 and uuid_row[0] == uuid:
+                    if info_row and len(info_row) > 0:
+                        try:
+                            dict_list = [ast.literal_eval(item) for item in info_row]
 
-                        return dict_list
+                            return dict_list
 
-                    except (ValueError, SyntaxError) as e:
-                        print("Error:", e)
+                        except (ValueError, SyntaxError) as e:
+                            print("Error:", e)
+    return None
 
-def get_ips(takedown_info, path):
+def get_ips(info, path):
     domain = get_domain(path)
-    for redirect in takedown_info:
+    for redirect in info:
         if redirect['hostname'] == domain:
             return list(redirect['ips'].keys())
     return None
 
 #getting only the first ip
-def get_geolocation(ips):
-    geo = geocoder.ip(ips[0])
-    lat, long = geo.latlng[0], geo.latlng[1]
-    return lat, long
+def get_geolocation(ips_list):
+    """geo = geocoder.ip(ips_list[0])
+    lat, long = geo.latlng[0], geo.latlng[1]"""
+
+    response = DbIpCity.get(ips_list[0], api_key='free')
+    return response.latitude, response.longitude
 
 def dominant_color(path, type):
     if type == "screenshot":
@@ -254,9 +259,6 @@ if lookyloo.is_up:
                 features = []
 
                 uuid = read_uuid(dir_path)
-                takedown_info = get_takedown_info(company, "fake", uuid)  # dict with takedown information
-
-
 
                 #adding features
 
@@ -277,7 +279,9 @@ if lookyloo.is_up:
                 features.append(empty_links)
                 features.append(domain_links)
                 #adding latitude and longitude
-                latitude, longitude = get_geolocation(get_ips(takedown_info, dir_path))
+                takedown_infos = get_takedown_info(company, "fake", uuid)  # dict with takedown information
+                ips = get_ips(takedown_infos, dir_path)
+                latitude, longitude = get_geolocation(ips)
                 features.append(latitude)
                 features.append(longitude)
                 #adding r,g,b values of dominant color of the screenshot and favicon
