@@ -222,3 +222,5 @@ de3d96ee-2df9-45c0-89f9-f58d940e063d
 https://www.ameli.fr/moselle/chirurgien-dentiste
 1e62d609-976b-407e-b7f6-d13ddf1716d9
 https://www.ameli.fr/moselle/assure/english-pages
+6f4c21aa-b220-4d4d-9b3a-9e47dfdf5a34
+https://ameliconnect.ameli.fr/oauth2/authorize?scope=openid+ameliconnect&response_type=code&nonce=855b0983cc73&redirect_uri=https%3A%2F%2Fassure.ameli.fr%3A443%2FPortailAS%2Fappmanager%2FPortailAS%2Fassure%3F_nfpb%3Dtrue%26_pageLabel%3Das_login_page%26cb%3Dtrue&state=3f022f31596a8&client_id=compte_AS

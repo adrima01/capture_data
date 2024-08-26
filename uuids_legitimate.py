@@ -74,7 +74,6 @@ uuids_amazon_done=[
 
 uuids_ameli=[
 
-
 ]
 
 uuids_ameli_done=[
@@ -189,7 +188,9 @@ uuids_ameli_done=[
 "7ee6dc99-d78a-4875-8aa8-019b4ad86866",
 "56f34cc6-9250-4dbe-8ae5-5764ae21e29d",
 "de3d96ee-2df9-45c0-89f9-f58d940e063d",
-"1e62d609-976b-407e-b7f6-d13ddf1716d9"
+"1e62d609-976b-407e-b7f6-d13ddf1716d9",
+    "6f4c21aa-b220-4d4d-9b3a-9e47dfdf5a34"
+
 ]
 
 uuids_amendes=[
@@ -209,7 +210,6 @@ uuids_amendes_done=[
 ]
 
 uuids_atandt=[
-
 ]
 
 uuids_atandt_done=[
@@ -258,7 +258,9 @@ uuids_atandt_done=[
     "d9cd45c3-64cd-475f-a6e7-ef9c1f077c3f",
     "9b8becca-98cd-4033-9c60-974f743e3721",
     "80a21fc6-6f5c-4576-9652-16c67ae7261b",
-    "420e4272-9a06-4ec2-b261-3041c7a145c4"
+    "420e4272-9a06-4ec2-b261-3041c7a145c4",
+    "9beb236b-5011-4463-8b15-cbbea696f85e"
+
 ]
 
 uuids_credit_agricole=[
@@ -429,7 +431,8 @@ uuids_luxtrust_done=[
 "e71bb0c2-f075-48e7-8861-51a497f68f52",
 "720abd17-d16e-4b43-afa0-b4aee2099afc",
 "7c4650f4-fde3-401b-812a-0eaad72bd05a",
-"7c3a0b4f-f543-426f-b2b2-180bc73005bb"
+"7c3a0b4f-f543-426f-b2b2-180bc73005bb",
+"ee028001-bd9f-4e63-a05e-af365735e636"
 ]
 
 uuids_microsoft=[

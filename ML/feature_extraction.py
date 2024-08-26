@@ -3,6 +3,8 @@ import csv
 import os
 import geocoder
 from urllib.parse import urlparse
+from similarius import get_website, extract_text_ressource, sk_similarity, ressource_difference, ratio
+
 
 from bs4 import BeautifulSoup
 import hashlib
@@ -117,7 +119,7 @@ def get_domain(path):
     return domain
 
 def get_takedown_info(company, nature, uuid):
-    """takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
+    takedown_path = "../" + company + "_" + nature + "/" + company + "_takedown_info.csv"
     with open(takedown_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
         rows = list(reader)
@@ -129,13 +131,12 @@ def get_takedown_info(company, nature, uuid):
             if uuid_row and len(uuid_row) > 0 and uuid_row[0] == uuid:
                 if info_row and len(info_row) > 0:
                     try:
-                        info_dict = ast.literal_eval(info_row[0])
-                        return info_dict
+                        dict_list = [ast.literal_eval(item) for item in info_row]
+
+                        return dict_list
+
                     except (ValueError, SyntaxError) as e:
-                        print("Error")
-                        return None
-    return None"""
-    return lookyloo.get_takedown_information(uuid)
+                        print("Error:", e)
 
 def get_ips(takedown_info, path):
     domain = get_domain(path)
@@ -158,18 +159,43 @@ def dominant_color(path, type):
     if os.path.exists(file_path):
         dominantcolor = DominantColor(file_path)
         return dominantcolor.r, dominantcolor.g, dominantcolor.b
+    return 0,0,0
 
 def calculate_file_hash(file_path, hash_algorithm='sha256'):
     # Unterstützte Hash-Algorithmen
     hash_func = getattr(hashlib, hash_algorithm)()
 
     # Datei im Binärmodus lesen und den Hash berechnen
-    with open(file_path, 'rb') as f:
-        for chunk in iter(lambda: f.read(4096), b""):
-            hash_func.update(chunk)
+    if os.path.exists(file_path):
+        with open(file_path, 'rb') as f:
+            for chunk in iter(lambda: f.read(4096), b""):
+                hash_func.update(chunk)
 
-    # Hexadezimale Darstellung des Hashs zurückgeben
-    return int(hash_func.hexdigest(),16)
+        # Hexadezimale Darstellung des Hashs zurückgeben
+        return int(hash_func.hexdigest(),16)
+    return 0
+
+def similarius_values(company, path):
+    with open(company, 'r', encoding='utf-8') as file:
+        html_content1 = file.read()
+    soup1 = BeautifulSoup(html_content1, 'html.parser')
+
+
+    original_text, original_ressource = extract_text_ressource(soup1.text)
+
+    # Compare
+
+    html_path = path + "/0.html"
+    with open(html_path, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+    soup = BeautifulSoup(html_content, 'html.parser')
+    compare_text, compare_ressource = extract_text_ressource(soup.text)
+
+    # Calculate
+    sim = str(sk_similarity(compare_text, original_text))
+
+    return sim
+
 
 lookyloo = Lookyloo()
 
@@ -178,6 +204,7 @@ if lookyloo.is_up:
     for company in companies:
         file_name = "datasets/" + company + "_dataset.csv"
         feature_list = ["uuid",
+                        "dir_path",
                         "typosquatting_list",
                         "3rd_party_hits",
                         "domain_length",
@@ -196,8 +223,21 @@ if lookyloo.is_up:
                         "blue_value_favicon",
                         "hash_screenshot",
                         "hash_favicon",
+                        "similarius_sim",
                         "malicious",
                         "company_site"]
+        compare_sites= {
+            "amazon": "/home/amaraj/Bachelorarbeit/capture_saver/amazon_legitimate/2024-08-21T12:17:23.058173/0.html",
+            "ameli":"/home/amaraj/Bachelorarbeit/capture_saver/ameli_legitimate/2024-08-26T12:17:33.189636/0.html",
+            "amendes":"/home/amaraj/Bachelorarbeit/capture_saver/amendes_legitimate/2024-08-21T14:44:09.691940/0.html",
+            "atandt":"/home/amaraj/Bachelorarbeit/capture_saver/atandt_legitimate/2024-08-26T12:29:05.942666/0.html",
+            "credit_agricole":"/home/amaraj/Bachelorarbeit/capture_saver/credit_agricole_legitimate/2024-08-21T14:30:17.582262/0.html",
+            "luxtrust":"/home/amaraj/Bachelorarbeit/capture_saver/luxtrust_legitimate/2024-08-26T13:45:53.974198/0.html",
+            "microsoft":"/home/amaraj/Bachelorarbeit/capture_saver/microsoft_legitimate/2024-08-21T14:20:58.145717/0.html",
+            "netflix":"/home/amaraj/Bachelorarbeit/capture_saver/netflix_legitimate/2024-08-21T14:19:05.483055/0.html",
+            "orange":"/home/amaraj/Bachelorarbeit/capture_saver/orange_legitimate/2024-08-21T13:47:47.622005/0.html",
+            "paypal":"/home/amaraj/Bachelorarbeit/capture_saver/paypal_legitimate/2024-08-21T13:36:34.243552/0.html"
+        }
         with open(file_name, 'a') as f_object:
             writer_object = writer(f_object)
             writer_object.writerow(feature_list)
@@ -220,8 +260,9 @@ if lookyloo.is_up:
 
                 #adding features
 
-                #adding uuid
+                #adding uuid and path
                 features.append(uuid)
+                features.append(dir_path)
                 #1 when the hostname is contained in the typosquatting list
                 features.append(check_list(typosquatting, dir_path))
                 #getting the number of how often the url was found in other phishing databases
@@ -251,6 +292,11 @@ if lookyloo.is_up:
                 #hashes
                 features.append(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'))
                 features.append(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'))
+                #similarius
+                sim_value= similarius_values(compare_sites[company],dir_path)
+                features.append(sim_value)
+                #features.append(diff_value)
+                #features.append(ratio_value)
 
 
                 #print(takedown_info)
@@ -279,7 +325,7 @@ if lookyloo.is_up:
 
 
 
-        #did the legitimate ones with demo and public instance
+        """"#did the legitimate ones with demo and public instance
         for root, dirs, files in os.walk("../" + company + "_legitimate"):
             for dir_name in dirs:
                 dir_path = os.path.join(root, dir_name)
@@ -301,4 +347,4 @@ if lookyloo.is_up:
                         label = "1" #1 so that it is marked as the company we are training the dataset on
                     else:
                         label = "0"
-                    write_files(company_dataset, features, label)
+                    write_files(company_dataset, features, label)"""
