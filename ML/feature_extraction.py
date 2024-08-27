@@ -3,6 +3,8 @@ import csv
 import os
 import geocoder
 from urllib.parse import urlparse
+
+import requests
 from similarius import get_website, extract_text_ressource, sk_similarity, ressource_difference, ratio
 from ip2geotools.databases.noncommercial import DbIpCity
 
@@ -150,11 +152,32 @@ def get_ips(info, path):
 
 #getting only the first ip
 def get_geolocation(ips_list):
-    """geo = geocoder.ip(ips_list[0])
-    lat, long = geo.latlng[0], geo.latlng[1]"""
+    if len(ips_list) > 0:
+        """geo = geocoder.ip(ips_list[0])
+        lat, long = geo.latlng[0], geo.latlng[1]
+        return lat, long"""
 
-    response = DbIpCity.get(ips_list[0], api_key='free')
-    return response.latitude, response.longitude
+        """response = DbIpCity.get(ips_list[0], api_key='free')
+        return response.latitude, response.longitude"""
+        url = 'https://ip.circl.lu/geolookup/' + ips_list[0]
+
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            if "Latitude (average)" in data[1]["country_info"]:
+                lat = data[1]["country_info"]["Latitude (average)"]
+            else:
+                lat = -1000
+            if "Longitude (average)" in data[1]["country_info"]:
+                long = data[1]["country_info"]["Longitude (average)"]
+            else:
+                long = -1000
+            return lat, long
+        else:
+            print(f"Error: {response.status_code}")
+    return -1000,-1000
+
+
 
 def dominant_color(path, type):
     if type == "screenshot":
@@ -252,7 +275,7 @@ if lookyloo.is_up:
         typosquatting = get_variations_list(company)
         #did the fake ones with the public instance
         #go through every directory
-        for root, dirs, files in os.walk("../" + company + "_fake"): #first all the fakes
+        for root, dirs, files in os.walk("../" + company + "_legitimate"): #first all the fakes
             for dir_name in dirs:
                 dir_path = os.path.join(root, dir_name)
                 print(dir_path)
@@ -279,7 +302,7 @@ if lookyloo.is_up:
                 features.append(empty_links)
                 features.append(domain_links)
                 #adding latitude and longitude
-                takedown_infos = get_takedown_info(company, "fake", uuid)  # dict with takedown information
+                takedown_infos = get_takedown_info(company, "legitimate", uuid)  # dict with takedown information
                 ips = get_ips(takedown_infos, dir_path)
                 latitude, longitude = get_geolocation(ips)
                 features.append(latitude)
@@ -308,7 +331,7 @@ if lookyloo.is_up:
 
 
 
-                features.append("1") #1 means that it is a fake website
+                features.append("0") #1 means that it is a fake website
 
 
                 for company_dataset in companies:
