@@ -42,7 +42,7 @@ def get_variations_list(company):
 
 def check_list(list, path):
     domain = get_domain(path)
-    return "1" if domain in list else "0"
+    return 1 if domain in list else 0
 
 def get_3rd_party_responses(uuid):
         response = lookyloo.get_modules_responses(uuid)
@@ -91,7 +91,7 @@ def get_3rd_party_responses(uuid):
                     # unable to run the query, probably an invalid key
                     pass
         if len(modules) == 0:
-            return "0"
+            return 0
         return len(modules)
 
 def html_information(path, company):
@@ -99,8 +99,8 @@ def html_information(path, company):
     with open(html_path, 'r', encoding='utf-8') as file:
         html_content = file.read()
     soup = BeautifulSoup(html_content, 'html.parser')
-    name_presence = "1" if company in soup.get_text().lower() else "0"
-    form_presence = "1" if soup.find('input') else "0"
+    name_presence = 1 if company in soup.get_text().lower() else 0
+    form_presence = 1 if soup.find('input') else 0
     links = soup.find_all('a')
     number_links = len(links)
     empty_links = [link for link in links if link.get('href') == '#']
@@ -260,92 +260,90 @@ if lookyloo.is_up:
                         "similarius_sim",
                         "malicious",
                         "company_site"]
-        compare_sites= {
-            "amazon": "/home/amaraj/Bachelorarbeit/capture_saver/amazon_legitimate/2024-08-21T12:17:23.058173/0.html",
-            "ameli":"/home/amaraj/Bachelorarbeit/capture_saver/ameli_legitimate/2024-08-26T12:17:33.189636/0.html",
-            "amendes":"/home/amaraj/Bachelorarbeit/capture_saver/amendes_legitimate/2024-08-21T14:44:09.691940/0.html",
-            "atandt":"/home/amaraj/Bachelorarbeit/capture_saver/atandt_legitimate/2024-08-26T12:29:05.942666/0.html",
-            "credit_agricole":"/home/amaraj/Bachelorarbeit/capture_saver/credit_agricole_legitimate/2024-08-21T14:30:17.582262/0.html",
-            "luxtrust":"/home/amaraj/Bachelorarbeit/capture_saver/luxtrust_legitimate/2024-08-26T13:45:53.974198/0.html",
-            "microsoft":"/home/amaraj/Bachelorarbeit/capture_saver/microsoft_legitimate/2024-08-21T14:20:58.145717/0.html",
-            "netflix":"/home/amaraj/Bachelorarbeit/capture_saver/netflix_legitimate/2024-08-21T14:19:05.483055/0.html",
-            "orange":"/home/amaraj/Bachelorarbeit/capture_saver/orange_legitimate/2024-08-21T13:47:47.622005/0.html",
-            "paypal":"/home/amaraj/Bachelorarbeit/capture_saver/paypal_legitimate/2024-08-21T13:36:34.243552/0.html"
-        }
         with open(file_name, 'a') as f_object:
             writer_object = writer(f_object)
             writer_object.writerow(feature_list)
-            f_object.close()
-    for company in companies:
-        print(company)
-        typosquatting = get_variations_list(company)
-        #did the fake ones with the public instance
-        #go through every directory
-        for root, dirs, files in os.walk("../" + company + "_legitimate"): #first all the fakes
-            for dir_name in dirs:
-                dir_path = os.path.join(root, dir_name)
-                print(dir_path)
-                features = []
+            f_object.close()"""
 
-                uuid = read_uuid(dir_path)
+   """compare_sites = {
+       "amazon": "/home/amaraj/Bachelorarbeit/capture_saver/amazon_legitimate/2024-08-21T12:17:23.058173/0.html",
+       "ameli": "/home/amaraj/Bachelorarbeit/capture_saver/ameli_legitimate/2024-08-26T12:17:33.189636/0.html",
+       "amendes": "/home/amaraj/Bachelorarbeit/capture_saver/amendes_legitimate/2024-08-21T14:44:09.691940/0.html",
+       "atandt": "/home/amaraj/Bachelorarbeit/capture_saver/atandt_legitimate/2024-08-26T12:29:05.942666/0.html",
+       "credit_agricole": "/home/amaraj/Bachelorarbeit/capture_saver/credit_agricole_legitimate/2024-08-21T14:30:17.582262/0.html",
+       "luxtrust": "/home/amaraj/Bachelorarbeit/capture_saver/luxtrust_legitimate/2024-08-26T13:45:53.974198/0.html",
+       "microsoft": "/home/amaraj/Bachelorarbeit/capture_saver/microsoft_legitimate/2024-08-21T14:20:58.145717/0.html",
+       "netflix": "/home/amaraj/Bachelorarbeit/capture_saver/netflix_legitimate/2024-08-21T14:19:05.483055/0.html",
+       "orange": "/home/amaraj/Bachelorarbeit/capture_saver/orange_legitimate/2024-08-21T13:47:47.622005/0.html",
+       "paypal": "/home/amaraj/Bachelorarbeit/capture_saver/paypal_legitimate/2024-08-21T13:36:34.243552/0.html"
+   }
+   for company in companies:
+       print(company)
+       typosquatting = get_variations_list(company)
+       # did the fake ones with the public instance
+       # go through every directory
+       for root, dirs, files in os.walk("../" + company + "_legitimate"):  # first all the fakes
+           for dir_name in dirs:
+               dir_path = os.path.join(root, dir_name)
+               print(dir_path)
+               features = []
 
-                #adding features
+               uuid = read_uuid(dir_path)
 
-                #adding uuid and path
-                features.append(uuid)
-                features.append(dir_path)
-                #1 when the hostname is contained in the typosquatting list
-                features.append(check_list(typosquatting, dir_path))
-                #getting the number of how often the url was found in other phishing databases
-                features.append(get_3rd_party_responses(uuid))
-                #getting the domain length
-                features.append(len(get_domain(dir_path)))
-                # form presence
-                name_presence,form_presence, number_links, empty_links, domain_links = html_information(dir_path, company)
-                features.append(name_presence)
-                features.append(form_presence)
-                features.append(number_links)
-                features.append(empty_links)
-                features.append(domain_links)
-                #adding latitude and longitude
-                takedown_infos = get_takedown_info(company, "legitimate", uuid)  # dict with takedown information
-                ips = get_ips(takedown_infos, dir_path)
-                latitude, longitude = get_geolocation(ips)
-                features.append(latitude)
-                features.append(longitude)
-                #adding r,g,b values of dominant color of the screenshot and favicon
-                r_screenshot, g_screenshot, b_screenshot = dominant_color(dir_path,"screenshot")
-                features.append(r_screenshot)
-                features.append(g_screenshot)
-                features.append(b_screenshot)
-                r_favicon, g_favicon, b_favicon = dominant_color(dir_path,"favicon")
-                features.append(r_favicon)
-                features.append(g_favicon)
-                features.append(b_favicon)
-                #hashes
-                features.append(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'))
-                features.append(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'))
-                #similarius
-                sim_value= similarius_values(compare_sites[company],dir_path)
-                features.append(sim_value)
-                #features.append(diff_value)
-                #features.append(ratio_value)
+               # adding features
 
+               # adding uuid and path
+               features.append(uuid)
+               features.append(dir_path)
+               # 1 when the hostname is contained in the typosquatting list
+               features.append(check_list(typosquatting, dir_path))
+               # getting the number of how often the url was found in other phishing databases
+               features.append(get_3rd_party_responses(uuid))
+               # getting the domain length
+               features.append(len(get_domain(dir_path)))
+               # form presence
+               name_presence, form_presence, number_links, empty_links, domain_links = html_information(dir_path,
+                                                                                                        company)
+               features.append(name_presence)
+               features.append(form_presence)
+               features.append(number_links)
+               features.append(empty_links)
+               features.append(domain_links)
+               # adding latitude and longitude
+               takedown_infos = get_takedown_info(company, "legitimate", uuid)  # dict with takedown information
+               ips = get_ips(takedown_infos, dir_path)
+               latitude, longitude = get_geolocation(ips)
+               features.append(latitude)
+               features.append(longitude)
+               # adding r,g,b values of dominant color of the screenshot and favicon
+               r_screenshot, g_screenshot, b_screenshot = dominant_color(dir_path, "screenshot")
+               features.append(r_screenshot)
+               features.append(g_screenshot)
+               features.append(b_screenshot)
+               r_favicon, g_favicon, b_favicon = dominant_color(dir_path, "favicon")
+               features.append(r_favicon)
+               features.append(g_favicon)
+               features.append(b_favicon)
+               # hashes
+               features.append(calculate_file_hash(dir_path + '/0.png', hash_algorithm='sha256'))
+               features.append(calculate_file_hash(dir_path + '/0.potential_favicons.ico', hash_algorithm='sha256'))
+               # similarius
+               sim_value = similarius_values(compare_sites[company], dir_path)
+               features.append(sim_value)
+               # features.append(diff_value)
+               # features.append(ratio_value)
 
-                #print(takedown_info)
-                #print(get_ips(takedown_info, dir_path))
+               # print(takedown_info)
+               # print(get_ips(takedown_info, dir_path))
 
+               features.append(0)  # 1 means that it is a fake website
 
-
-                features.append("0") #1 means that it is a fake website
-
-
-                for company_dataset in companies:
-                    if company_dataset == company:
-                        label = "1" #1 so that it is marked as the company we are training the dataset on
-                        write_files(company_dataset, features, label)
-                    else:
-                        label = "0"""""
+               for company_dataset in companies:
+                   if company_dataset == company:
+                       label = 1  # 1 so that it is marked as the company we are training the dataset on
+                       write_files(company_dataset, features, label)
+                   else:
+                       label = 0"""
 
    compare_sites = {
        "amazon": "/home/amaraj/Bachelorarbeit/capture_saver/amazon_legitimate/2024-08-21T12:17:23.058173/0.html",
@@ -419,5 +417,5 @@ if lookyloo.is_up:
                # print(takedown_info)
                # print(get_ips(takedown_info, dir_path))
 
-               features.append("2")  # 1 means that it is a fake website, 2 means that we do not know
-               write_files(company, features, "0")
+               features.append(2)  # 1 means that it is a fake website, 2 means that we do not know
+               write_files(company, features, 0)
