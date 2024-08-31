@@ -42,7 +42,6 @@ already_taken_uuids_amendes=[
 ]
 
 uuids_paypal=[
-
 ]
 
 already_taken_uuids_paypal=[
@@ -67,7 +66,9 @@ already_taken_uuids_paypal=[
     "4b565878-1bff-4453-a315-16cbf403d0e6",
     "3710a4c3-eae5-4b2a-a295-776a74f3b411",
     "0f710f96-1c1e-4a80-93aa-c969f49731bc",
-    "5b0d6925-2bdb-4dab-b3b6-ae72ec5f9528"
+    "5b0d6925-2bdb-4dab-b3b6-ae72ec5f9528",
+"de7658c1-d4e2-41ea-80e9-119f38bf5586"
+
 
 ]
 
@@ -191,8 +192,8 @@ already_taken_uuids_luxtrust=[
     "92310dc1-6073-4fd2-8057-1df2b610b229",
     "c3e7820f-2106-4917-a0ad-e302e1582775",
     "3d62dd21-ef80-4817-b9b9-5289c61c202b",
-    "bbdf8a95-fcf7-4fac-93e7-832d5bba1448"
-
+    "bbdf8a95-fcf7-4fac-93e7-832d5bba1448",
+    "a8c4f801-05be-44e2-901f-7c9740281114"
 ]
 
 uuids_microsoft=[

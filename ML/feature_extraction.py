@@ -337,9 +337,10 @@ if lookyloo.is_up:
                 for company_dataset in companies:
                     if company_dataset == company:
                         label = "1" #1 so that it is marked as the company we are training the dataset on
+                        write_files(company_dataset, features, label)
                     else:
                         label = "0"
-                    write_files(company_dataset, features, label)
+
 
 
 
