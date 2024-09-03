@@ -7,7 +7,7 @@ import sklearn
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
-
+from sklearn import neighbors
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import RandomizedSearchCV, train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, ConfusionMatrixDisplay, \
@@ -57,9 +57,9 @@ for company in companies:
     uuids_test = uuids.iloc[X_test.index]
 
     #print(X_train.shape)
-    rf = RandomForestClassifier()
-    rf.fit(X_train, y_train)
-    y_pred = rf.predict(X_test)
+    clf = neighbors.KNeighborsClassifier()
+    clf.fit(X_train, y_train)
+    y_pred = clf.predict(X_test)
     X_test_classified_as_1 = X_test[y_pred == 1]
     results = pd.DataFrame({
         'uuid': uuids_test,
@@ -68,13 +68,11 @@ for company in companies:
     })
     # Ergebnisse in eine CSV-Datei speichern
     #results.to_csv(company + '_results.csv', index=False)
-    print("Test Accuracy: ", rf.score(X_test, y_test))
-    print("Train Accuracy: ",rf.score(X_train, y_train))
+    print("Test Accuracy: ", clf.score(X_test, y_test))
+    print("Train Accuracy: ",clf.score(X_train, y_train))
     # Option 1: Ausgabe der Datenpunkte
     print("Daten, die als 1 klassifiziert wurden:")
     print(X_test_classified_as_1)
-    accuracy = accuracy_score(y_test, y_pred)
-    print("Accuracy:", accuracy)
     param_dist = {'n_estimators': randint(50,500),
                   'max_depth': randint(1,20)}
 
@@ -102,23 +100,13 @@ for company in companies:
     ConfusionMatrixDisplay(confusion_matrix=cm).plot();
     plt.figure(figsize=(20, 10))
     plot_tree(rf.estimators_[0], feature_names=X_train.columns, filled=True, max_depth=4, impurity=False)
-    plt.show()"""
-    importances = rf.feature_importances_
+    plt.show()
+    importances = clf.feature_importances_
     indices = np.argsort(importances)[::-1]
     print(indices)
-    plt.figure(figsize=(13, 16))
+    plt.figure(figsize=(13, 16))"""
 
-    plt.bar(range(X_train.shape[1]), importances[indices], align='center')
-    plt.xticks(range(X_train.shape[1]), X_train.columns[indices], rotation=90)
-    plt.xlim([-1, X_train.shape[1]])
-    plt.xlabel('Feature')
-    plt.ylabel('Importance')
-    plt.title(company)
-    plt.show()
-
-    y_train_pred = rf.predict(X_train)
-
-    # Confusion Matrix für das Trainingsset berechnen
+    y_train_pred = clf.predict(X_train)
     cm_train = confusion_matrix(y_train, y_train_pred)
     print("Confusion Matrix Train:")
     print(cm_train)
@@ -127,9 +115,7 @@ for company in companies:
     print("Confusion Matrix Test:")
     print(cm)
 
-
-
-    cv_scores = cross_val_score(rf, X, y, cv=5)
+    cv_scores = cross_val_score(clf, X, y, cv=5)
     print("Cross-Validation Scores:", cv_scores)
     print("Average CV Score:", np.mean(cv_scores))
     #print(classification_report(y_test, y_pred))
@@ -157,7 +143,7 @@ for company in companies:
     print(f'Recall (Sensitivity): {recall}')
     print(f'F1-Score: {f1}')
     print(f'Specificity: {specificity}')
-    y_prob = rf.predict_proba(X_test)[:, 1]
+    y_prob = clf.predict_proba(X_test)[:, 1]
     auc = roc_auc_score(y_test, y_prob)
     print("AUC:", auc)
 
@@ -166,7 +152,7 @@ for company in companies:
     """korrelation_matrix = data_all.corr(method='pearson')
     print(korrelation_matrix)"""
 
-    file_name = "results/"+ company + "_results_rf.csv"
+    file_name = "results/"+ company + "_results_neighbors.csv"
     results = {"Accuracy": accuracy, "Precision": precision, "Recall": recall, "Specificity": specificity, "F1-score": f1}
     with open(file_name, 'a', newline='') as f_object:
         writer_object = csv.writer(f_object)
