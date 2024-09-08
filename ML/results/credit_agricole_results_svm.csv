@@ -1,0 +1,7 @@
+Accuracy,Precision,Recall,Specificity,F1-score
+1.0,1.0,1.0,1.0,1.0
+[[145   0]
+ [  0  23]]
+ Average CV Score: 0.9988095238095237
+1.0,1.0,1.0,1.0,1.0
+1.0,1.0,1.0,1.0,1.0

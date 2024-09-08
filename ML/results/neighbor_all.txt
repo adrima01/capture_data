@@ -1,0 +1,483 @@
+amazon
+(837, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9523809523809523
+Train Accuracy:  0.9745889387144993
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+41                    0              1  ...    175.070741              19
+44                    0              1  ...    175.070741              78
+1                     0              1  ...    175.070741              78
+133                   0              0  ...    176.531290               0
+31                    0              1  ...    175.070741              78
+110                   0              1  ...    175.070741              25
+105                   0              1  ...    175.070741              15
+7                     0              1  ...    175.070741              78
+35                    0              1  ...    175.070741              78
+45                    0              1  ...    175.070741              78
+120                   0              1  ...    175.070741               4
+112                   0              1  ...    175.070741              21
+8                     0              1  ...    175.070741              78
+58                    0              1  ...    175.070741              78
+36                    0              1  ...    175.070741              19
+16                    0              1  ...    175.070741              78
+111                   0              1  ...      0.000000               5
+817                   0              0  ...    176.818274               3
+454                   0              0  ...    176.697414               1
+518                   0              0  ...    177.206802               0
+100                   0              1  ...    175.070741               9
+55                    0              1  ...    175.070741              78
+28                    0              1  ...    175.070741              19
+82                    0              1  ...    175.070741               9
+60                    0              1  ...    175.070741              78
+27                    0              1  ...    175.070741              19
+222                   0              0  ...      0.000000               7
+56                    0              1  ...    175.070741              19
+12                    0              1  ...    175.070741              19
+39                    0              1  ...    175.070741               7
+115                   0              1  ...    175.070741              19
+
+[31 rows x 11 columns]
+Confusion Matrix Train:
+[[558  10]
+ [  7  94]]
+Confusion Matrix Test:
+[[134   5]
+ [  3  26]]
+Cross-Validation Scores: [0.95833333 0.95833333 0.9760479  0.94610778 0.93413174]
+Average CV Score: 0.9545908183632734
+Accuracy: 0.9523809523809523
+Precision: 0.8387096774193549
+Recall (Sensitivity): 0.896551724137931
+F1-Score: 0.8666666666666667
+Specificity: 0.9640287769784173
+AUC: 0.9924336392954601
+
+
+ameli
+(915, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9890710382513661
+Train Accuracy:  0.9918032786885246
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+21                    0              1  ...    176.967610              24
+76                    0              1  ...    176.967610              24
+93                    0              1  ...    176.967610              24
+17                    0              1  ...    176.967610              24
+25                    0              1  ...    176.967610              24
+14                    0              1  ...    176.967610              24
+63                    0              1  ...    176.967610              24
+37                    0              1  ...    176.967610              24
+166                   0              1  ...    176.078959              43
+164                   0              1  ...    174.626574              25
+771                   0              0  ...    176.458248               9
+148                   0              1  ...    176.967610              25
+67                    0              1  ...    176.967610              24
+125                   0              1  ...    176.078959              32
+604                   0              0  ...    176.213321               0
+27                    0              1  ...    176.967610              24
+74                    0              1  ...    176.967610              24
+96                    0              1  ...    176.078959              45
+64                    0              1  ...    176.967610              24
+132                   0              1  ...    176.967610              25
+11                    0              1  ...    176.967610              24
+41                    0              1  ...    176.967610              24
+151                   0              1  ...    174.626574              25
+0                     0              1  ...    176.967610              24
+130                   0              1  ...    174.626574              25
+156                   0              1  ...    174.626574              25
+149                   0              1  ...    176.388595              32
+38                    0              1  ...    176.967610              24
+205                   0              1  ...    176.967610              25
+161                   0              1  ...    174.626574              25
+174                   0              1  ...    174.626574              25
+109                   0              1  ...    176.388595              48
+60                    0              1  ...    176.967610              24
+58                    0              1  ...    176.967610              24
+144                   0              1  ...      0.000000              25
+82                    0              1  ...    176.967610              24
+183                   0              1  ...    176.967610              25
+207                   0              1  ...    174.626574              25
+10                    0              1  ...    176.967610              24
+55                    0              1  ...    176.967610              24
+89                    0              1  ...    176.967610              24
+165                   0              1  ...    176.078959              33
+167                   0              1  ...      0.000000              25
+133                   0              1  ...    174.626574              25
+28                    0              1  ...    176.967610              24
+202                   0              1  ...      0.000000              25
+159                   0              1  ...    176.078959              48
+
+[47 rows x 11 columns]
+Confusion Matrix Train:
+[[564   5]
+ [  1 162]]
+Confusion Matrix Test:
+[[136   2]
+ [  0  45]]
+Cross-Validation Scores: [0.98907104 1.         0.9726776  0.98907104 1.        ]
+Average CV Score: 0.9901639344262296
+Accuracy: 0.9890710382513661
+Precision: 0.9574468085106383
+Recall (Sensitivity): 1.0
+F1-Score: 0.9782608695652174
+Specificity: 0.9855072463768116
+AUC: 1.0
+
+
+amendes
+(751, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9668874172185431
+Train Accuracy:  0.985
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+23                    0              1  ...    177.300217              10
+1                     0              1  ...    177.300217              10
+546                   0              0  ...    175.294304               0
+359                   0              0  ...      0.000000               0
+84                    0              0  ...    176.895636               3
+28                    0              1  ...    177.300217              10
+170                   0              0  ...    174.281743               0
+749                   0              0  ...    176.863305               0
+7                     0              1  ...    177.300217              10
+
+[9 rows x 11 columns]
+Confusion Matrix Train:
+[[555   5]
+ [  4  36]]
+Confusion Matrix Test:
+[[142   5]
+ [  0   4]]
+Cross-Validation Scores: [0.97350993 0.98666667 0.96666667 0.98       0.92666667]
+Average CV Score: 0.9667019867549669
+Accuracy: 0.9668874172185431
+Precision: 0.4444444444444444
+Recall (Sensitivity): 1.0
+F1-Score: 0.6153846153846154
+Specificity: 0.9659863945578231
+AUC: 0.9931972789115646
+
+
+atandt
+(805, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9254658385093167
+Train Accuracy:  0.9627329192546584
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+92                    0              0  ...    176.098850             100
+61                    0              0  ...    176.098850               4
+90                    0              0  ...    176.098850               2
+35                    0              0  ...    176.069228              10
+39                    0              0  ...    176.069228               2
+396                   0              0  ...    176.180243               5
+10                    0              0  ...    177.319143               3
+735                   0              0  ...      0.000000               2
+494                   0              0  ...    176.213321               5
+675                   0              0  ...    177.162622               0
+93                    0              0  ...    176.098850               5
+222                   0              0  ...    174.495952               0
+620                   0              0  ...    175.889041               3
+262                   0              0  ...    173.714996               1
+28                    0              0  ...    176.069228               4
+15                    0              0  ...    176.069228              13
+18                    0              0  ...    176.069228               7
+50                    0              0  ...    176.069228               2
+410                   0              0  ...      0.000000               1
+87                    0              0  ...    176.098850               6
+27                    0              0  ...    177.319143               7
+12                    0              0  ...    177.115756               2
+7                     0              0  ...    176.069228               3
+9                     0              0  ...    177.319143               7
+14                    0              0  ...    176.300428               1
+11                    0              0  ...    177.319143               7
+3                     0              0  ...    173.725702               7
+
+[27 rows x 11 columns]
+Confusion Matrix Train:
+[[555  14]
+ [ 10  65]]
+Confusion Matrix Test:
+[[130   8]
+ [  4  19]]
+Cross-Validation Scores: [0.9689441  0.96273292 0.92546584 0.90062112 0.9378882 ]
+Average CV Score: 0.9391304347826088
+Accuracy: 0.9254658385093167
+Precision: 0.7037037037037037
+Recall (Sensitivity): 0.8260869565217391
+F1-Score: 0.76
+Specificity: 0.9420289855072463
+AUC: 0.9584120982986768
+
+
+credit_agricole
+(838, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  1.0
+Train Accuracy:  1.0
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+50                    0              0  ...      0.000000              93
+55                    0              0  ...    173.666193              86
+44                    0              0  ...    173.666193              83
+103                   0              0  ...      0.000000              86
+94                    0              0  ...      0.000000              86
+64                    0              0  ...    173.666193              78
+112                   0              0  ...      0.000000              77
+122                   0              0  ...      0.000000              85
+4                     0              0  ...    176.521325              69
+127                   0              0  ...      0.000000              84
+119                   0              0  ...      0.000000              82
+66                    0              0  ...      0.000000              86
+15                    0              0  ...    176.521325              69
+58                    0              0  ...      0.000000              83
+31                    0              0  ...    177.281016              69
+51                    0              0  ...    173.666193              85
+61                    0              0  ...    173.666193              81
+72                    0              0  ...    173.666193              75
+59                    0              0  ...      0.000000              85
+76                    0              0  ...      0.000000              91
+0                     0              0  ...    177.281016              69
+52                    0              0  ...      0.000000              91
+36                    0              0  ...    176.521325              69
+60                    0              0  ...    173.666193              82
+11                    0              0  ...    177.281016              69
+83                    0              0  ...    173.666193              95
+65                    0              0  ...    173.666193              80
+71                    0              0  ...    173.666193              89
+
+[28 rows x 11 columns]
+Confusion Matrix Train:
+[[567   0]
+ [  0 103]]
+Confusion Matrix Test:
+[[140   0]
+ [  0  28]]
+Cross-Validation Scores: [1.         0.99404762 1.         0.99401198 1.        ]
+Average CV Score: 0.9976119190191046
+Accuracy: 1.0
+Precision: 1.0
+Recall (Sensitivity): 1.0
+F1-Score: 1.0
+Specificity: 1.0
+AUC: 1.0
+
+
+luxtrust
+(789, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9936708860759493
+Train Accuracy:  0.993660855784469
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+38                    1              1  ...    177.434580              62
+63                    1              1  ...    177.434580              75
+65                    0              1  ...    177.434580              82
+50                    0              1  ...    177.434580              54
+25                    1              1  ...    177.434580              66
+24                    1              1  ...    177.434580              62
+0                     0              1  ...    177.434580              53
+20                    1              1  ...    177.434580              77
+35                    1              1  ...    177.434580              65
+16                    1              1  ...    177.434580              72
+415                   0              0  ...    175.607673               0
+4                     0              1  ...    177.434580              31
+32                    1              1  ...    177.434580              69
+46                    1              1  ...    177.434580              22
+23                    1              1  ...    177.434580              63
+5                     0              1  ...    177.434580              31
+
+[16 rows x 11 columns]
+Confusion Matrix Train:
+[[562   2]
+ [  2  65]]
+Confusion Matrix Test:
+[[142   1]
+ [  0  15]]
+Cross-Validation Scores: [0.96202532 1.         0.98101266 0.99367089 0.99363057]
+Average CV Score: 0.9860678868015803
+Accuracy: 0.9936708860759493
+Precision: 0.9375
+Recall (Sensitivity): 1.0
+F1-Score: 0.967741935483871
+Specificity: 0.993006993006993
+AUC: 1.0
+
+
+microsoft
+(795, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9748427672955975
+Train Accuracy:  0.9889937106918238
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+68                    0              1  ...    176.875878              17
+71                    0              1  ...    176.875878              21
+9                     0              0  ...    176.875878              23
+80                    0              1  ...    176.875878               8
+608                   0              0  ...    176.074865               2
+50                    0              1  ...    176.875878              13
+85                    0              1  ...    176.875878               8
+53                    0              1  ...    176.875878               4
+0                     0              0  ...    176.875878              26
+102                   0              0  ...    176.814608               0
+64                    0              1  ...    176.875878              12
+17                    0              0  ...    176.494003              27
+38                    0              1  ...    176.875878              22
+2                     0              0  ...    176.875878              24
+60                    0              1  ...    176.875878              14
+12                    0              0  ...    176.875878               9
+65                    0              1  ...    176.875878              16
+646                   0              0  ...    176.592731               5
+69                    0              1  ...    176.875878              17
+75                    0              1  ...    176.875878              14
+87                    0              1  ...    176.875878               9
+4                     0              0  ...    176.875878               9
+29                    0              1  ...    176.875878              28
+359                   0              0  ...    176.915074               0
+
+[24 rows x 11 columns]
+Confusion Matrix Train:
+[[562   6]
+ [  1  67]]
+Confusion Matrix Test:
+[[135   4]
+ [  0  20]]
+Cross-Validation Scores: [0.98113208 0.98113208 0.99371069 0.96855346 0.97484277]
+Average CV Score: 0.979874213836478
+Accuracy: 0.9748427672955975
+Precision: 0.8333333333333334
+Recall (Sensitivity): 1.0
+F1-Score: 0.9090909090909091
+Specificity: 0.9712230215827338
+AUC: 0.9983812949640288
+
+
+netflix
+(784, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9872611464968153
+Train Accuracy:  0.9776714513556619
+Daten, die als 1 klassifiziert wurden:
+    typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+66                   0              1  ...    177.047450              76
+50                   0              1  ...    176.961149              82
+45                   0              1  ...    176.961149              76
+65                   0              1  ...    176.961149              96
+11                   0              1  ...    177.047450              17
+47                   0              1  ...    177.047450              98
+19                   0              1  ...    176.952744              16
+27                   0              1  ...    177.047450              10
+31                   0              1  ...    177.047450              15
+61                   0              1  ...    176.961149              62
+39                   0              1  ...    176.952744              97
+3                    0              1  ...    176.952744              16
+51                   0              1  ...    176.961149              73
+21                   0              1  ...    177.047450              10
+62                   0              1  ...    176.961149              75
+
+[15 rows x 11 columns]
+Confusion Matrix Train:
+[[559   8]
+ [  6  54]]
+Confusion Matrix Test:
+[[140   0]
+ [  2  15]]
+Cross-Validation Scores: [0.99363057 0.96815287 0.98726115 0.96815287 0.98076923]
+Average CV Score: 0.979593336599706
+Accuracy: 0.9872611464968153
+Precision: 1.0
+Recall (Sensitivity): 0.8823529411764706
+F1-Score: 0.9375
+Specificity: 1.0
+AUC: 0.9978991596638656
+
+
+orange
+(803, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9813664596273292
+Train Accuracy:  0.9922118380062306
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+58                    0              1  ...    173.162957              49
+82                    0              1  ...    177.356550              64
+67                    0              1  ...    176.587078              52
+9                     0              1  ...    176.482930              30
+44                    0              1  ...    173.162957              64
+61                    0              1  ...    176.788784              50
+26                    0              1  ...    176.482930              30
+91                    0              1  ...    173.162957              59
+83                    0              1  ...    173.162957              54
+50                    0              1  ...    173.162957              42
+17                    0              1  ...    176.482930              30
+513                   0              0  ...    176.520333              43
+23                    0              1  ...    176.482930              30
+74                    0              1  ...    177.356550              65
+64                    0              1  ...    173.162957              57
+86                    0              1  ...    173.162957              77
+89                    0              1  ...    176.587078              65
+57                    0              1  ...    176.788784              44
+87                    0              1  ...    177.356550              66
+37                    0              1  ...    173.162957              46
+88                    0              1  ...    176.788784              35
+40                    0              1  ...    177.356550              63
+42                    0              1  ...    173.162957              52
+
+[23 rows x 11 columns]
+Confusion Matrix Train:
+[[568   2]
+ [  3  69]]
+Confusion Matrix Test:
+[[136   1]
+ [  2  22]]
+Cross-Validation Scores: [0.98136646 0.99378882 0.9689441  0.9625     0.9875    ]
+Average CV Score: 0.9788198757763975
+Accuracy: 0.9813664596273292
+Precision: 0.9565217391304348
+Recall (Sensitivity): 0.9166666666666666
+F1-Score: 0.9361702127659575
+Specificity: 0.9927007299270073
+AUC: 0.9732360097323601
+
+
+paypal
+(773, 23)
+['typosquatting_list', 'name_presence', 'red_value_screenshot', 'green_value_screenshot', 'blue_value_screenshot', 'red_value_favicon', 'green_value_favicon', 'blue_value_favicon', 'hash_screenshot', 'hash_favicon', 'similarius_sim', 'company_site']
+Test Accuracy:  0.9806451612903225
+Train Accuracy:  0.982200647249191
+Daten, die als 1 klassifiziert wurden:
+     typosquatting_list  name_presence  ...  hash_favicon  similarius_sim
+462                   0              0  ...    176.213321               0
+29                    0              1  ...    175.016923              16
+21                    0              1  ...    175.016923              12
+32                    0              1  ...    177.288488              11
+39                    0              1  ...    175.016923               8
+258                   0              0  ...    177.147303               5
+59                    0              1  ...    177.288488              13
+20                    0              1  ...    175.016923               8
+12                    0              0  ...    175.016923               8
+6                     0              0  ...    175.016923               0
+47                    0              1  ...    175.016923               7
+27                    0              1  ...    175.016923              11
+8                     0              1  ...    176.913517              49
+17                    0              1  ...    175.016923              24
+
+[14 rows x 11 columns]
+Confusion Matrix Train:
+[[558   7]
+ [  4  49]]
+Confusion Matrix Test:
+[[140   2]
+ [  1  12]]
+Cross-Validation Scores: [0.98064516 0.95483871 0.95483871 0.98051948 0.99350649]
+Average CV Score: 0.972869710934227
+Accuracy: 0.9806451612903225
+Precision: 0.8571428571428571
+Recall (Sensitivity): 0.9230769230769231
+F1-Score: 0.8888888888888888
+Specificity: 0.9859154929577465
+AUC: 0.9937703141928493
+
