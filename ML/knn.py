@@ -29,7 +29,7 @@ for company in companies:
     print(data_all.shape)
 
     uuids = data_all['uuid']
-    columns_to_drop = ['uuid', 'dir_path', 'malicious', '3rd_party_hits', 'latitude', 'longitude','domain_length','form_presence',
+    columns_to_drop = ['uuid', 'dir_path', 'malicious', '3rd_party_hits', 'latitude', 'longitude','domain_length','form_presence','ip',
                         'number_links',
                         'number_empty_links',
                         'number_links_domain']
@@ -66,45 +66,13 @@ for company in companies:
         'actual': y_test,
         'prediction': y_pred
     })
-    # Ergebnisse in eine CSV-Datei speichern
-    #results.to_csv(company + '_results.csv', index=False)
+
     print("Test Accuracy: ", clf.score(X_test, y_test))
     print("Train Accuracy: ",clf.score(X_train, y_train))
     # Option 1: Ausgabe der Datenpunkte
     print("Daten, die als 1 klassifiziert wurden:")
     print(X_test_classified_as_1)
-    param_dist = {'n_estimators': randint(50,500),
-                  'max_depth': randint(1,20)}
 
-   #Create a random forest classifier
-    """rc = RandomForestClassifier()
-
-    # Use random search to find the best hyperparameters
-    rand_search = RandomizedSearchCV(rc,
-                                     param_distributions = param_dist,
-                                     n_iter=5,
-                                     cv=5)
-
-    # Fit the random search object to the data
-    rand_search.fit(X_train, y_train)
-    best_rf = rand_search.best_estimator_
-
-    # Print the best hyperparameters
-    print('Best hyperparameters:',  rand_search.best_params_)
-    # Generate predictions with the best model
-    y_pred = best_rf.predict(X_test)
-
-    # Create the confusion matrix
-    cm = confusion_matrix(y_test, y_pred)
-
-    ConfusionMatrixDisplay(confusion_matrix=cm).plot();
-    plt.figure(figsize=(20, 10))
-    plot_tree(rf.estimators_[0], feature_names=X_train.columns, filled=True, max_depth=4, impurity=False)
-    plt.show()
-    importances = clf.feature_importances_
-    indices = np.argsort(importances)[::-1]
-    print(indices)
-    plt.figure(figsize=(13, 16))"""
 
     y_train_pred = clf.predict(X_train)
     cm_train = confusion_matrix(y_train, y_train_pred)
@@ -118,13 +86,11 @@ for company in companies:
     cv_scores = cross_val_score(clf, X, y, cv=5)
     print("Cross-Validation Scores:", cv_scores)
     print("Average CV Score:", np.mean(cv_scores))
-    #print(classification_report(y_test, y_pred))
     # Accuracy
     accuracy = accuracy_score(y_test, y_pred)
 
     # Precision
-    precision = precision_score(y_test, y_pred, average='binary')  # für binäre Klassifikation
-    # für Multiklass-Klassifikation, 'average' kann 'micro', 'macro', 'weighted' sein
+    precision = precision_score(y_test, y_pred, average='binary')
 
     # Recall (Sensitivity)
     recall = recall_score(y_test, y_pred, average='binary')
@@ -148,19 +114,14 @@ for company in companies:
     print("AUC:", auc)
 
 
-    # Korrelation berechnen
-    """korrelation_matrix = data_all.corr(method='pearson')
-    print(korrelation_matrix)"""
 
     file_name = "results/"+ company + "_results_neighbors.csv"
     results = {"Accuracy": accuracy, "Precision": precision, "Recall": recall, "Specificity": specificity, "F1-score": f1}
     with open(file_name, 'a', newline='') as f_object:
         writer_object = csv.writer(f_object)
 
-        # Optional: Kopfzeile schreiben, falls Datei neu ist
-        f_object.seek(0, 2)  # An das Ende der Datei gehen
+        f_object.seek(0, 2)
         if f_object.tell() == 0:
             writer_object.writerow(results.keys())
 
-        # Die Ergebnisse in einer Zeile schreiben
         writer_object.writerow(results.values())

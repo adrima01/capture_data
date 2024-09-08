@@ -247,6 +247,7 @@ if lookyloo.is_up:
                         "number_links",
                         "number_empty_links",
                         "number_links_domain",
+                        "ip",
                         "latitude",
                         "longitude",
                         "red_value_screenshot",
@@ -312,6 +313,7 @@ if lookyloo.is_up:
                # adding latitude and longitude
                takedown_infos = get_takedown_info(company, "legitimate", uuid)  # dict with takedown information
                ips = get_ips(takedown_infos, dir_path)
+               features.append(ips[0] if len(ips) > 0 else 0)
                latitude, longitude = get_geolocation(ips)
                features.append(latitude)
                features.append(longitude)
@@ -394,6 +396,7 @@ if lookyloo.is_up:
                                                   uuid=uuid)  # dict with takedown information
                ips = get_ips(takedown_infos, dir_path)
                latitude, longitude = get_geolocation(ips)
+               features.append(ips[0] if len(ips) > 0 else 0)
                features.append(latitude)
                features.append(longitude)
                # adding r,g,b values of dominant color of the screenshot and favicon
